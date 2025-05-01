@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // set className="dark" in html tag
-    <html lang="en">
+    // className="dark" for permanent dark mode
+    <html lang="en" className="dark">
       <body className={`${monaSans.className} antialiased`}>{children}</body>
     </html>
   );
