@@ -1,2 +1,3 @@
-# intellimock-ai
-An AI based Mock Interview Platform
+## IntelliMock
+
+An AI Powered Mock Interview Platform
