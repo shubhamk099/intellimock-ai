@@ -117,19 +117,8 @@ const Agent = ({
   const handleCall = async () => {
     setCallStatus(CallStatus.CONNECTING);
 
-    // Get the Workflow ID from environment variables
-    const workflowId = process.env.NEXT_PUBLIC_VAPI_WORKFLOW_ID;
-
     if (type === "generate") {
-      // Check if workflow ID is available
-      if (!workflowId) {
-        console.error("VAPI Workflow ID is not defined.");
-        toast.error("Internal error: AI workflow not configured.");
-        setCallStatus(CallStatus.INACTIVE);
-        return;
-      }
-
-      await vapi.start(workflowId, {
+      await vapi.start(process.env.NEXT_PUBLIC_VAPI_WORKFLOW_ID!, {
         variableValues: {
           username: userName,
           userid: userId,
@@ -149,6 +138,11 @@ const Agent = ({
         },
       });
     }
+  };
+
+  const handleDisconnect = () => {
+    setCallStatus(CallStatus.FINISHED);
+    vapi.stop();
   };
 
   return (
