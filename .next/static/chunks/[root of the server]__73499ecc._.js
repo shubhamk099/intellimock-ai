@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([typeof document === "object" ? document.currentScript : undefined, {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/[root of the server]__73499ecc._.js", {
 
 "[project]/node_modules/next/dist/compiled/process/browser.js [client] (ecmascript)": (function(__turbopack_context__) {
 
@@ -4165,7 +4165,7 @@ var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
     }
     var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
     Symbol.for("react.provider");
-    var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_VIEW_TRANSITION_TYPE = Symbol.for("react.view_transition"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference");
+    var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen"), REACT_VIEW_TRANSITION_TYPE = Symbol.for("react.view_transition"), REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference");
     exports.ContextConsumer = REACT_CONSUMER_TYPE;
     exports.ContextProvider = REACT_CONTEXT_TYPE;
     exports.Element = REACT_ELEMENT_TYPE;
@@ -4215,7 +4215,7 @@ var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
         return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
     };
     exports.isValidElementType = function(type) {
-        return "string" === typeof type || "function" === typeof type || type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || "object" === typeof type && null !== type && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_CONSUMER_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_CLIENT_REFERENCE || void 0 !== type.getModuleId) ? !0 : !1;
+        return "string" === typeof type || "function" === typeof type || type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || type === REACT_OFFSCREEN_TYPE || "object" === typeof type && null !== type && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_CONSUMER_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_CLIENT_REFERENCE || void 0 !== type.getModuleId) ? !0 : !1;
     };
     exports.typeOf = typeOf;
 }();
@@ -5568,7 +5568,6 @@ Object.defineProperty(exports, "__esModule", {
     ACTION_HEADER: null,
     FLIGHT_HEADERS: null,
     NEXT_DID_POSTPONE_HEADER: null,
-    NEXT_HMR_REFRESH_HASH_COOKIE: null,
     NEXT_HMR_REFRESH_HEADER: null,
     NEXT_IS_PRERENDER_HEADER: null,
     NEXT_REWRITTEN_PATH_HEADER: null,
@@ -5597,9 +5596,6 @@ _export(exports, {
     },
     NEXT_DID_POSTPONE_HEADER: function() {
         return NEXT_DID_POSTPONE_HEADER;
-    },
-    NEXT_HMR_REFRESH_HASH_COOKIE: function() {
-        return NEXT_HMR_REFRESH_HASH_COOKIE;
     },
     NEXT_HMR_REFRESH_HEADER: function() {
         return NEXT_HMR_REFRESH_HEADER;
@@ -5644,7 +5640,6 @@ const NEXT_ROUTER_STATE_TREE_HEADER = 'Next-Router-State-Tree';
 const NEXT_ROUTER_PREFETCH_HEADER = 'Next-Router-Prefetch';
 const NEXT_ROUTER_SEGMENT_PREFETCH_HEADER = 'Next-Router-Segment-Prefetch';
 const NEXT_HMR_REFRESH_HEADER = 'Next-HMR-Refresh';
-const NEXT_HMR_REFRESH_HASH_COOKIE = '__next_hmr_refresh_hash__';
 const NEXT_URL = 'Next-Url';
 const RSC_CONTENT_TYPE_HEADER = 'text/x-component';
 const FLIGHT_HEADERS = [
@@ -6879,7 +6874,7 @@ Object.defineProperty(exports, "HTML_LIMITED_BOT_UA_RE", {
         return HTML_LIMITED_BOT_UA_RE;
     }
 });
-const HTML_LIMITED_BOT_UA_RE = /Mediapartners-Google|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti/i; //# sourceMappingURL=html-bots.js.map
+const HTML_LIMITED_BOT_UA_RE = /Mediapartners-Google|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview/i; //# sourceMappingURL=html-bots.js.map
 }}),
 "[project]/node_modules/next/dist/shared/lib/router/utils/is-bot.js [client] (ecmascript)": (function(__turbopack_context__) {
 
@@ -7427,11 +7422,11 @@ class Router {
                     });
                     return new Promise(()=>{});
                 }
-                const routerFilterSValue = ("TURBOPACK compile-time value", JSON.parse('{"numItems":0,"errorRate":0.0001,"numBits":0,"numHashes":null,"bitArray":[]}'));
+                const routerFilterSValue = ("TURBOPACK compile-time value", JSON.parse('{"numItems":6,"errorRate":0.0001,"numBits":116,"numHashes":14,"bitArray":[1,1,0,1,1,0,1,1,0,0,0,1,1,0,0,1,0,0,1,0,1,0,1,1,1,0,1,1,1,1,1,0,0,1,0,1,1,0,1,1,1,0,1,1,0,1,0,0,0,1,0,0,1,1,1,1,1,0,0,1,0,0,0,1,1,0,1,0,0,0,1,1,0,0,0,0,1,0,0,0,0,1,1,1,1,0,1,1,0,1,0,1,1,0,0,0,0,0,0,1,0,0,1,0,1,1,1,1,0,1,1,1,0,0,1,1]}'));
                 if (!staticFilterData && routerFilterSValue) {
                     staticFilterData = routerFilterSValue ? routerFilterSValue : undefined;
                 }
-                const routerFilterDValue = ("TURBOPACK compile-time value", JSON.parse('{"numItems":0,"errorRate":0.0001,"numBits":0,"numHashes":null,"bitArray":[]}'));
+                const routerFilterDValue = ("TURBOPACK compile-time value", JSON.parse('{"numItems":1,"errorRate":0.0001,"numBits":20,"numHashes":14,"bitArray":[1,0,0,0,0,1,1,0,1,1,0,0,0,0,1,1,1,1,0,0]}'));
                 if (!dynamicFilterData && routerFilterDValue) {
                     dynamicFilterData = routerFilterDValue ? routerFilterDValue : undefined;
                 }
@@ -9821,12 +9816,9 @@ Object.defineProperty(exports, "__esModule", {
     ACTION_UNHANDLED_REJECTION: null,
     ACTION_VERSION_INFO: null,
     INITIAL_OVERLAY_STATE: null,
-    REACT_REFRESH_FULL_RELOAD: null,
     REACT_REFRESH_FULL_RELOAD_FROM_ERROR: null,
     STORAGE_KEY_POSITION: null,
-    STORAGE_KEY_SCALE: null,
     STORAGE_KEY_THEME: null,
-    reportInvalidHmrMessage: null,
     useErrorOverlayReducer: null
 });
 function _export(target, all) {
@@ -9869,23 +9861,14 @@ _export(exports, {
     INITIAL_OVERLAY_STATE: function() {
         return INITIAL_OVERLAY_STATE;
     },
-    REACT_REFRESH_FULL_RELOAD: function() {
-        return REACT_REFRESH_FULL_RELOAD;
-    },
     REACT_REFRESH_FULL_RELOAD_FROM_ERROR: function() {
         return REACT_REFRESH_FULL_RELOAD_FROM_ERROR;
     },
     STORAGE_KEY_POSITION: function() {
         return STORAGE_KEY_POSITION;
     },
-    STORAGE_KEY_SCALE: function() {
-        return STORAGE_KEY_SCALE;
-    },
     STORAGE_KEY_THEME: function() {
         return STORAGE_KEY_THEME;
-    },
-    reportInvalidHmrMessage: function() {
-        return reportInvalidHmrMessage;
     },
     useErrorOverlayReducer: function() {
         return useErrorOverlayReducer;
@@ -9905,7 +9888,6 @@ const ACTION_DEBUG_INFO = 'debug-info';
 const ACTION_DEV_INDICATOR = 'dev-indicator';
 const STORAGE_KEY_THEME = '__nextjs-dev-tools-theme';
 const STORAGE_KEY_POSITION = '__nextjs-dev-tools-position';
-const STORAGE_KEY_SCALE = '__nextjs-dev-tools-scale';
 function pushErrorFilterDuplicates(errors, err) {
     return [
         ...errors.filter((e)=>{
@@ -9922,15 +9904,12 @@ const INITIAL_OVERLAY_STATE = {
     errors: [],
     notFound: false,
     staticIndicator: false,
-    /* 
-    This is set to `true` when we can reliably know
-    whether the indicator is in disabled state or not.  
-    Otherwise the surface would flicker because the disabled flag loads from the config.
-  */ showIndicator: false,
-    disableDevIndicator: false,
+    // To prevent flickering, set the initial state to disabled.
+    disableDevIndicator: true,
     refreshState: {
         type: 'idle'
     },
+    rootLayoutMissingTags: [],
     versionInfo: {
         installed: '0.0.0',
         staleness: 'unknown'
@@ -9946,40 +9925,40 @@ function getInitialState(routerType) {
     };
 }
 function useErrorOverlayReducer(routerType) {
-    return (0, _react.useReducer)((state, action)=>{
+    return (0, _react.useReducer)((_state, action)=>{
         switch(action.type){
             case ACTION_DEBUG_INFO:
                 {
                     return {
-                        ...state,
+                        ..._state,
                         debugInfo: action.debugInfo
                     };
                 }
             case ACTION_STATIC_INDICATOR:
                 {
                     return {
-                        ...state,
+                        ..._state,
                         staticIndicator: action.staticIndicator
                     };
                 }
             case ACTION_BUILD_OK:
                 {
                     return {
-                        ...state,
+                        ..._state,
                         buildError: null
                     };
                 }
             case ACTION_BUILD_ERROR:
                 {
                     return {
-                        ...state,
+                        ..._state,
                         buildError: action.message
                     };
                 }
             case ACTION_BEFORE_REFRESH:
                 {
                     return {
-                        ...state,
+                        ..._state,
                         refreshState: {
                             type: 'pending',
                             errors: []
@@ -9989,14 +9968,14 @@ function useErrorOverlayReducer(routerType) {
             case ACTION_REFRESH:
                 {
                     return {
-                        ...state,
+                        ..._state,
                         buildError: null,
                         errors: // and UNHANDLED_REJECTION events might be dispatched between the
                         // BEFORE_REFRESH and the REFRESH event. We want to keep those errors
                         // around until the next refresh. Otherwise we run into a race
                         // condition where those errors would be cleared on refresh completion
                         // before they can be displayed.
-                        state.refreshState.type === 'pending' ? state.refreshState.errors : [],
+                        _state.refreshState.type === 'pending' ? _state.refreshState.errors : [],
                         refreshState: {
                             type: 'idle'
                         }
@@ -10005,14 +9984,14 @@ function useErrorOverlayReducer(routerType) {
             case ACTION_UNHANDLED_ERROR:
             case ACTION_UNHANDLED_REJECTION:
                 {
-                    switch(state.refreshState.type){
+                    switch(_state.refreshState.type){
                         case 'idle':
                             {
                                 return {
-                                    ...state,
-                                    nextId: state.nextId + 1,
-                                    errors: pushErrorFilterDuplicates(state.errors, {
-                                        id: state.nextId,
+                                    ..._state,
+                                    nextId: _state.nextId + 1,
+                                    errors: pushErrorFilterDuplicates(_state.errors, {
+                                        id: _state.nextId,
                                         event: action
                                     })
                                 };
@@ -10020,48 +9999,45 @@ function useErrorOverlayReducer(routerType) {
                         case 'pending':
                             {
                                 return {
-                                    ...state,
-                                    nextId: state.nextId + 1,
+                                    ..._state,
+                                    nextId: _state.nextId + 1,
                                     refreshState: {
-                                        ...state.refreshState,
-                                        errors: pushErrorFilterDuplicates(state.refreshState.errors, {
-                                            id: state.nextId,
+                                        ..._state.refreshState,
+                                        errors: pushErrorFilterDuplicates(_state.refreshState.errors, {
+                                            id: _state.nextId,
                                             event: action
                                         })
                                     }
                                 };
                             }
                         default:
-                            return state;
+                            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+                            const _ = _state.refreshState;
+                            return _state;
                     }
                 }
             case ACTION_VERSION_INFO:
                 {
                     return {
-                        ...state,
+                        ..._state,
                         versionInfo: action.versionInfo
                     };
                 }
             case ACTION_DEV_INDICATOR:
                 {
                     return {
-                        ...state,
-                        showIndicator: true,
+                        ..._state,
                         disableDevIndicator: shouldDisableDevIndicator || !!action.devIndicator.disabledUntil
                     };
                 }
             default:
                 {
-                    return state;
+                    return _state;
                 }
         }
     }, getInitialState(routerType));
 }
-const REACT_REFRESH_FULL_RELOAD = '[Fast Refresh] performing full reload\n\n' + "Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.\n" + 'You might have a file which exports a React component but also exports a value that is imported by a non-React component file.\n' + 'Consider migrating the non-React component export to a separate file and importing it into both files.\n\n' + 'It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.\n' + 'Fast Refresh requires at least one parent function component in your React tree.';
 const REACT_REFRESH_FULL_RELOAD_FROM_ERROR = '[Fast Refresh] performing full reload because your application had an unrecoverable error';
-function reportInvalidHmrMessage(message, err) {
-    console.warn('[HMR] Invalid message: ' + JSON.stringify(message) + '\n' + (err instanceof Error && (err == null ? void 0 : err.stack) || ''));
-}
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
     Object.defineProperty(exports.default, '__esModule', {
         value: true
@@ -10236,11 +10212,10 @@ _export(exports, {
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
 const _iserror = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/lib/is-error.js [client] (ecmascript)"));
-const hydrationErrorRegex = /hydration failed|while hydrating|content does not match|did not match|HTML didn't match|text didn't match/i;
+const hydrationErrorRegex = /hydration failed|while hydrating|content does not match|did not match|HTML didn't match/i;
 const reactUnifiedMismatchWarning = "Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:";
 const reactHydrationStartMessages = [
     reactUnifiedMismatchWarning,
-    "Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:",
     "A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:"
 ];
 const REACT_HYDRATION_ERROR_LINK = 'https://react.dev/link/hydration-mismatch';
@@ -10703,9 +10678,7 @@ function attachHydrationErrorState(error) {
             // - if hydration error has diff, and is not hydration diff log, then it's a normal hydration error.
             // - if hydration error no diff, then leverage the one from the hydration diff log.
             warning: (diff && !isHydrationWarning ? null : _hydrationerrorinfo.hydrationErrorState.warning) || [
-                (0, _ishydrationerror.getDefaultHydrationErrorMessage)(),
-                '',
-                ''
+                (0, _ishydrationerror.getDefaultHydrationErrorMessage)()
             ],
             // When it's hydration diff log, do not show notes section.
             // This condition is only for the 1st squashed error.
@@ -11227,7 +11200,8 @@ Object.defineProperty(exports, "__esModule", {
     onRefresh: null,
     onStaticIndicator: null,
     onVersionInfo: null,
-    register: null
+    register: null,
+    unregister: null
 });
 function _export(target, all) {
     for(var name in all)Object.defineProperty(target, name, {
@@ -11265,6 +11239,9 @@ _export(exports, {
     },
     register: function() {
         return register;
+    },
+    unregister: function() {
+        return unregister;
     }
 });
 const _interop_require_wildcard = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [client] (ecmascript)");
@@ -11277,13 +11254,14 @@ const _attachhydrationerrorstate = __turbopack_context__.r("[project]/node_modul
 const _geterrorbytype = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/utils/get-error-by-type.js [client] (ecmascript)");
 const _nodestackframes = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/utils/node-stack-frames.js [client] (ecmascript)");
 let isRegistered = false;
+let stackTraceLimit = undefined;
 function handleError(error) {
     if (!error || !(error instanceof Error) || typeof error.stack !== 'string') {
         // A non-error was thrown, we don't have anything to show. :-(
         return;
     }
     (0, _attachhydrationerrorstate.attachHydrationErrorState)(error);
-    const componentStackTrace = error._componentStack;
+    const componentStackTrace = error._componentStack || _hydrationerrorinfo.hydrationErrorState.componentStack;
     const componentStackFrames = typeof componentStackTrace === 'string' ? (0, _parsecomponentstack.parseComponentStack)(componentStackTrace) : undefined;
     // Skip ModuleBuildError and ModuleNotFoundError, as it will be sent through onBuildError callback.
     // This is to avoid same error as different type showing up on client to cause flashing.
@@ -11330,11 +11308,28 @@ function register() {
     }
     isRegistered = true;
     try {
+        const limit = Error.stackTraceLimit;
         Error.stackTraceLimit = 50;
+        stackTraceLimit = limit;
     } catch (e) {}
     window.addEventListener('error', onUnhandledError);
     window.addEventListener('unhandledrejection', onUnhandledRejection);
     window.console.error = nextJsHandleConsoleError;
+}
+function unregister() {
+    if (!isRegistered) {
+        return;
+    }
+    isRegistered = false;
+    if (stackTraceLimit !== undefined) {
+        try {
+            Error.stackTraceLimit = stackTraceLimit;
+        } catch (e) {}
+        stackTraceLimit = undefined;
+    }
+    window.removeEventListener('error', onUnhandledError);
+    window.removeEventListener('unhandledrejection', onUnhandledRejection);
+    window.console.error = origConsoleError;
 }
 function onBuildOk() {
     _bus.emit({
@@ -11810,6 +11805,44 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     module.exports = exports.default;
 } //# sourceMappingURL=format-webpack-messages.js.map
 }}),
+"[project]/node_modules/next/dist/server/dev/extract-modules-from-turbopack-message.js [client] (ecmascript)": (function(__turbopack_context__) {
+
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
+{
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "extractModulesFromTurbopackMessage", {
+    enumerable: true,
+    get: function() {
+        return extractModulesFromTurbopackMessage;
+    }
+});
+function extractModulesFromTurbopackMessage(data) {
+    const updatedModules = new Set();
+    const updates = Array.isArray(data) ? data : [
+        data
+    ];
+    for (const update of updates){
+        // TODO this won't capture changes to CSS since they don't result in a "merged" update
+        if (update.type !== 'partial' || update.instruction.type !== 'ChunkListUpdate' || update.instruction.merged === undefined) {
+            continue;
+        }
+        for (const mergedUpdate of update.instruction.merged){
+            for (const name of Object.keys(mergedUpdate.entries)){
+                const res = /(.*)\s+\[.*/.exec(name);
+                if (res === null) {
+                    console.error('[Turbopack HMR] Expected module to match pattern: ' + name);
+                    continue;
+                }
+                updatedModules.add(res[1]);
+            }
+        }
+    }
+    return updatedModules;
+} //# sourceMappingURL=extract-modules-from-turbopack-message.js.map
+}}),
 "[project]/node_modules/next/dist/client/components/errors/runtime-error-handler.js [client] (ecmascript)": (function(__turbopack_context__) {
 
 var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
@@ -11834,212 +11867,6 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     Object.assign(exports.default, exports);
     module.exports = exports.default;
 } //# sourceMappingURL=runtime-error-handler.js.map
-}}),
-"[project]/node_modules/next/dist/client/components/react-dev-overlay/utils/report-hmr-latency.js [client] (ecmascript)": (function(__turbopack_context__) {
-
-var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
-{
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, /**
- * Logs information about a completed HMR to the console, the server (via a
- * `client-hmr-latency` event), and to `self.__NEXT_HMR_LATENCY_CB` (a debugging
- * hook).
- *
- * @param hasUpdate Set this to `false` to avoid reporting the HMR event via a
- *   `client-hmr-latency` event or to `self.__NEXT_HMR_LATENCY_CB`. Used by
- *   turbopack when we must report a message to the browser console (because we
- *   already logged a "rebuilding" message), but it's not a real HMR, so we
- *   don't want to impact our telemetry.
- */ "default", {
-    enumerable: true,
-    get: function() {
-        return reportHmrLatency;
-    }
-});
-function reportHmrLatency(sendMessage, updatedModules, startMsSinceEpoch, endMsSinceEpoch, hasUpdate) {
-    if (hasUpdate === void 0) hasUpdate = true;
-    const latencyMs = endMsSinceEpoch - startMsSinceEpoch;
-    console.log("[Fast Refresh] done in " + latencyMs + "ms");
-    if (!hasUpdate) {
-        return;
-    }
-    sendMessage(JSON.stringify({
-        event: 'client-hmr-latency',
-        id: window.__nextDevClientId,
-        startTime: startMsSinceEpoch,
-        endTime: endMsSinceEpoch,
-        page: window.location.pathname,
-        updatedModules,
-        // Whether the page (tab) was hidden at the time the event occurred.
-        // This can impact the accuracy of the event's timing.
-        isPageHidden: document.visibilityState === 'hidden'
-    }));
-    if (self.__NEXT_HMR_LATENCY_CB) {
-        self.__NEXT_HMR_LATENCY_CB(latencyMs);
-    }
-}
-if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
-    Object.defineProperty(exports.default, '__esModule', {
-        value: true
-    });
-    Object.assign(exports.default, exports);
-    module.exports = exports.default;
-} //# sourceMappingURL=report-hmr-latency.js.map
-}}),
-"[project]/node_modules/next/dist/client/components/react-dev-overlay/utils/turbopack-hot-reloader-common.js [client] (ecmascript)": (function(__turbopack_context__) {
-
-var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
-{
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "TurbopackHmr", {
-    enumerable: true,
-    get: function() {
-        return TurbopackHmr;
-    }
-});
-const _class_private_field_loose_base = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_class_private_field_loose_base.cjs [client] (ecmascript)");
-const _class_private_field_loose_key = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_class_private_field_loose_key.cjs [client] (ecmascript)");
-// How long to wait before reporting the HMR start, used to suppress irrelevant
-// `BUILDING` events. Does not impact reported latency.
-const TURBOPACK_HMR_START_DELAY_MS = 100;
-var _updatedModules = /*#__PURE__*/ _class_private_field_loose_key._("_updatedModules"), _startMsSinceEpoch = /*#__PURE__*/ _class_private_field_loose_key._("_startMsSinceEpoch"), _lastUpdateMsSinceEpoch = /*#__PURE__*/ _class_private_field_loose_key._("_lastUpdateMsSinceEpoch"), _deferredReportHmrStartId = /*#__PURE__*/ _class_private_field_loose_key._("_deferredReportHmrStartId"), // as it reports *any* compilation, including fully no-op/cached compilations
-// and those unrelated to HMR. Fixing this would require significant
-// architectural changes.
-//
-// Work around this by deferring any "rebuilding" message by 100ms. If we get
-// a BUILT event within that threshold and nothing has changed, just suppress
-// the message entirely.
-_runDeferredReportHmrStart = /*#__PURE__*/ _class_private_field_loose_key._("_runDeferredReportHmrStart"), _cancelDeferredReportHmrStart = /*#__PURE__*/ _class_private_field_loose_key._("_cancelDeferredReportHmrStart"), /** Helper for other `onEvent` methods. */ _onUpdate = /*#__PURE__*/ _class_private_field_loose_key._("_onUpdate");
-class TurbopackHmr {
-    onBuilding() {
-        _class_private_field_loose_base._(this, _lastUpdateMsSinceEpoch)[_lastUpdateMsSinceEpoch] = undefined;
-        _class_private_field_loose_base._(this, _cancelDeferredReportHmrStart)[_cancelDeferredReportHmrStart]();
-        _class_private_field_loose_base._(this, _startMsSinceEpoch)[_startMsSinceEpoch] = Date.now();
-        // report the HMR start after a short delay
-        _class_private_field_loose_base._(this, _deferredReportHmrStartId)[_deferredReportHmrStartId] = setTimeout(()=>_class_private_field_loose_base._(this, _runDeferredReportHmrStart)[_runDeferredReportHmrStart](), self.__NEXT_HMR_TURBOPACK_REPORT_NOISY_NOOP_EVENTS ? 0 : TURBOPACK_HMR_START_DELAY_MS);
-    }
-    onTurbopackMessage(msg) {
-        _class_private_field_loose_base._(this, _onUpdate)[_onUpdate]();
-        const updatedModules = extractModulesFromTurbopackMessage(msg.data);
-        for (const module1 of updatedModules){
-            _class_private_field_loose_base._(this, _updatedModules)[_updatedModules].add(module1);
-        }
-    }
-    onServerComponentChanges() {
-        _class_private_field_loose_base._(this, _onUpdate)[_onUpdate]();
-    }
-    onReloadPage() {
-        _class_private_field_loose_base._(this, _onUpdate)[_onUpdate]();
-    }
-    onPageAddRemove() {
-        _class_private_field_loose_base._(this, _onUpdate)[_onUpdate]();
-    }
-    /**
-   * @returns `null` if the caller should ignore the update entirely. Returns an
-   *   object with `hasUpdates: false` if the caller should report the end of
-   *   the HMR in the browser console, but the HMR was a no-op.
-   */ onBuilt() {
-        // Check that we got *any* `TurbopackMessageAction`, even if
-        // `updatedModules` is empty (not everything gets recorded there).
-        //
-        // There's also a case where `onBuilt` gets called before `onBuilding`,
-        // which can happen during initial page load. Ignore that too!
-        const hasUpdates = _class_private_field_loose_base._(this, _lastUpdateMsSinceEpoch)[_lastUpdateMsSinceEpoch] != null && _class_private_field_loose_base._(this, _startMsSinceEpoch)[_startMsSinceEpoch] != null;
-        if (!hasUpdates && _class_private_field_loose_base._(this, _deferredReportHmrStartId)[_deferredReportHmrStartId] != null) {
-            // suppress the update entirely
-            _class_private_field_loose_base._(this, _cancelDeferredReportHmrStart)[_cancelDeferredReportHmrStart]();
-            return null;
-        }
-        _class_private_field_loose_base._(this, _runDeferredReportHmrStart)[_runDeferredReportHmrStart]();
-        var _class_private_field_loose_base__lastUpdateMsSinceEpoch;
-        const result = {
-            hasUpdates,
-            updatedModules: _class_private_field_loose_base._(this, _updatedModules)[_updatedModules],
-            startMsSinceEpoch: _class_private_field_loose_base._(this, _startMsSinceEpoch)[_startMsSinceEpoch],
-            endMsSinceEpoch: (_class_private_field_loose_base__lastUpdateMsSinceEpoch = _class_private_field_loose_base._(this, _lastUpdateMsSinceEpoch)[_lastUpdateMsSinceEpoch]) != null ? _class_private_field_loose_base__lastUpdateMsSinceEpoch : Date.now()
-        };
-        _class_private_field_loose_base._(this, _updatedModules)[_updatedModules] = new Set();
-        return result;
-    }
-    constructor(){
-        Object.defineProperty(this, _runDeferredReportHmrStart, {
-            value: runDeferredReportHmrStart
-        });
-        Object.defineProperty(this, _cancelDeferredReportHmrStart, {
-            value: cancelDeferredReportHmrStart
-        });
-        Object.defineProperty(this, _onUpdate, {
-            value: onUpdate
-        });
-        Object.defineProperty(this, _updatedModules, {
-            writable: true,
-            value: void 0
-        });
-        Object.defineProperty(this, _startMsSinceEpoch, {
-            writable: true,
-            value: void 0
-        });
-        Object.defineProperty(this, _lastUpdateMsSinceEpoch, {
-            writable: true,
-            value: void 0
-        });
-        Object.defineProperty(this, _deferredReportHmrStartId, {
-            writable: true,
-            value: void 0
-        });
-        _class_private_field_loose_base._(this, _updatedModules)[_updatedModules] = new Set();
-    }
-}
-function runDeferredReportHmrStart() {
-    if (_class_private_field_loose_base._(this, _deferredReportHmrStartId)[_deferredReportHmrStartId] != null) {
-        console.log('[Fast Refresh] rebuilding');
-        _class_private_field_loose_base._(this, _cancelDeferredReportHmrStart)[_cancelDeferredReportHmrStart]();
-    }
-}
-function cancelDeferredReportHmrStart() {
-    clearTimeout(_class_private_field_loose_base._(this, _deferredReportHmrStartId)[_deferredReportHmrStartId]);
-    _class_private_field_loose_base._(this, _deferredReportHmrStartId)[_deferredReportHmrStartId] = undefined;
-}
-function onUpdate() {
-    _class_private_field_loose_base._(this, _runDeferredReportHmrStart)[_runDeferredReportHmrStart]();
-    _class_private_field_loose_base._(this, _lastUpdateMsSinceEpoch)[_lastUpdateMsSinceEpoch] = Date.now();
-}
-function extractModulesFromTurbopackMessage(data) {
-    const updatedModules = new Set();
-    const updates = Array.isArray(data) ? data : [
-        data
-    ];
-    for (const update of updates){
-        // TODO this won't capture changes to CSS since they don't result in a "merged" update
-        if (update.type !== 'partial' || update.instruction.type !== 'ChunkListUpdate' || update.instruction.merged === undefined) {
-            continue;
-        }
-        for (const mergedUpdate of update.instruction.merged){
-            for (const name of Object.keys(mergedUpdate.entries)){
-                const res = /(.*)\s+\[.*/.exec(name);
-                if (res === null) {
-                    console.error('[Turbopack HMR] Expected module to match pattern: ' + name);
-                    continue;
-                }
-                updatedModules.add(res[1]);
-            }
-        }
-    }
-    return updatedModules;
-}
-if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
-    Object.defineProperty(exports.default, '__esModule', {
-        value: true
-    });
-    Object.assign(exports.default, exports);
-    module.exports = exports.default;
-} //# sourceMappingURL=turbopack-hot-reloader-common.js.map
 }}),
 "[project]/node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js [client] (ecmascript)": (function(__turbopack_context__) {
 
@@ -12068,11 +11895,9 @@ var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- */ /// <reference types="webpack/module.d.ts" />
-// This file is a modified version of the Create React App HMR dev client that
+ */ // This file is a modified version of the Create React App HMR dev client that
 // can be found here:
 // https://github.com/facebook/create-react-app/blob/v3.4.1/packages/react-dev-utils/webpackHotDevClient.js
-/// <reference types="webpack/module.d.ts" />
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 "use strict";
 Object.defineProperty(exports, "__esModule", {
@@ -12106,14 +11931,15 @@ const _stripansi = /*#__PURE__*/ _interop_require_default._(__turbopack_context_
 const _websocket = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js [client] (ecmascript)");
 const _formatwebpackmessages = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/utils/format-webpack-messages.js [client] (ecmascript)"));
 const _hotreloadertypes = __turbopack_context__.r("[project]/node_modules/next/dist/server/dev/hot-reloader-types.js [client] (ecmascript)");
+const _extractmodulesfromturbopackmessage = __turbopack_context__.r("[project]/node_modules/next/dist/server/dev/extract-modules-from-turbopack-message.js [client] (ecmascript)");
 const _shared = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/shared.js [client] (ecmascript)");
 const _runtimeerrorhandler = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/errors/runtime-error-handler.js [client] (ecmascript)");
-const _reporthmrlatency = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/utils/report-hmr-latency.js [client] (ecmascript)"));
-const _turbopackhotreloadercommon = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/utils/turbopack-hot-reloader-common.js [client] (ecmascript)");
 window.__nextDevClientId = Math.round(Math.random() * 100 + Date.now());
 let customHmrEventHandler;
 let turbopackMessageListeners = [];
-function connect() {
+let MODE = 'webpack';
+function connect(mode) {
+    MODE = mode;
     (0, _client.register)();
     (0, _websocket.addMessageListener)((payload)=>{
         if (!('action' in payload)) {
@@ -12122,7 +11948,8 @@ function connect() {
         try {
             processMessage(payload);
         } catch (err) {
-            (0, _shared.reportInvalidHmrMessage)(payload, err);
+            var _err_stack;
+            console.warn('[HMR] Invalid message: ' + JSON.stringify(payload) + '\n' + ((_err_stack = err == null ? void 0 : err.stack) != null ? _err_stack : ''));
         }
     });
     return {
@@ -12158,19 +11985,20 @@ function clearOutdatedErrors() {
 // Successful compilation.
 function handleSuccess() {
     clearOutdatedErrors();
-    hasCompileErrors = false;
-    if ("TURBOPACK compile-time truthy", 1) {
-        const hmrUpdate = turbopackHmr.onBuilt();
-        if (hmrUpdate != null) {
-            (0, _reporthmrlatency.default)(_websocket.sendMessage, [
-                ...hmrUpdate.updatedModules
-            ], hmrUpdate.startMsSinceEpoch, hmrUpdate.endMsSinceEpoch, hmrUpdate.hasUpdates);
+    if (MODE === 'webpack') {
+        const isHotUpdate = !isFirstCompilation || window.__NEXT_DATA__.page !== '/_error' && isUpdateAvailable();
+        isFirstCompilation = false;
+        hasCompileErrors = false;
+        // Attempt to apply hot updates or reload.
+        if (isHotUpdate) {
+            tryApplyUpdates(onBeforeFastRefresh, onFastRefresh);
         }
-        (0, _client.onBuildOk)();
     } else {
-        "TURBOPACK unreachable";
+        reportHmrLatency([
+            ...turbopackUpdatedModules
+        ]);
+        (0, _client.onBuildOk)();
     }
-    isFirstCompilation = false;
 }
 // Compilation with warnings (e.g. ESLint).
 function handleWarnings(warnings) {
@@ -12198,7 +12026,7 @@ function handleWarnings(warnings) {
     printWarnings();
     // Attempt to apply hot updates or reload.
     if (isHotUpdate) {
-        tryApplyUpdatesWebpack();
+        tryApplyUpdates(onBeforeFastRefresh, onFastRefresh);
     }
 }
 // Compilation with errors (e.g. syntax error or missing modules).
@@ -12225,9 +12053,49 @@ function handleErrors(errors) {
         "TURBOPACK unreachable";
     }
 }
-let webpackStartMsSinceEpoch = null;
-const turbopackHmr = ("TURBOPACK compile-time truthy", 1) ? new _turbopackhotreloadercommon.TurbopackHmr() : ("TURBOPACK unreachable", undefined);
+let startLatency = null;
+let turbopackLastUpdateLatency = null;
+let turbopackUpdatedModules = new Set();
 let isrManifest = {};
+function onBeforeFastRefresh(updatedModules) {
+    if (updatedModules.length > 0) {
+        // Only trigger a pending state if we have updates to apply
+        // (cf. onFastRefresh)
+        (0, _client.onBeforeRefresh)();
+    }
+}
+function onFastRefresh(updatedModules) {
+    if (updatedModules === void 0) updatedModules = [];
+    (0, _client.onBuildOk)();
+    if (updatedModules.length === 0) {
+        return;
+    }
+    (0, _client.onRefresh)();
+    reportHmrLatency();
+}
+function reportHmrLatency(updatedModules) {
+    if (updatedModules === void 0) updatedModules = [];
+    if (!startLatency) return;
+    // turbopack has a debounce for the BUILT event which we don't want to
+    // incorrectly show in this number, use the last TURBOPACK_MESSAGE time
+    let endLatency = turbopackLastUpdateLatency != null ? turbopackLastUpdateLatency : Date.now();
+    const latency = endLatency - startLatency;
+    console.log("[Fast Refresh] done in " + latency + "ms");
+    (0, _websocket.sendMessage)(JSON.stringify({
+        event: 'client-hmr-latency',
+        id: window.__nextDevClientId,
+        startTime: startLatency,
+        endTime: endLatency,
+        page: window.location.pathname,
+        updatedModules,
+        // Whether the page (tab) was hidden at the time the event occurred.
+        // This can impact the accuracy of the event's timing.
+        isPageHidden: document.visibilityState === 'hidden'
+    }));
+    if (self.__NEXT_HMR_LATENCY_CB) {
+        self.__NEXT_HMR_LATENCY_CB(latency);
+    }
+}
 // There is a newer version of the code available.
 function handleAvailableHash(hash) {
     // Update last known compilation hash.
@@ -12239,16 +12107,17 @@ function handleStaticIndicator() {
         const routeInfo = window.next.router.components[window.next.router.pathname];
         const pageComponent = routeInfo == null ? void 0 : routeInfo.Component;
         const appComponent = (_window_next_router_components__app = window.next.router.components['/_app']) == null ? void 0 : _window_next_router_components__app.Component;
-        const isDynamicPage = Boolean(pageComponent == null ? void 0 : pageComponent.getInitialProps) || Boolean(routeInfo == null ? void 0 : routeInfo.__N_SSP);
+        const isDynamicPage = Boolean(pageComponent == null ? void 0 : pageComponent.getInitialProps) || Boolean(routeInfo.__N_SSP);
         const hasAppGetInitialProps = Boolean(appComponent == null ? void 0 : appComponent.getInitialProps) && (appComponent == null ? void 0 : appComponent.getInitialProps) !== (appComponent == null ? void 0 : appComponent.origGetInitialProps);
         const isPageStatic = window.location.pathname in isrManifest || !isDynamicPage && !hasAppGetInitialProps;
         (0, _client.onStaticIndicator)(isPageStatic);
     }
 }
-/** Handles messages from the server for the Pages Router. */ function processMessage(obj) {
+/** Handles messages from the sevrer for the Pages Router. */ function processMessage(obj) {
     if (!('action' in obj)) {
         return;
     }
+    // Use turbopack message for analytics, (still need built for webpack)
     switch(obj.action){
         case _hotreloadertypes.HMR_ACTIONS_SENT_TO_BROWSER.ISR_MANIFEST:
             {
@@ -12258,11 +12127,10 @@ function handleStaticIndicator() {
             }
         case _hotreloadertypes.HMR_ACTIONS_SENT_TO_BROWSER.BUILDING:
             {
-                if ("TURBOPACK compile-time truthy", 1) {
-                    turbopackHmr.onBuilding();
-                } else {
-                    "TURBOPACK unreachable";
-                }
+                startLatency = Date.now();
+                turbopackLastUpdateLatency = null;
+                turbopackUpdatedModules.clear();
+                console.log('[Fast Refresh] rebuilding');
                 break;
             }
         case _hotreloadertypes.HMR_ACTIONS_SENT_TO_BROWSER.BUILT:
@@ -12282,7 +12150,6 @@ function handleStaticIndicator() {
                     }));
                     return handleErrors(errors);
                 }
-                // NOTE: Turbopack does not currently send warnings
                 const hasWarnings = Boolean(warnings && warnings.length);
                 if (hasWarnings) {
                     (0, _websocket.sendMessage)(JSON.stringify({
@@ -12300,7 +12167,6 @@ function handleStaticIndicator() {
             }
         case _hotreloadertypes.HMR_ACTIONS_SENT_TO_BROWSER.SERVER_COMPONENT_CHANGES:
             {
-                turbopackHmr == null ? void 0 : turbopackHmr.onServerComponentChanges();
                 if (hasCompileErrors || _runtimeerrorhandler.RuntimeErrorHandler.hadRuntimeError) {
                     window.location.reload();
                 }
@@ -12335,8 +12201,10 @@ function handleStaticIndicator() {
             }
         case _hotreloadertypes.HMR_ACTIONS_SENT_TO_BROWSER.TURBOPACK_MESSAGE:
             {
-                turbopackHmr.onTurbopackMessage(obj);
-                (0, _client.onBeforeRefresh)();
+                const updatedModules = (0, _extractmodulesfromturbopackmessage.extractModulesFromTurbopackMessage)(obj.data);
+                onBeforeFastRefresh([
+                    ...updatedModules
+                ]);
                 for (const listener of turbopackMessageListeners){
                     listener({
                         type: _hotreloadertypes.HMR_ACTIONS_SENT_TO_BROWSER.TURBOPACK_MESSAGE,
@@ -12348,6 +12216,10 @@ function handleStaticIndicator() {
                     performFullReload(null);
                 }
                 (0, _client.onRefresh)();
+                for (const module1 of updatedModules){
+                    turbopackUpdatedModules.add(module1);
+                }
+                turbopackLastUpdateLatency = Date.now();
                 break;
             }
         default:
@@ -12368,6 +12240,7 @@ function isUpdateAvailable() {
 }
 // Webpack disallows updates in other states.
 function canApplyUpdates() {
+    // @ts-expect-error TODO: module.hot exists but type needs to be added. Can't use `as any` here as webpack parses for `module.hot` calls.
     return module.hot.status() === 'idle';
 }
 function afterApplyUpdates(fn) {
@@ -12376,15 +12249,18 @@ function afterApplyUpdates(fn) {
     } else {
         function handler(status) {
             if (status === 'idle') {
+                // @ts-expect-error TODO: module.hot exists but type needs to be added. Can't use `as any` here as webpack parses for `module.hot` calls.
                 module.hot.removeStatusHandler(handler);
                 fn();
             }
         }
+        // @ts-expect-error TODO: module.hot exists but type needs to be added. Can't use `as any` here as webpack parses for `module.hot` calls.
         module.hot.addStatusHandler(handler);
     }
 }
 // Attempt to update code on the fly, fall back to a hard reload.
-function tryApplyUpdatesWebpack() {
+function tryApplyUpdates(onBeforeHotUpdate, onHotUpdateSuccess) {
+    // @ts-expect-error TODO: module.hot exists but type needs to be added. Can't use `as any` here as webpack parses for `module.hot` calls.
     if (!module.hot) {
         // HotModuleReplacementPlugin is not in Webpack configuration.
         console.error('HotModuleReplacementPlugin is not in Webpack configuration.');
@@ -12396,37 +12272,40 @@ function tryApplyUpdatesWebpack() {
         return;
     }
     function handleApplyUpdates(err, updatedModules) {
-        if (err || _runtimeerrorhandler.RuntimeErrorHandler.hadRuntimeError || updatedModules == null) {
+        if (err || _runtimeerrorhandler.RuntimeErrorHandler.hadRuntimeError || !updatedModules) {
             if (err) {
-                console.warn(_shared.REACT_REFRESH_FULL_RELOAD);
+                console.warn('[Fast Refresh] performing full reload\n\n' + "Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.\n" + 'You might have a file which exports a React component but also exports a value that is imported by a non-React component file.\n' + 'Consider migrating the non-React component export to a separate file and importing it into both files.\n\n' + 'It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.\n' + 'Fast Refresh requires at least one parent function component in your React tree.');
             } else if (_runtimeerrorhandler.RuntimeErrorHandler.hadRuntimeError) {
-                console.warn(_shared.REACT_REFRESH_FULL_RELOAD_FROM_ERROR);
+                console.warn('[Fast Refresh] performing full reload because your application had an unrecoverable error');
             }
             performFullReload(err);
             return;
         }
-        (0, _client.onBuildOk)();
+        if (typeof onHotUpdateSuccess === 'function') {
+            // Maybe we want to do something.
+            onHotUpdateSuccess(updatedModules);
+        }
         if (isUpdateAvailable()) {
             // While we were updating, there was a new update! Do it again.
-            tryApplyUpdatesWebpack();
-            return;
-        }
-        (0, _client.onRefresh)();
-        (0, _reporthmrlatency.default)(_websocket.sendMessage, updatedModules, webpackStartMsSinceEpoch, Date.now());
-        if ("TURBOPACK compile-time falsy", 0) {
-            "TURBOPACK unreachable";
+            // However, this time, don't trigger a pending refresh state.
+            tryApplyUpdates(updatedModules.length > 0 ? undefined : onBeforeHotUpdate, updatedModules.length > 0 ? _client.onBuildOk : onHotUpdateSuccess);
+        } else {
+            (0, _client.onBuildOk)();
+            if ("TURBOPACK compile-time falsy", 0) {
+                "TURBOPACK unreachable";
+            }
         }
     }
     // https://webpack.js.org/api/hot-module-replacement/#check
+    // @ts-expect-error TODO: module.hot exists but type needs to be added. Can't use `as any` here as webpack parses for `module.hot` calls.
     module.hot.check(/* autoApply */ false).then((updatedModules)=>{
-        if (updatedModules == null) {
+        if (!updatedModules) {
             return null;
         }
-        // We should always handle an update, even if updatedModules is empty (but
-        // non-null) for any reason. That's what webpack would normally do:
-        // https://github.com/webpack/webpack/blob/3aa6b6bc3a64/lib/hmr/HotModuleReplacement.runtime.js#L296-L298
-        (0, _client.onBeforeRefresh)();
-        // https://webpack.js.org/api/hot-module-replacement/#apply
+        if (typeof onBeforeHotUpdate === 'function') {
+            onBeforeHotUpdate(updatedModules);
+        }
+        // @ts-expect-error TODO: module.hot exists but type needs to be added. Can't use `as any` here as webpack parses for `module.hot` calls.
         return module.hot.apply();
     }).then((updatedModules)=>{
         handleApplyUpdates(null, updatedModules);
@@ -12610,12 +12489,8 @@ function ShadowPortal(param) {
     let portalNode = _react.useRef(null);
     let shadowNode = _react.useRef(null);
     let [, forceUpdate] = _react.useState();
-    // Don't use useLayoutEffect here, as it will cause warnings during SSR in React 18.
-    // Don't use useSyncExternalStore as an SSR gate unless you verified it doesn't
-    // downgrade a Transition of the initial root render to a sync render or
-    // we can assure the root render is not a Transition.
-    _react.useEffect({
-        "ShadowPortal.useEffect": ()=>{
+    _react.useLayoutEffect({
+        "ShadowPortal.useLayoutEffect": ()=>{
             const ownerDocument = document;
             portalNode.current = ownerDocument.createElement('nextjs-portal');
             // load default color preference from localstorage
@@ -12635,14 +12510,14 @@ function ShadowPortal(param) {
             ownerDocument.body.appendChild(portalNode.current);
             forceUpdate({});
             return ({
-                "ShadowPortal.useEffect": ()=>{
+                "ShadowPortal.useLayoutEffect": ()=>{
                     if (portalNode.current && portalNode.current.ownerDocument) {
                         portalNode.current.ownerDocument.body.removeChild(portalNode.current);
                     }
                 }
-            })["ShadowPortal.useEffect"];
+            })["ShadowPortal.useLayoutEffect"];
         }
-    }["ShadowPortal.useEffect"], []);
+    }["ShadowPortal.useLayoutEffect"], []);
     return shadowNode.current ? /*#__PURE__*/ (0, _reactdom.createPortal)(children, shadowNode.current) : null;
 }
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
@@ -12672,18 +12547,16 @@ const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-ru
 const _css = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/utils/css.js [client] (ecmascript)");
 function _templateObject() {
     const data = _tagged_template_literal_loose._([
-        "\n        :host {\n          /* \n           * Although the style applied to the shadow host is isolated,\n           * the element that attached the shadow host (i.e. \"nextjs-portal\")\n           * is still affected by the parent's style (e.g. \"body\"). This may\n           * occur style conflicts like \"display: flex\", with other children\n           * elements therefore give the shadow host an absolute position.\n           */\n          position: absolute;\n\n          --color-font: #757575;\n          --color-backdrop: rgba(250, 250, 250, 0.8);\n          --color-border-shadow: rgba(0, 0, 0, 0.145);\n\n          --color-title-color: #1f1f1f;\n          --color-stack-notes: #777;\n\n          --color-accents-1: #808080;\n          --color-accents-2: #222222;\n          --color-accents-3: #404040;\n\n          --font-stack-monospace: '__nextjs-Geist Mono', 'Geist Mono',\n            'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,\n            monospace;\n          --font-stack-sans: '__nextjs-Geist', 'Geist', -apple-system,\n            'Source Sans Pro', sans-serif;\n\n          font-family: var(--font-stack-sans);\n          font-variant-ligatures: none;\n\n          /* TODO: Remove replaced ones. */\n          --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);\n          --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),\n            0 1px 2px -1px rgb(0 0 0 / 0.1);\n          --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1),\n            0 2px 4px -2px rgb(0 0 0 / 0.1);\n          --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),\n            0 4px 6px -4px rgb(0 0 0 / 0.1);\n          --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),\n            0 8px 10px -6px rgb(0 0 0 / 0.1);\n          --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);\n          --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);\n          --shadow-none: 0 0 #0000;\n\n          --shadow-small: 0px 2px 2px rgba(0, 0, 0, 0.04);\n          --shadow-menu: 0px 1px 1px rgba(0, 0, 0, 0.02),\n            0px 4px 8px -4px rgba(0, 0, 0, 0.04),\n            0px 16px 24px -8px rgba(0, 0, 0, 0.06);\n\n          --focus-color: var(--color-blue-800);\n          --focus-ring: 2px solid var(--focus-color);\n\n          --timing-swift: cubic-bezier(0.23, 0.88, 0.26, 0.92);\n          --timing-overlay: cubic-bezier(0.175, 0.885, 0.32, 1.1);\n\n          --rounded-none: 0px;\n          --rounded-sm: 2px;\n          --rounded-md: 4px;\n          --rounded-md-2: 6px;\n          --rounded-lg: 8px;\n          --rounded-xl: 12px;\n          --rounded-2xl: 16px;\n          --rounded-3xl: 24px;\n          --rounded-4xl: 32px;\n          --rounded-full: 9999px;\n\n          /* \n            This value gets set from the Dev Tools preferences,\n            and we use the following --size-* variables to \n            scale the relevant elements.\n\n            The reason why we don't rely on rem values is because\n            if an app sets their root font size to something tiny, \n            it feels unexpected to have the app root size leak \n            into a Next.js surface.\n\n            https://github.com/vercel/next.js/discussions/76812\n          */\n          --nextjs-dev-tools-scale: ",
-        ";\n          --size-1: calc(1px / var(--nextjs-dev-tools-scale));\n          --size-2: calc(2px / var(--nextjs-dev-tools-scale));\n          --size-3: calc(3px / var(--nextjs-dev-tools-scale));\n          --size-4: calc(4px / var(--nextjs-dev-tools-scale));\n          --size-5: calc(5px / var(--nextjs-dev-tools-scale));\n          --size-6: calc(6px / var(--nextjs-dev-tools-scale));\n          --size-7: calc(7px / var(--nextjs-dev-tools-scale));\n          --size-8: calc(8px / var(--nextjs-dev-tools-scale));\n          --size-9: calc(9px / var(--nextjs-dev-tools-scale));\n          --size-10: calc(10px / var(--nextjs-dev-tools-scale));\n          --size-11: calc(11px / var(--nextjs-dev-tools-scale));\n          --size-12: calc(12px / var(--nextjs-dev-tools-scale));\n          --size-13: calc(13px / var(--nextjs-dev-tools-scale));\n          --size-14: calc(14px / var(--nextjs-dev-tools-scale));\n          --size-15: calc(15px / var(--nextjs-dev-tools-scale));\n          --size-16: calc(16px / var(--nextjs-dev-tools-scale));\n          --size-17: calc(17px / var(--nextjs-dev-tools-scale));\n          --size-18: calc(18px / var(--nextjs-dev-tools-scale));\n          --size-20: calc(20px / var(--nextjs-dev-tools-scale));\n          --size-22: calc(22px / var(--nextjs-dev-tools-scale));\n          --size-24: calc(24px / var(--nextjs-dev-tools-scale));\n          --size-26: calc(26px / var(--nextjs-dev-tools-scale));\n          --size-28: calc(28px / var(--nextjs-dev-tools-scale));\n          --size-30: calc(30px / var(--nextjs-dev-tools-scale));\n          --size-32: calc(32px / var(--nextjs-dev-tools-scale));\n          --size-34: calc(34px / var(--nextjs-dev-tools-scale));\n          --size-36: calc(36px / var(--nextjs-dev-tools-scale));\n          --size-38: calc(38px / var(--nextjs-dev-tools-scale));\n          --size-40: calc(40px / var(--nextjs-dev-tools-scale));\n          --size-42: calc(42px / var(--nextjs-dev-tools-scale));\n          --size-44: calc(44px / var(--nextjs-dev-tools-scale));\n          --size-46: calc(46px / var(--nextjs-dev-tools-scale));\n          --size-48: calc(48px / var(--nextjs-dev-tools-scale));\n\n          @media print {\n            display: none;\n          }\n        }\n\n        h1,\n        h2,\n        h3,\n        h4,\n        h5,\n        h6 {\n          margin-bottom: 8px;\n          font-weight: 500;\n          line-height: 1.5;\n        }\n\n        a {\n          color: var(--color-blue-900);\n          &:hover {\n            color: var(--color-blue-900);\n          }\n          &:focus {\n            outline: var(--focus-ring);\n          }\n        }\n      "
+        "\n        :host {\n          /* \n           * Although the style applied to the shadow host is isolated,\n           * the element that attached the shadow host (i.e. \"nextjs-portal\")\n           * is still affected by the parent's style (e.g. \"body\"). This may\n           * occur style conflicts like \"display: flex\", with other children\n           * elements therefore give the shadow host an absolute position.\n           */\n          position: absolute;\n\n          --color-font: #757575;\n          --color-backdrop: rgba(250, 250, 250, 0.8);\n          --color-border-shadow: rgba(0, 0, 0, 0.145);\n\n          --color-title-color: #1f1f1f;\n          --color-stack-notes: #777;\n\n          --color-accents-1: #808080;\n          --color-accents-2: #222222;\n          --color-accents-3: #404040;\n\n          --font-stack-monospace: '__nextjs-Geist Mono', 'Geist Mono',\n            'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier,\n            monospace;\n          --font-stack-sans: '__nextjs-Geist', 'Geist', -apple-system,\n            'Source Sans Pro', sans-serif;\n\n          font-family: var(--font-stack-sans);\n\n          /* TODO: Remove replaced ones. */\n          --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);\n          --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),\n            0 1px 2px -1px rgb(0 0 0 / 0.1);\n          --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1),\n            0 2px 4px -2px rgb(0 0 0 / 0.1);\n          --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),\n            0 4px 6px -4px rgb(0 0 0 / 0.1);\n          --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),\n            0 8px 10px -6px rgb(0 0 0 / 0.1);\n          --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);\n          --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);\n          --shadow-none: 0 0 #0000;\n\n          --shadow-small: 0px 2px 2px rgba(0, 0, 0, 0.04);\n          --shadow-menu: 0px 1px 1px rgba(0, 0, 0, 0.02),\n            0px 4px 8px -4px rgba(0, 0, 0, 0.04),\n            0px 16px 24px -8px rgba(0, 0, 0, 0.06);\n\n          --focus-color: var(--color-blue-800);\n          --focus-ring: 2px solid var(--focus-color);\n\n          --timing-swift: cubic-bezier(0.23, 0.88, 0.26, 0.92);\n          --timing-overlay: cubic-bezier(0.175, 0.885, 0.32, 1.1);\n\n          --rounded-none: 0px;\n          --rounded-sm: 2px;\n          --rounded-md: 4px;\n          --rounded-md-2: 6px;\n          --rounded-lg: 8px;\n          --rounded-xl: 12px;\n          --rounded-2xl: 16px;\n          --rounded-3xl: 24px;\n          --rounded-4xl: 32px;\n          --rounded-full: 9999px;\n\n          /* \n            Suffix N of --size-N as px value when the base font size is 16px.\n            Example: --size-1 is 1px, --size-2 is 2px, --size-3 is 3px, etc.\n          */\n          --size-1: 0.0625rem; /* 1px */\n          --size-2: 0.125rem; /* 2px */\n          --size-3: 0.1875rem; /* 3px */\n          --size-4: 0.25rem; /* ...and more */\n          --size-5: 0.3125rem;\n          --size-6: 0.375rem;\n          --size-7: 0.4375rem;\n          --size-8: 0.5rem;\n          --size-9: 0.5625rem;\n          --size-10: 0.625rem;\n          --size-11: 0.6875rem;\n          --size-12: 0.75rem;\n          --size-13: 0.8125rem;\n          --size-14: 0.875rem;\n          --size-15: 0.9375rem;\n          /* If the base font size of the dev overlay changes e.g. 18px, \n          just slide the window and make --size-18 as 1rem. */\n          --size-16: 1rem;\n          --size-17: 1.0625rem;\n          --size-18: 1.125rem;\n          --size-20: 1.25rem;\n          --size-22: 1.375rem;\n          --size-24: 1.5rem;\n          --size-26: 1.625rem;\n          --size-28: 1.75rem;\n          --size-30: 1.875rem;\n          --size-32: 2rem;\n          --size-34: 2.125rem;\n          --size-36: 2.25rem;\n          --size-38: 2.375rem;\n          --size-40: 2.5rem;\n          --size-42: 2.625rem;\n          --size-44: 2.75rem;\n          --size-46: 2.875rem;\n          --size-48: 3rem;\n\n          @media print {\n            display: none;\n          }\n        }\n\n        h1,\n        h2,\n        h3,\n        h4,\n        h5,\n        h6 {\n          margin-bottom: 8px;\n          font-weight: 500;\n          line-height: 1.5;\n        }\n\n        a {\n          color: var(--color-blue-900);\n          &:hover {\n            color: var(--color-blue-900);\n          }\n          &:focus {\n            outline: var(--focus-ring);\n          }\n        }\n      "
     ]);
     _templateObject = function() {
         return data;
     };
     return data;
 }
-function Base(param) {
-    let { scale = 1 } = param;
+function Base() {
     return /*#__PURE__*/ (0, _jsxruntime.jsx)("style", {
-        children: (0, _css.css)(_templateObject(), String(scale))
+        children: (0, _css.css)(_templateObject())
     });
 }
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
@@ -12693,454 +12566,6 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     Object.assign(exports.default, exports);
     module.exports = exports.default;
 } //# sourceMappingURL=base.js.map
-}}),
-"[project]/node_modules/next/dist/shared/lib/magic-identifier.js [client] (ecmascript)": (function(__turbopack_context__) {
-
-var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
-{
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-0 && (module.exports = {
-    MAGIC_IDENTIFIER_REGEX: null,
-    decodeMagicIdentifier: null
-});
-function _export(target, all) {
-    for(var name in all)Object.defineProperty(target, name, {
-        enumerable: true,
-        get: all[name]
-    });
-}
-_export(exports, {
-    MAGIC_IDENTIFIER_REGEX: function() {
-        return MAGIC_IDENTIFIER_REGEX;
-    },
-    decodeMagicIdentifier: function() {
-        return decodeMagicIdentifier;
-    }
-});
-function decodeHex(hexStr) {
-    if (hexStr.trim() === '') {
-        throw Object.defineProperty(new Error("can't decode empty hex"), "__NEXT_ERROR_CODE", {
-            value: "E19",
-            enumerable: false,
-            configurable: true
-        });
-    }
-    const num = parseInt(hexStr, 16);
-    if (isNaN(num)) {
-        throw Object.defineProperty(new Error("invalid hex: `" + hexStr + "`"), "__NEXT_ERROR_CODE", {
-            value: "E293",
-            enumerable: false,
-            configurable: true
-        });
-    }
-    return String.fromCodePoint(num);
-}
-const DECODE_REGEX = /^__TURBOPACK__([a-zA-Z0-9_$]+)__$/;
-function decodeMagicIdentifier(identifier) {
-    const matches = identifier.match(DECODE_REGEX);
-    if (!matches) {
-        return identifier;
-    }
-    const inner = matches[1];
-    let output = '';
-    let mode = 0;
-    let buffer = '';
-    for(let i = 0; i < inner.length; i++){
-        const char = inner[i];
-        if (mode === 0) {
-            if (char === '_') {
-                mode = 1;
-            } else if (char === '$') {
-                mode = 2;
-            } else {
-                output += char;
-            }
-        } else if (mode === 1) {
-            if (char === '_') {
-                output += ' ';
-                mode = 0;
-            } else if (char === '$') {
-                output += '_';
-                mode = 2;
-            } else {
-                output += char;
-                mode = 0;
-            }
-        } else if (mode === 2) {
-            if (buffer.length === 2) {
-                output += decodeHex(buffer);
-                buffer = '';
-            }
-            if (char === '_') {
-                if (buffer !== '') {
-                    throw Object.defineProperty(new Error("invalid hex: `" + buffer + "`"), "__NEXT_ERROR_CODE", {
-                        value: "E293",
-                        enumerable: false,
-                        configurable: true
-                    });
-                }
-                mode = 3;
-            } else if (char === '$') {
-                if (buffer !== '') {
-                    throw Object.defineProperty(new Error("invalid hex: `" + buffer + "`"), "__NEXT_ERROR_CODE", {
-                        value: "E293",
-                        enumerable: false,
-                        configurable: true
-                    });
-                }
-                mode = 0;
-            } else {
-                buffer += char;
-            }
-        } else if (mode === 3) {
-            if (char === '_') {
-                throw Object.defineProperty(new Error("invalid hex: `" + (buffer + char) + "`"), "__NEXT_ERROR_CODE", {
-                    value: "E244",
-                    enumerable: false,
-                    configurable: true
-                });
-            } else if (char === '$') {
-                output += decodeHex(buffer);
-                buffer = '';
-                mode = 0;
-            } else {
-                buffer += char;
-            }
-        }
-    }
-    return output;
-}
-const MAGIC_IDENTIFIER_REGEX = /__TURBOPACK__[a-zA-Z0-9_$]+__/g; //# sourceMappingURL=magic-identifier.js.map
-}}),
-"[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/hot-linked-text/index.js [client] (ecmascript)": (function(__turbopack_context__) {
-
-var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
-{
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "HotlinkedText", {
-    enumerable: true,
-    get: function() {
-        return HotlinkedText;
-    }
-});
-const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
-const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)"));
-const _magicidentifier = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/magic-identifier.js [client] (ecmascript)");
-const linkRegex = /https?:\/\/[^\s/$.?#].[^\s)'"]*/i;
-const splitRegexp = new RegExp("(" + _magicidentifier.MAGIC_IDENTIFIER_REGEX.source + "|\\s+)");
-const HotlinkedText = function HotlinkedText(props) {
-    const { text, matcher } = props;
-    const wordsAndWhitespaces = text.split(splitRegexp);
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_jsxruntime.Fragment, {
-        children: wordsAndWhitespaces.map((word, index)=>{
-            if (linkRegex.test(word)) {
-                const link = linkRegex.exec(word);
-                const href = link[0];
-                // If link matcher is present but the link doesn't match, don't turn it into a link
-                if (typeof matcher === 'function' && !matcher(href)) {
-                    return word;
-                }
-                return /*#__PURE__*/ (0, _jsxruntime.jsx)(_react.default.Fragment, {
-                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)("a", {
-                        href: href,
-                        target: "_blank",
-                        rel: "noreferrer noopener",
-                        children: word
-                    })
-                }, "link-" + index);
-            }
-            try {
-                const decodedWord = (0, _magicidentifier.decodeMagicIdentifier)(word);
-                if (decodedWord !== word) {
-                    return /*#__PURE__*/ (0, _jsxruntime.jsxs)("i", {
-                        children: [
-                            '{',
-                            decodedWord,
-                            '}'
-                        ]
-                    }, "ident-" + index);
-                }
-            } catch (e) {
-                return /*#__PURE__*/ (0, _jsxruntime.jsxs)("i", {
-                    children: [
-                        '{',
-                        word,
-                        " (decoding failed: ",
-                        '' + e,
-                        ")",
-                        '}'
-                    ]
-                }, "ident-" + index);
-            }
-            return /*#__PURE__*/ (0, _jsxruntime.jsx)(_react.default.Fragment, {
-                children: word
-            }, "text-" + index);
-        })
-    });
-};
-if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
-    Object.defineProperty(exports.default, '__esModule', {
-        value: true
-    });
-    Object.assign(exports.default, exports);
-    module.exports = exports.default;
-} //# sourceMappingURL=index.js.map
-}}),
-"[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/utils/use-open-in-editor.js [client] (ecmascript)": (function(__turbopack_context__) {
-
-var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
-{
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "useOpenInEditor", {
-    enumerable: true,
-    get: function() {
-        return useOpenInEditor;
-    }
-});
-const _react = __turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)");
-function useOpenInEditor(param) {
-    let { file, lineNumber, column } = param === void 0 ? {} : param;
-    const openInEditor = (0, _react.useCallback)(()=>{
-        if (file == null || lineNumber == null || column == null) return;
-        const params = new URLSearchParams();
-        params.append('file', file);
-        params.append('lineNumber', String(lineNumber));
-        params.append('column', String(column));
-        self.fetch((("TURBOPACK compile-time value", "") || '') + "/__nextjs_launch-editor?" + params.toString()).then(()=>{}, (cause)=>{
-            console.error('Failed to open file "' + file + " (" + lineNumber + ":" + column + ')" in your editor. Cause:', cause);
-        });
-    }, [
-        file,
-        lineNumber,
-        column
-    ]);
-    return openInEditor;
-}
-if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
-    Object.defineProperty(exports.default, '__esModule', {
-        value: true
-    });
-    Object.assign(exports.default, exports);
-    module.exports = exports.default;
-} //# sourceMappingURL=use-open-in-editor.js.map
-}}),
-"[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/icons/external.js [client] (ecmascript)": (function(__turbopack_context__) {
-
-var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
-{
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-0 && (module.exports = {
-    ExternalIcon: null,
-    SourceMappingErrorIcon: null
-});
-function _export(target, all) {
-    for(var name in all)Object.defineProperty(target, name, {
-        enumerable: true,
-        get: all[name]
-    });
-}
-_export(exports, {
-    ExternalIcon: function() {
-        return ExternalIcon;
-    },
-    SourceMappingErrorIcon: function() {
-        return SourceMappingErrorIcon;
-    }
-});
-const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
-function ExternalIcon(props) {
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        width: "16",
-        height: "16",
-        viewBox: "0 0 16 16",
-        fill: "none",
-        ...props,
-        children: /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
-            fillRule: "evenodd",
-            clipRule: "evenodd",
-            fill: "currentColor",
-            d: "M11.5 9.75V11.25C11.5 11.3881 11.3881 11.5 11.25 11.5H4.75C4.61193 11.5 4.5 11.3881 4.5 11.25L4.5 4.75C4.5 4.61193 4.61193 4.5 4.75 4.5H6.25H7V3H6.25H4.75C3.7835 3 3 3.7835 3 4.75V11.25C3 12.2165 3.7835 13 4.75 13H11.25C12.2165 13 13 12.2165 13 11.25V9.75V9H11.5V9.75ZM8.5 3H9.25H12.2495C12.6637 3 12.9995 3.33579 12.9995 3.75V6.75V7.5H11.4995V6.75V5.56066L8.53033 8.52978L8 9.06011L6.93934 7.99945L7.46967 7.46912L10.4388 4.5H9.25H8.5V3Z"
-        })
-    });
-}
-function SourceMappingErrorIcon(props) {
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        height: "16",
-        strokeLinejoin: "round",
-        viewBox: "-4 -4 24 24",
-        width: "16",
-        ...props,
-        children: /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
-            fillRule: "evenodd",
-            clipRule: "evenodd",
-            d: "M8.55846 2H7.44148L1.88975 13.5H14.1102L8.55846 2ZM9.90929 1.34788C9.65902 0.829456 9.13413 0.5 8.55846 0.5H7.44148C6.86581 0.5 6.34092 0.829454 6.09065 1.34787L0.192608 13.5653C-0.127943 14.2293 0.355835 15 1.09316 15H14.9068C15.6441 15 16.1279 14.2293 15.8073 13.5653L9.90929 1.34788ZM8.74997 4.75V5.5V8V8.75H7.24997V8V5.5V4.75H8.74997ZM7.99997 12C8.55226 12 8.99997 11.5523 8.99997 11C8.99997 10.4477 8.55226 10 7.99997 10C7.44769 10 6.99997 10.4477 6.99997 11C6.99997 11.5523 7.44769 12 7.99997 12Z",
-            fill: "currentColor"
-        })
-    });
-}
-if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
-    Object.defineProperty(exports.default, '__esModule', {
-        value: true
-    });
-    Object.assign(exports.default, exports);
-    module.exports = exports.default;
-} //# sourceMappingURL=external.js.map
-}}),
-"[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/icons/file.js [client] (ecmascript)": (function(__turbopack_context__) {
-
-var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
-{
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-Object.defineProperty(exports, "FileIcon", {
-    enumerable: true,
-    get: function() {
-        return FileIcon;
-    }
-});
-const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
-function FileIcon(param) {
-    let { lang } = param;
-    if (!lang) return /*#__PURE__*/ (0, _jsxruntime.jsx)(File, {});
-    switch(lang.toLowerCase()){
-        case 'jsx':
-        case 'tsx':
-            return /*#__PURE__*/ (0, _jsxruntime.jsx)(React, {});
-        case 'ts':
-        case 'typescript':
-            return /*#__PURE__*/ (0, _jsxruntime.jsx)(Ts, {});
-        case 'javascript':
-        case 'js':
-        case 'mjs':
-            return /*#__PURE__*/ (0, _jsxruntime.jsx)(Js, {});
-        case 'json':
-            return /*#__PURE__*/ (0, _jsxruntime.jsx)(Json, {});
-        default:
-            return /*#__PURE__*/ (0, _jsxruntime.jsx)(File, {});
-    }
-}
-function Json() {
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)("svg", {
-        clipRule: "evenodd",
-        fillRule: "evenodd",
-        height: "16",
-        viewBox: "0 0 1321.45 1333.33",
-        width: "16",
-        children: /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
-            d: "M221.37 618.44h757.94V405.15H755.14c-23.5 0-56.32-12.74-71.82-28.24-15.5-15.5-25-43.47-25-66.97V82.89H88.39c-1.99 0-3.49 1-4.49 2-1.5 1-2 2.5-2 4.5v1155.04c0 1.5 1 3.5 2 4.5 1 1.49 3 1.99 4.49 1.99H972.8c2 0 1.89-.99 2.89-1.99 1.5-1 3.61-3 3.61-4.5v-121.09H221.36c-44.96 0-82-36.9-82-81.99V700.44c0-45.1 36.9-82 82-82zm126.51 117.47h75.24v146.61c0 30.79-2.44 54.23-7.33 70.31-4.92 16.03-14.8 29.67-29.65 40.85-14.86 11.12-33.91 16.72-57.05 16.72-24.53 0-43.51-3.71-56.94-11.06-13.5-7.36-23.89-18.1-31.23-32.3-7.35-14.14-11.69-31.67-12.99-52.53l71.5-10.81c.11 11.81 1.07 20.61 2.81 26.33 1.76 5.78 4.75 10.37 9 13.95 2.87 2.33 6.94 3.46 12.25 3.46 8.4 0 14.58-3.46 18.53-10.37 3.9-6.92 5.87-18.6 5.87-35V735.92zm112.77 180.67l71.17-4.97c1.54 12.81 4.69 22.62 9.44 29.28 7.74 10.88 18.74 16.34 33.09 16.34 10.68 0 18.93-2.76 24.68-8.36 5.81-5.58 8.7-12.07 8.7-19.41 0-6.97-2.71-13.26-8.2-18.79-5.47-5.53-18.23-10.68-38.28-15.65-32.89-8.17-56.27-19.1-70.26-32.74-14.12-13.57-21.18-30.92-21.18-52.03 0-13.83 3.61-26.89 10.85-39.21 7.22-12.38 18.07-22.06 32.59-29.09 14.52-7.04 34.4-10.56 59.65-10.56 31 0 54.62 6.41 70.88 19.29 16.28 12.81 25.92 33.24 29.04 61.27l-70.5 4.65c-1.87-12.25-5.81-21.17-11.81-26.7-6.05-5.6-14.35-8.36-24.9-8.36-8.71 0-15.31 2.07-19.73 6.16-4.4 4.09-6.59 9.12-6.59 15.02 0 4.27 1.81 8.11 5.37 11.57 3.45 3.59 11.8 6.85 25.02 9.93 32.75 7.86 56.2 15.84 70.31 23.87 14.18 8.05 24.52 17.98 30.96 29.92 6.44 11.88 9.66 25.2 9.66 39.96 0 17.29-4.3 33.24-12.88 47.89-8.63 14.58-20.61 25.7-36.08 33.24-15.41 7.54-34.85 11.31-58.33 11.31-41.24 0-69.81-8.86-85.68-26.52-15.88-17.65-24.85-40.09-26.96-67.3zm248.74-45.5c0-44.05 11.02-78.36 33.09-102.87 22.09-24.57 52.82-36.82 92.24-36.82 40.38 0 71.5 12.07 93.34 36.13 21.86 24.13 32.77 57.94 32.77 101.37 0 31.54-4.75 57.36-14.3 77.54-9.54 20.18-23.37 35.89-41.4 47.13-18.07 11.24-40.55 16.84-67.48 16.84-27.33 0-49.99-4.83-67.94-14.52-17.92-9.74-32.49-25.07-43.62-46.06-11.13-20.92-16.72-47.19-16.72-78.74zm74.89.19c0 27.21 4.57 46.81 13.68 58.68 9.13 11.88 21.57 17.85 37.26 17.85 16.1 0 28.65-5.84 37.45-17.47 8.87-11.68 13.28-32.54 13.28-62.77 0-25.39-4.63-43.92-13.84-55.61-9.26-11.76-21.75-17.6-37.56-17.6-15.13 0-27.34 5.97-36.49 17.85-9.21 11.88-13.78 31.61-13.78 59.07zm209.08-135.36h69.99l90.98 149.05V735.91h70.83v269.96h-70.83l-90.48-148.24v148.24h-70.49V735.91zm67.71-117.47h178.37c45.1 0 82 37.04 82 82v340.91c0 44.96-37.03 81.99-82 81.99h-178.37v147c0 17.5-6.99 32.99-18.5 44.5-11.5 11.49-27 18.5-44.5 18.5H62.97c-17.5 0-32.99-7-44.5-18.5-11.49-11.5-18.5-27-18.5-44.5V63.49c0-17.5 7-33 18.5-44.5S45.97.49 62.97.49H700.1c1.5-.5 3-.5 4.5-.5 7 0 14 3 19 7.49h1c1 .5 1.5 1 2.5 2l325.46 329.47c5.5 5.5 9.5 13 9.5 21.5 0 2.5-.5 4.5-1 7v250.98zM732.61 303.47V96.99l232.48 235.47H761.6c-7.99 0-14.99-3.5-20.5-8.49-4.99-5-8.49-12.5-8.49-20.5z",
-            fill: "currentColor"
-        })
-    });
-}
-function Js() {
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)("svg", {
-        height: "16",
-        viewBox: "0 0 50 50",
-        width: "16",
-        xmlns: "http://www.w3.org/2000/svg",
-        children: /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
-            d: "M 43.335938 4 L 6.667969 4 C 5.195313 4 4 5.195313 4 6.667969 L 4 43.332031 C 4 44.804688 5.195313 46 6.667969 46 L 43.332031 46 C 44.804688 46 46 44.804688 46 43.335938 L 46 6.667969 C 46 5.195313 44.804688 4 43.335938 4 Z M 27 36.183594 C 27 40.179688 24.65625 42 21.234375 42 C 18.140625 42 15.910156 39.925781 15 38 L 18.144531 36.097656 C 18.75 37.171875 19.671875 38 21 38 C 22.269531 38 23 37.503906 23 35.574219 L 23 23 L 27 23 Z M 35.675781 42 C 32.132813 42 30.121094 40.214844 29 38 L 32 36 C 32.816406 37.335938 33.707031 38.613281 35.589844 38.613281 C 37.171875 38.613281 38 37.824219 38 36.730469 C 38 35.425781 37.140625 34.960938 35.402344 34.199219 L 34.449219 33.789063 C 31.695313 32.617188 29.863281 31.148438 29.863281 28.039063 C 29.863281 25.179688 32.046875 23 35.453125 23 C 37.878906 23 39.621094 23.84375 40.878906 26.054688 L 37.910156 27.964844 C 37.253906 26.789063 36.550781 26.328125 35.453125 26.328125 C 34.335938 26.328125 33.628906 27.039063 33.628906 27.964844 C 33.628906 29.109375 34.335938 29.570313 35.972656 30.28125 L 36.925781 30.691406 C 40.171875 32.078125 42 33.496094 42 36.683594 C 42 40.117188 39.300781 42 35.675781 42 Z",
-            fill: "currentColor"
-        })
-    });
-}
-function Ts() {
-    return /*#__PURE__*/ (0, _jsxruntime.jsxs)("svg", {
-        fill: "none",
-        height: "14",
-        viewBox: "0 0 512 512",
-        width: "14",
-        xmlns: "http://www.w3.org/2000/svg",
-        children: [
-            /*#__PURE__*/ (0, _jsxruntime.jsx)("rect", {
-                fill: "currentColor",
-                height: "512",
-                rx: "50",
-                width: "512"
-            }),
-            /*#__PURE__*/ (0, _jsxruntime.jsx)("rect", {
-                fill: "currentColor",
-                height: "512",
-                rx: "50",
-                width: "512"
-            }),
-            /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
-                clipRule: "evenodd",
-                d: "m316.939 407.424v50.061c8.138 4.172 17.763 7.3 28.875 9.386s22.823 3.129 35.135 3.129c11.999 0 23.397-1.147 34.196-3.442 10.799-2.294 20.268-6.075 28.406-11.342 8.138-5.266 14.581-12.15 19.328-20.65s7.121-19.007 7.121-31.522c0-9.074-1.356-17.026-4.069-23.857s-6.625-12.906-11.738-18.225c-5.112-5.319-11.242-10.091-18.389-14.315s-15.207-8.213-24.18-11.967c-6.573-2.712-12.468-5.345-17.685-7.9-5.217-2.556-9.651-5.163-13.303-7.822-3.652-2.66-6.469-5.476-8.451-8.448-1.982-2.973-2.974-6.336-2.974-10.091 0-3.441.887-6.544 2.661-9.308s4.278-5.136 7.512-7.118c3.235-1.981 7.199-3.52 11.894-4.615 4.696-1.095 9.912-1.642 15.651-1.642 4.173 0 8.581.313 13.224.938 4.643.626 9.312 1.591 14.008 2.894 4.695 1.304 9.259 2.947 13.694 4.928 4.434 1.982 8.529 4.276 12.285 6.884v-46.776c-7.616-2.92-15.937-5.084-24.962-6.492s-19.381-2.112-31.066-2.112c-11.895 0-23.163 1.278-33.805 3.833s-20.006 6.544-28.093 11.967c-8.086 5.424-14.476 12.333-19.171 20.729-4.695 8.395-7.043 18.433-7.043 30.114 0 14.914 4.304 27.638 12.912 38.172 8.607 10.533 21.675 19.45 39.204 26.751 6.886 2.816 13.303 5.579 19.25 8.291s11.086 5.528 15.415 8.448c4.33 2.92 7.747 6.101 10.252 9.543 2.504 3.441 3.756 7.352 3.756 11.733 0 3.233-.783 6.231-2.348 8.995s-3.939 5.162-7.121 7.196-7.147 3.624-11.894 4.771c-4.748 1.148-10.303 1.721-16.668 1.721-10.851 0-21.597-1.903-32.24-5.71-10.642-3.806-20.502-9.516-29.579-17.13zm-84.159-123.342h64.22v-41.082h-179v41.082h63.906v182.918h50.874z",
-                fill: "var(--color-background-100)",
-                fillRule: "evenodd"
-            })
-        ]
-    });
-}
-function File() {
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)("svg", {
-        width: "16",
-        height: "17",
-        fill: "none",
-        xmlns: "http://www.w3.org/2000/svg",
-        children: /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
-            fillRule: "evenodd",
-            clipRule: "evenodd",
-            d: "M14.5 7v7a2.5 2.5 0 0 1-2.5 2.5H4A2.5 2.5 0 0 1 1.5 14V.5h7.586a1 1 0 0 1 .707.293l4.414 4.414a1 1 0 0 1 .293.707V7zM13 7v7a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2h5v5h5zM9.5 2.621V5.5h2.879L9.5 2.621z",
-            fill: "currentColor"
-        })
-    });
-}
-function React() {
-    return /*#__PURE__*/ (0, _jsxruntime.jsxs)("svg", {
-        height: "16",
-        strokeLinejoin: "round",
-        viewBox: "0 0 16 16",
-        width: "16",
-        children: [
-            /*#__PURE__*/ (0, _jsxruntime.jsx)("g", {
-                clipPath: "url(#file_react_clip0_872_3183)",
-                children: /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
-                    fillRule: "evenodd",
-                    clipRule: "evenodd",
-                    d: "M4.5 1.93782C4.70129 1.82161 4.99472 1.7858 5.41315 1.91053C5.83298 2.03567 6.33139 2.31073 6.87627 2.73948C7.01136 2.84578 7.14803 2.96052 7.28573 3.08331C6.86217 3.53446 6.44239 4.04358 6.03752 4.60092C5.35243 4.67288 4.70164 4.78186 4.09916 4.92309C4.06167 4.74244 4.03064 4.56671 4.00612 4.39656C3.90725 3.71031 3.91825 3.14114 4.01979 2.71499C4.12099 2.29025 4.29871 2.05404 4.5 1.93782ZM7.49466 1.95361C7.66225 2.08548 7.83092 2.22804 7.99999 2.38067C8.16906 2.22804 8.33773 2.08548 8.50532 1.95361C9.10921 1.47842 9.71982 1.12549 10.3012 0.952202C10.8839 0.778496 11.4838 0.7738 12 1.0718C12.5161 1.3698 12.812 1.89169 12.953 2.48322C13.0936 3.07333 13.0932 3.77858 12.9836 4.53917C12.9532 4.75024 12.9141 4.9676 12.8665 5.19034C13.0832 5.26044 13.291 5.33524 13.489 5.41444C14.2025 5.69983 14.8134 6.05217 15.2542 6.46899C15.696 6.8868 16 7.404 16 8C16 8.596 15.696 9.11319 15.2542 9.53101C14.8134 9.94783 14.2025 10.3002 13.489 10.5856C13.291 10.6648 13.0832 10.7396 12.8665 10.8097C12.9141 11.0324 12.9532 11.2498 12.9837 11.4608C13.0932 12.2214 13.0936 12.9267 12.953 13.5168C12.812 14.1083 12.5161 14.6302 12 14.9282C11.4839 15.2262 10.8839 15.2215 10.3012 15.0478C9.71984 14.8745 9.10923 14.5216 8.50534 14.0464C8.33775 13.9145 8.16906 13.7719 7.99999 13.6193C7.83091 13.7719 7.66223 13.9145 7.49464 14.0464C6.89075 14.5216 6.28014 14.8745 5.69879 15.0478C5.11605 15.2215 4.51613 15.2262 3.99998 14.9282C3.48383 14.6302 3.18794 14.1083 3.047 13.5168C2.9064 12.9267 2.90674 12.2214 3.01632 11.4608C3.04673 11.2498 3.08586 11.0324 3.13351 10.8097C2.91679 10.7395 2.709 10.6648 2.511 10.5856C1.79752 10.3002 1.18658 9.94783 0.745833 9.53101C0.304028 9.11319 0 8.596 0 8C0 7.404 0.304028 6.8868 0.745833 6.46899C1.18658 6.05217 1.79752 5.69983 2.511 5.41444C2.709 5.33524 2.9168 5.26044 3.13352 5.19034C3.08587 4.9676 3.04675 4.75024 3.01634 4.53917C2.90676 3.77858 2.90642 3.07332 3.04702 2.48321C3.18796 1.89169 3.48385 1.3698 4 1.0718C4.51615 0.773798 5.11607 0.778495 5.69881 0.952201C6.28016 1.12549 6.89077 1.47841 7.49466 1.95361ZM7.36747 4.51025C7.57735 4.25194 7.78881 4.00927 7.99999 3.78356C8.21117 4.00927 8.42263 4.25194 8.63251 4.51025C8.42369 4.50346 8.21274 4.5 8 4.5C7.78725 4.5 7.5763 4.50345 7.36747 4.51025ZM8.71425 3.08331C9.13781 3.53447 9.55759 4.04358 9.96246 4.60092C10.6475 4.67288 11.2983 4.78186 11.9008 4.92309C11.9383 4.74244 11.9693 4.56671 11.9939 4.39657C12.0927 3.71031 12.0817 3.14114 11.9802 2.71499C11.879 2.29025 11.7013 2.05404 11.5 1.93782C11.2987 1.82161 11.0053 1.7858 10.5868 1.91053C10.167 2.03568 9.66859 2.31073 9.12371 2.73948C8.98862 2.84578 8.85196 2.96052 8.71425 3.08331ZM8 5.5C8.48433 5.5 8.95638 5.51885 9.41188 5.55456C9.67056 5.93118 9.9229 6.33056 10.1651 6.75C10.4072 7.16944 10.6269 7.58766 10.8237 7.99998C10.6269 8.41232 10.4072 8.83055 10.165 9.25C9.92288 9.66944 9.67053 10.0688 9.41185 10.4454C8.95636 10.4812 8.48432 10.5 8 10.5C7.51567 10.5 7.04363 10.4812 6.58813 10.4454C6.32945 10.0688 6.0771 9.66944 5.83494 9.25C5.59277 8.83055 5.37306 8.41232 5.17624 7.99998C5.37306 7.58765 5.59275 7.16944 5.83492 6.75C6.07708 6.33056 6.32942 5.93118 6.5881 5.55456C7.04361 5.51884 7.51566 5.5 8 5.5ZM11.0311 6.25C11.1375 6.43423 11.2399 6.61864 11.3385 6.80287C11.4572 6.49197 11.5616 6.18752 11.6515 5.89178C11.3505 5.82175 11.0346 5.75996 10.706 5.70736C10.8163 5.8848 10.9247 6.06576 11.0311 6.25ZM11.0311 9.75C11.1374 9.56576 11.2399 9.38133 11.3385 9.19709C11.4572 9.50801 11.5617 9.81246 11.6515 10.1082C11.3505 10.1782 11.0346 10.24 10.7059 10.2926C10.8162 10.1152 10.9247 9.93424 11.0311 9.75ZM11.9249 7.99998C12.2051 8.62927 12.4362 9.24738 12.6151 9.83977C12.7903 9.78191 12.958 9.72092 13.1176 9.65708C13.7614 9.39958 14.2488 9.10547 14.5671 8.80446C14.8843 8.50445 15 8.23243 15 8C15 7.76757 14.8843 7.49555 14.5671 7.19554C14.2488 6.89453 13.7614 6.60042 13.1176 6.34292C12.958 6.27907 12.7903 6.21808 12.6151 6.16022C12.4362 6.7526 12.2051 7.37069 11.9249 7.99998ZM9.96244 11.3991C10.6475 11.3271 11.2983 11.2181 11.9008 11.0769C11.9383 11.2576 11.9694 11.4333 11.9939 11.6034C12.0928 12.2897 12.0817 12.8589 11.9802 13.285C11.879 13.7098 11.7013 13.946 11.5 14.0622C11.2987 14.1784 11.0053 14.2142 10.5868 14.0895C10.167 13.9643 9.66861 13.6893 9.12373 13.2605C8.98863 13.1542 8.85196 13.0395 8.71424 12.9167C9.1378 12.4655 9.55758 11.9564 9.96244 11.3991ZM8.63249 11.4898C8.42262 11.7481 8.21116 11.9907 7.99999 12.2164C7.78881 11.9907 7.57737 11.7481 7.36749 11.4897C7.57631 11.4965 7.78726 11.5 8 11.5C8.21273 11.5 8.42367 11.4965 8.63249 11.4898ZM4.96891 9.75C5.07528 9.93424 5.18375 10.1152 5.29404 10.2926C4.9654 10.24 4.64951 10.1782 4.34844 10.1082C4.43833 9.81246 4.54276 9.508 4.66152 9.19708C4.76005 9.38133 4.86254 9.56575 4.96891 9.75ZM6.03754 11.3991C5.35244 11.3271 4.70163 11.2181 4.09914 11.0769C4.06165 11.2576 4.03062 11.4333 4.0061 11.6034C3.90723 12.2897 3.91823 12.8589 4.01977 13.285C4.12097 13.7098 4.29869 13.946 4.49998 14.0622C4.70127 14.1784 4.9947 14.2142 5.41313 14.0895C5.83296 13.9643 6.33137 13.6893 6.87625 13.2605C7.01135 13.1542 7.14802 13.0395 7.28573 12.9167C6.86217 12.4655 6.4424 11.9564 6.03754 11.3991ZM4.07507 7.99998C3.79484 8.62927 3.56381 9.24737 3.38489 9.83977C3.20969 9.78191 3.042 9.72092 2.88239 9.65708C2.23864 9.39958 1.75123 9.10547 1.43294 8.80446C1.11571 8.50445 1 8.23243 1 8C1 7.76757 1.11571 7.49555 1.43294 7.19554C1.75123 6.89453 2.23864 6.60042 2.88239 6.34292C3.042 6.27907 3.2097 6.21808 3.3849 6.16022C3.56383 6.75261 3.79484 7.37069 4.07507 7.99998ZM4.66152 6.80287C4.54277 6.49197 4.43835 6.18752 4.34846 5.89178C4.64952 5.82175 4.96539 5.75996 5.29402 5.70736C5.18373 5.8848 5.07526 6.06576 4.96889 6.25C4.86253 6.43423 4.76005 6.61864 4.66152 6.80287ZM9.25 8C9.25 8.69036 8.69036 9.25 8 9.25C7.30964 9.25 6.75 8.69036 6.75 8C6.75 7.30965 7.30964 6.75 8 6.75C8.69036 6.75 9.25 7.30965 9.25 8Z",
-                    fill: "currentColor"
-                })
-            }),
-            /*#__PURE__*/ (0, _jsxruntime.jsx)("defs", {
-                children: /*#__PURE__*/ (0, _jsxruntime.jsx)("clipPath", {
-                    id: "file_react_clip0_872_3183",
-                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)("rect", {
-                        width: "16",
-                        height: "16",
-                        fill: "white"
-                    })
-                })
-            })
-        ]
-    });
-}
-if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
-    Object.defineProperty(exports.default, '__esModule', {
-        value: true
-    });
-    Object.assign(exports.default, exports);
-    module.exports = exports.default;
-} //# sourceMappingURL=file.js.map
 }}),
 "[project]/node_modules/next/dist/compiled/anser/index.js [client] (ecmascript)": (function(__turbopack_context__) {
 
@@ -13620,7 +13045,7 @@ var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
     module.exports = n;
 })();
 }}),
-"[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/code-frame/parse-code-frame.js [client] (ecmascript)": (function(__turbopack_context__) {
+"[project]/node_modules/next/dist/shared/lib/magic-identifier.js [client] (ecmascript)": (function(__turbopack_context__) {
 
 var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
 {
@@ -13629,9 +13054,8 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 0 && (module.exports = {
-    formatCodeFrame: null,
-    groupCodeFrameLines: null,
-    parseLineNumberFromCodeFrameLine: null
+    MAGIC_IDENTIFIER_REGEX: null,
+    decodeMagicIdentifier: null
 });
 function _export(target, all) {
     for(var name in all)Object.defineProperty(target, name, {
@@ -13640,71 +13064,219 @@ function _export(target, all) {
     });
 }
 _export(exports, {
-    formatCodeFrame: function() {
-        return formatCodeFrame;
+    MAGIC_IDENTIFIER_REGEX: function() {
+        return MAGIC_IDENTIFIER_REGEX;
     },
-    groupCodeFrameLines: function() {
-        return groupCodeFrameLines;
-    },
-    parseLineNumberFromCodeFrameLine: function() {
-        return parseLineNumberFromCodeFrameLine;
+    decodeMagicIdentifier: function() {
+        return decodeMagicIdentifier;
+    }
+});
+function decodeHex(hexStr) {
+    if (hexStr.trim() === '') {
+        throw Object.defineProperty(new Error("can't decode empty hex"), "__NEXT_ERROR_CODE", {
+            value: "E19",
+            enumerable: false,
+            configurable: true
+        });
+    }
+    const num = parseInt(hexStr, 16);
+    if (isNaN(num)) {
+        throw Object.defineProperty(new Error("invalid hex: `" + hexStr + "`"), "__NEXT_ERROR_CODE", {
+            value: "E293",
+            enumerable: false,
+            configurable: true
+        });
+    }
+    return String.fromCodePoint(num);
+}
+const DECODE_REGEX = /^__TURBOPACK__([a-zA-Z0-9_$]+)__$/;
+function decodeMagicIdentifier(identifier) {
+    const matches = identifier.match(DECODE_REGEX);
+    if (!matches) {
+        return identifier;
+    }
+    const inner = matches[1];
+    let output = '';
+    let mode = 0;
+    let buffer = '';
+    for(let i = 0; i < inner.length; i++){
+        const char = inner[i];
+        if (mode === 0) {
+            if (char === '_') {
+                mode = 1;
+            } else if (char === '$') {
+                mode = 2;
+            } else {
+                output += char;
+            }
+        } else if (mode === 1) {
+            if (char === '_') {
+                output += ' ';
+                mode = 0;
+            } else if (char === '$') {
+                output += '_';
+                mode = 2;
+            } else {
+                output += char;
+                mode = 0;
+            }
+        } else if (mode === 2) {
+            if (buffer.length === 2) {
+                output += decodeHex(buffer);
+                buffer = '';
+            }
+            if (char === '_') {
+                if (buffer !== '') {
+                    throw Object.defineProperty(new Error("invalid hex: `" + buffer + "`"), "__NEXT_ERROR_CODE", {
+                        value: "E293",
+                        enumerable: false,
+                        configurable: true
+                    });
+                }
+                mode = 3;
+            } else if (char === '$') {
+                if (buffer !== '') {
+                    throw Object.defineProperty(new Error("invalid hex: `" + buffer + "`"), "__NEXT_ERROR_CODE", {
+                        value: "E293",
+                        enumerable: false,
+                        configurable: true
+                    });
+                }
+                mode = 0;
+            } else {
+                buffer += char;
+            }
+        } else if (mode === 3) {
+            if (char === '_') {
+                throw Object.defineProperty(new Error("invalid hex: `" + (buffer + char) + "`"), "__NEXT_ERROR_CODE", {
+                    value: "E244",
+                    enumerable: false,
+                    configurable: true
+                });
+            } else if (char === '$') {
+                output += decodeHex(buffer);
+                buffer = '';
+                mode = 0;
+            } else {
+                buffer += char;
+            }
+        }
+    }
+    return output;
+}
+const MAGIC_IDENTIFIER_REGEX = /__TURBOPACK__[a-zA-Z0-9_$]+__/g; //# sourceMappingURL=magic-identifier.js.map
+}}),
+"[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/hot-linked-text/index.js [client] (ecmascript)": (function(__turbopack_context__) {
+
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
+{
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "HotlinkedText", {
+    enumerable: true,
+    get: function() {
+        return HotlinkedText;
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _anser = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/compiled/anser/index.js [client] (ecmascript)"));
-const _stripansi = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/compiled/strip-ansi/index.js [client] (ecmascript)"));
-function formatCodeFrame(codeFrame) {
-    const lines = codeFrame.split(/\r?\n/g);
-    // Find the minimum length of leading spaces after `|` in the code frame
-    const miniLeadingSpacesLength = lines.map((line)=>/^>? +\d+ +\| [ ]+/.exec((0, _stripansi.default)(line)) === null ? null : /^>? +\d+ +\| ( *)/.exec((0, _stripansi.default)(line))).filter(Boolean).map((v)=>v.pop()).reduce((c, n)=>isNaN(c) ? n.length : Math.min(c, n.length), NaN);
-    // When the minimum length of leading spaces is greater than 1, remove them
-    // from the code frame to help the indentation looks better when there's a lot leading spaces.
-    if (miniLeadingSpacesLength > 1) {
-        return lines.map((line, a)=>~(a = line.indexOf('|')) ? line.substring(0, a) + line.substring(a).replace("^\\ {" + miniLeadingSpacesLength + "}", '') : line).join('\n');
-    }
-    return lines.join('\n');
-}
-function groupCodeFrameLines(formattedFrame) {
-    // Map the decoded lines to a format that can be rendered
-    const decoded = _anser.default.ansiToJson(formattedFrame, {
-        json: true,
-        use_classes: true,
-        remove_empty: true
+const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
+const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)"));
+const _magicidentifier = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/magic-identifier.js [client] (ecmascript)");
+const linkRegex = /https?:\/\/[^\s/$.?#].[^\s)'"]*/i;
+const splitRegexp = new RegExp("(" + _magicidentifier.MAGIC_IDENTIFIER_REGEX.source + "|\\s+)");
+const HotlinkedText = function HotlinkedText(props) {
+    const { text, matcher } = props;
+    const wordsAndWhitespaces = text.split(splitRegexp);
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_jsxruntime.Fragment, {
+        children: wordsAndWhitespaces.map((word, index)=>{
+            if (linkRegex.test(word)) {
+                const link = linkRegex.exec(word);
+                const href = link[0];
+                // If link matcher is present but the link doesn't match, don't turn it into a link
+                if (typeof matcher === 'function' && !matcher(href)) {
+                    return word;
+                }
+                return /*#__PURE__*/ (0, _jsxruntime.jsx)(_react.default.Fragment, {
+                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)("a", {
+                        href: href,
+                        target: "_blank",
+                        rel: "noreferrer noopener",
+                        children: word
+                    })
+                }, "link-" + index);
+            }
+            try {
+                const decodedWord = (0, _magicidentifier.decodeMagicIdentifier)(word);
+                if (decodedWord !== word) {
+                    return /*#__PURE__*/ (0, _jsxruntime.jsxs)("i", {
+                        children: [
+                            '{',
+                            decodedWord,
+                            '}'
+                        ]
+                    }, "ident-" + index);
+                }
+            } catch (e) {
+                return /*#__PURE__*/ (0, _jsxruntime.jsxs)("i", {
+                    children: [
+                        '{',
+                        word,
+                        " (decoding failed: ",
+                        '' + e,
+                        ")",
+                        '}'
+                    ]
+                }, "ident-" + index);
+            }
+            return /*#__PURE__*/ (0, _jsxruntime.jsx)(_react.default.Fragment, {
+                children: word
+            }, "text-" + index);
+        })
     });
-    const lines = [];
-    let line = [];
-    for (const token of decoded){
-        if (token.content === '\n') {
-            lines.push(line);
-            line = [];
-        } else {
-            line.push(token);
-        }
+};
+if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
+    Object.defineProperty(exports.default, '__esModule', {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=index.js.map
+}}),
+"[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/utils/use-open-in-editor.js [client] (ecmascript)": (function(__turbopack_context__) {
+
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
+{
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "useOpenInEditor", {
+    enumerable: true,
+    get: function() {
+        return useOpenInEditor;
     }
-    if (line.length > 0) {
-        lines.push(line);
-    }
-    return lines;
-}
-function parseLineNumberFromCodeFrameLine(line, stackFrame) {
-    var _line_, _line_1, _stackFrame_lineNumber;
-    let lineNumberToken;
-    let lineNumber;
-    // parse line number from line first 2 tokens
-    // e.g. ` > 1 | const foo = 'bar'` => `1`, first token is `1 |`
-    // e.g. `  2 | const foo = 'bar'` => `2`. first 2 tokens are ' ' and ' 2 |'
-    // console.log('line', line)
-    if (((_line_ = line[0]) == null ? void 0 : _line_.content) === '>' || ((_line_1 = line[0]) == null ? void 0 : _line_1.content) === ' ') {
-        var _lineNumberToken_content_replace, _lineNumberToken_content;
-        lineNumberToken = line[1];
-        lineNumber = lineNumberToken == null ? void 0 : (_lineNumberToken_content = lineNumberToken.content) == null ? void 0 : (_lineNumberToken_content_replace = _lineNumberToken_content.replace('|', '')) == null ? void 0 : _lineNumberToken_content_replace.trim();
-    }
-    // When the line number is possibly undefined, it can be just the non-source code line
-    // e.g. the ^ sign can also take a line, we skip rendering line number for it
-    return {
+});
+const _react = __turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)");
+function useOpenInEditor(param) {
+    let { file, lineNumber, column } = param === void 0 ? {} : param;
+    const openInEditor = (0, _react.useCallback)(()=>{
+        if (file == null || lineNumber == null || column == null) return;
+        const params = new URLSearchParams();
+        params.append('file', file);
+        params.append('lineNumber', String(lineNumber));
+        params.append('column', String(column));
+        self.fetch((("TURBOPACK compile-time value", "") || '') + "/__nextjs_launch-editor?" + params.toString()).then(()=>{}, (cause)=>{
+            console.error('Failed to open file "' + file + " (" + lineNumber + ":" + column + ')" in your editor. Cause:', cause);
+        });
+    }, [
+        file,
         lineNumber,
-        isErroredLine: lineNumber === ((_stackFrame_lineNumber = stackFrame.lineNumber) == null ? void 0 : _stackFrame_lineNumber.toString())
-    };
+        column
+    ]);
+    return openInEditor;
 }
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
     Object.defineProperty(exports.default, '__esModule', {
@@ -13712,7 +13284,214 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     });
     Object.assign(exports.default, exports);
     module.exports = exports.default;
-} //# sourceMappingURL=parse-code-frame.js.map
+} //# sourceMappingURL=use-open-in-editor.js.map
+}}),
+"[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/icons/external.js [client] (ecmascript)": (function(__turbopack_context__) {
+
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
+{
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+0 && (module.exports = {
+    ExternalIcon: null,
+    SourceMappingErrorIcon: null
+});
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    ExternalIcon: function() {
+        return ExternalIcon;
+    },
+    SourceMappingErrorIcon: function() {
+        return SourceMappingErrorIcon;
+    }
+});
+const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
+function ExternalIcon(props) {
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        width: "16",
+        height: "16",
+        viewBox: "0 0 16 16",
+        fill: "none",
+        ...props,
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
+            fillRule: "evenodd",
+            clipRule: "evenodd",
+            fill: "currentColor",
+            d: "M11.5 9.75V11.25C11.5 11.3881 11.3881 11.5 11.25 11.5H4.75C4.61193 11.5 4.5 11.3881 4.5 11.25L4.5 4.75C4.5 4.61193 4.61193 4.5 4.75 4.5H6.25H7V3H6.25H4.75C3.7835 3 3 3.7835 3 4.75V11.25C3 12.2165 3.7835 13 4.75 13H11.25C12.2165 13 13 12.2165 13 11.25V9.75V9H11.5V9.75ZM8.5 3H9.25H12.2495C12.6637 3 12.9995 3.33579 12.9995 3.75V6.75V7.5H11.4995V6.75V5.56066L8.53033 8.52978L8 9.06011L6.93934 7.99945L7.46967 7.46912L10.4388 4.5H9.25H8.5V3Z"
+        })
+    });
+}
+function SourceMappingErrorIcon(props) {
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)("svg", {
+        xmlns: "http://www.w3.org/2000/svg",
+        height: "16",
+        strokeLinejoin: "round",
+        viewBox: "-4 -4 24 24",
+        width: "16",
+        ...props,
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
+            fillRule: "evenodd",
+            clipRule: "evenodd",
+            d: "M8.55846 2H7.44148L1.88975 13.5H14.1102L8.55846 2ZM9.90929 1.34788C9.65902 0.829456 9.13413 0.5 8.55846 0.5H7.44148C6.86581 0.5 6.34092 0.829454 6.09065 1.34787L0.192608 13.5653C-0.127943 14.2293 0.355835 15 1.09316 15H14.9068C15.6441 15 16.1279 14.2293 15.8073 13.5653L9.90929 1.34788ZM8.74997 4.75V5.5V8V8.75H7.24997V8V5.5V4.75H8.74997ZM7.99997 12C8.55226 12 8.99997 11.5523 8.99997 11C8.99997 10.4477 8.55226 10 7.99997 10C7.44769 10 6.99997 10.4477 6.99997 11C6.99997 11.5523 7.44769 12 7.99997 12Z",
+            fill: "currentColor"
+        })
+    });
+}
+if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
+    Object.defineProperty(exports.default, '__esModule', {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=external.js.map
+}}),
+"[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/icons/file.js [client] (ecmascript)": (function(__turbopack_context__) {
+
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
+{
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "FileIcon", {
+    enumerable: true,
+    get: function() {
+        return FileIcon;
+    }
+});
+const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
+function FileIcon(param) {
+    let { lang } = param;
+    if (!lang) return /*#__PURE__*/ (0, _jsxruntime.jsx)(File, {});
+    switch(lang.toLowerCase()){
+        case 'jsx':
+        case 'tsx':
+            return /*#__PURE__*/ (0, _jsxruntime.jsx)(React, {});
+        case 'ts':
+        case 'typescript':
+            return /*#__PURE__*/ (0, _jsxruntime.jsx)(Ts, {});
+        case 'javascript':
+        case 'js':
+        case 'mjs':
+            return /*#__PURE__*/ (0, _jsxruntime.jsx)(Js, {});
+        case 'json':
+            return /*#__PURE__*/ (0, _jsxruntime.jsx)(Json, {});
+        default:
+            return /*#__PURE__*/ (0, _jsxruntime.jsx)(File, {});
+    }
+}
+function Json() {
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)("svg", {
+        clipRule: "evenodd",
+        fillRule: "evenodd",
+        height: "16",
+        viewBox: "0 0 1321.45 1333.33",
+        width: "16",
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
+            d: "M221.37 618.44h757.94V405.15H755.14c-23.5 0-56.32-12.74-71.82-28.24-15.5-15.5-25-43.47-25-66.97V82.89H88.39c-1.99 0-3.49 1-4.49 2-1.5 1-2 2.5-2 4.5v1155.04c0 1.5 1 3.5 2 4.5 1 1.49 3 1.99 4.49 1.99H972.8c2 0 1.89-.99 2.89-1.99 1.5-1 3.61-3 3.61-4.5v-121.09H221.36c-44.96 0-82-36.9-82-81.99V700.44c0-45.1 36.9-82 82-82zm126.51 117.47h75.24v146.61c0 30.79-2.44 54.23-7.33 70.31-4.92 16.03-14.8 29.67-29.65 40.85-14.86 11.12-33.91 16.72-57.05 16.72-24.53 0-43.51-3.71-56.94-11.06-13.5-7.36-23.89-18.1-31.23-32.3-7.35-14.14-11.69-31.67-12.99-52.53l71.5-10.81c.11 11.81 1.07 20.61 2.81 26.33 1.76 5.78 4.75 10.37 9 13.95 2.87 2.33 6.94 3.46 12.25 3.46 8.4 0 14.58-3.46 18.53-10.37 3.9-6.92 5.87-18.6 5.87-35V735.92zm112.77 180.67l71.17-4.97c1.54 12.81 4.69 22.62 9.44 29.28 7.74 10.88 18.74 16.34 33.09 16.34 10.68 0 18.93-2.76 24.68-8.36 5.81-5.58 8.7-12.07 8.7-19.41 0-6.97-2.71-13.26-8.2-18.79-5.47-5.53-18.23-10.68-38.28-15.65-32.89-8.17-56.27-19.1-70.26-32.74-14.12-13.57-21.18-30.92-21.18-52.03 0-13.83 3.61-26.89 10.85-39.21 7.22-12.38 18.07-22.06 32.59-29.09 14.52-7.04 34.4-10.56 59.65-10.56 31 0 54.62 6.41 70.88 19.29 16.28 12.81 25.92 33.24 29.04 61.27l-70.5 4.65c-1.87-12.25-5.81-21.17-11.81-26.7-6.05-5.6-14.35-8.36-24.9-8.36-8.71 0-15.31 2.07-19.73 6.16-4.4 4.09-6.59 9.12-6.59 15.02 0 4.27 1.81 8.11 5.37 11.57 3.45 3.59 11.8 6.85 25.02 9.93 32.75 7.86 56.2 15.84 70.31 23.87 14.18 8.05 24.52 17.98 30.96 29.92 6.44 11.88 9.66 25.2 9.66 39.96 0 17.29-4.3 33.24-12.88 47.89-8.63 14.58-20.61 25.7-36.08 33.24-15.41 7.54-34.85 11.31-58.33 11.31-41.24 0-69.81-8.86-85.68-26.52-15.88-17.65-24.85-40.09-26.96-67.3zm248.74-45.5c0-44.05 11.02-78.36 33.09-102.87 22.09-24.57 52.82-36.82 92.24-36.82 40.38 0 71.5 12.07 93.34 36.13 21.86 24.13 32.77 57.94 32.77 101.37 0 31.54-4.75 57.36-14.3 77.54-9.54 20.18-23.37 35.89-41.4 47.13-18.07 11.24-40.55 16.84-67.48 16.84-27.33 0-49.99-4.83-67.94-14.52-17.92-9.74-32.49-25.07-43.62-46.06-11.13-20.92-16.72-47.19-16.72-78.74zm74.89.19c0 27.21 4.57 46.81 13.68 58.68 9.13 11.88 21.57 17.85 37.26 17.85 16.1 0 28.65-5.84 37.45-17.47 8.87-11.68 13.28-32.54 13.28-62.77 0-25.39-4.63-43.92-13.84-55.61-9.26-11.76-21.75-17.6-37.56-17.6-15.13 0-27.34 5.97-36.49 17.85-9.21 11.88-13.78 31.61-13.78 59.07zm209.08-135.36h69.99l90.98 149.05V735.91h70.83v269.96h-70.83l-90.48-148.24v148.24h-70.49V735.91zm67.71-117.47h178.37c45.1 0 82 37.04 82 82v340.91c0 44.96-37.03 81.99-82 81.99h-178.37v147c0 17.5-6.99 32.99-18.5 44.5-11.5 11.49-27 18.5-44.5 18.5H62.97c-17.5 0-32.99-7-44.5-18.5-11.49-11.5-18.5-27-18.5-44.5V63.49c0-17.5 7-33 18.5-44.5S45.97.49 62.97.49H700.1c1.5-.5 3-.5 4.5-.5 7 0 14 3 19 7.49h1c1 .5 1.5 1 2.5 2l325.46 329.47c5.5 5.5 9.5 13 9.5 21.5 0 2.5-.5 4.5-1 7v250.98zM732.61 303.47V96.99l232.48 235.47H761.6c-7.99 0-14.99-3.5-20.5-8.49-4.99-5-8.49-12.5-8.49-20.5z",
+            fill: "currentColor"
+        })
+    });
+}
+function Js() {
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)("svg", {
+        height: "16",
+        viewBox: "0 0 50 50",
+        width: "16",
+        xmlns: "http://www.w3.org/2000/svg",
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
+            d: "M 43.335938 4 L 6.667969 4 C 5.195313 4 4 5.195313 4 6.667969 L 4 43.332031 C 4 44.804688 5.195313 46 6.667969 46 L 43.332031 46 C 44.804688 46 46 44.804688 46 43.335938 L 46 6.667969 C 46 5.195313 44.804688 4 43.335938 4 Z M 27 36.183594 C 27 40.179688 24.65625 42 21.234375 42 C 18.140625 42 15.910156 39.925781 15 38 L 18.144531 36.097656 C 18.75 37.171875 19.671875 38 21 38 C 22.269531 38 23 37.503906 23 35.574219 L 23 23 L 27 23 Z M 35.675781 42 C 32.132813 42 30.121094 40.214844 29 38 L 32 36 C 32.816406 37.335938 33.707031 38.613281 35.589844 38.613281 C 37.171875 38.613281 38 37.824219 38 36.730469 C 38 35.425781 37.140625 34.960938 35.402344 34.199219 L 34.449219 33.789063 C 31.695313 32.617188 29.863281 31.148438 29.863281 28.039063 C 29.863281 25.179688 32.046875 23 35.453125 23 C 37.878906 23 39.621094 23.84375 40.878906 26.054688 L 37.910156 27.964844 C 37.253906 26.789063 36.550781 26.328125 35.453125 26.328125 C 34.335938 26.328125 33.628906 27.039063 33.628906 27.964844 C 33.628906 29.109375 34.335938 29.570313 35.972656 30.28125 L 36.925781 30.691406 C 40.171875 32.078125 42 33.496094 42 36.683594 C 42 40.117188 39.300781 42 35.675781 42 Z",
+            fill: "currentColor"
+        })
+    });
+}
+function Ts() {
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)("svg", {
+        fill: "none",
+        height: "14",
+        viewBox: "0 0 512 512",
+        width: "14",
+        xmlns: "http://www.w3.org/2000/svg",
+        children: [
+            /*#__PURE__*/ (0, _jsxruntime.jsx)("rect", {
+                fill: "currentColor",
+                height: "512",
+                rx: "50",
+                width: "512"
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)("rect", {
+                fill: "currentColor",
+                height: "512",
+                rx: "50",
+                width: "512"
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
+                clipRule: "evenodd",
+                d: "m316.939 407.424v50.061c8.138 4.172 17.763 7.3 28.875 9.386s22.823 3.129 35.135 3.129c11.999 0 23.397-1.147 34.196-3.442 10.799-2.294 20.268-6.075 28.406-11.342 8.138-5.266 14.581-12.15 19.328-20.65s7.121-19.007 7.121-31.522c0-9.074-1.356-17.026-4.069-23.857s-6.625-12.906-11.738-18.225c-5.112-5.319-11.242-10.091-18.389-14.315s-15.207-8.213-24.18-11.967c-6.573-2.712-12.468-5.345-17.685-7.9-5.217-2.556-9.651-5.163-13.303-7.822-3.652-2.66-6.469-5.476-8.451-8.448-1.982-2.973-2.974-6.336-2.974-10.091 0-3.441.887-6.544 2.661-9.308s4.278-5.136 7.512-7.118c3.235-1.981 7.199-3.52 11.894-4.615 4.696-1.095 9.912-1.642 15.651-1.642 4.173 0 8.581.313 13.224.938 4.643.626 9.312 1.591 14.008 2.894 4.695 1.304 9.259 2.947 13.694 4.928 4.434 1.982 8.529 4.276 12.285 6.884v-46.776c-7.616-2.92-15.937-5.084-24.962-6.492s-19.381-2.112-31.066-2.112c-11.895 0-23.163 1.278-33.805 3.833s-20.006 6.544-28.093 11.967c-8.086 5.424-14.476 12.333-19.171 20.729-4.695 8.395-7.043 18.433-7.043 30.114 0 14.914 4.304 27.638 12.912 38.172 8.607 10.533 21.675 19.45 39.204 26.751 6.886 2.816 13.303 5.579 19.25 8.291s11.086 5.528 15.415 8.448c4.33 2.92 7.747 6.101 10.252 9.543 2.504 3.441 3.756 7.352 3.756 11.733 0 3.233-.783 6.231-2.348 8.995s-3.939 5.162-7.121 7.196-7.147 3.624-11.894 4.771c-4.748 1.148-10.303 1.721-16.668 1.721-10.851 0-21.597-1.903-32.24-5.71-10.642-3.806-20.502-9.516-29.579-17.13zm-84.159-123.342h64.22v-41.082h-179v41.082h63.906v182.918h50.874z",
+                fill: "var(--color-background-100)",
+                fillRule: "evenodd"
+            })
+        ]
+    });
+}
+function File() {
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)("svg", {
+        width: "16",
+        height: "17",
+        fill: "none",
+        xmlns: "http://www.w3.org/2000/svg",
+        children: /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
+            fillRule: "evenodd",
+            clipRule: "evenodd",
+            d: "M14.5 7v7a2.5 2.5 0 0 1-2.5 2.5H4A2.5 2.5 0 0 1 1.5 14V.5h7.586a1 1 0 0 1 .707.293l4.414 4.414a1 1 0 0 1 .293.707V7zM13 7v7a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2h5v5h5zM9.5 2.621V5.5h2.879L9.5 2.621z",
+            fill: "currentColor"
+        })
+    });
+}
+function React() {
+    return /*#__PURE__*/ (0, _jsxruntime.jsxs)("svg", {
+        height: "16",
+        strokeLinejoin: "round",
+        viewBox: "0 0 16 16",
+        width: "16",
+        children: [
+            /*#__PURE__*/ (0, _jsxruntime.jsx)("g", {
+                clipPath: "url(#file_react_clip0_872_3183)",
+                children: /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M4.5 1.93782C4.70129 1.82161 4.99472 1.7858 5.41315 1.91053C5.83298 2.03567 6.33139 2.31073 6.87627 2.73948C7.01136 2.84578 7.14803 2.96052 7.28573 3.08331C6.86217 3.53446 6.44239 4.04358 6.03752 4.60092C5.35243 4.67288 4.70164 4.78186 4.09916 4.92309C4.06167 4.74244 4.03064 4.56671 4.00612 4.39656C3.90725 3.71031 3.91825 3.14114 4.01979 2.71499C4.12099 2.29025 4.29871 2.05404 4.5 1.93782ZM7.49466 1.95361C7.66225 2.08548 7.83092 2.22804 7.99999 2.38067C8.16906 2.22804 8.33773 2.08548 8.50532 1.95361C9.10921 1.47842 9.71982 1.12549 10.3012 0.952202C10.8839 0.778496 11.4838 0.7738 12 1.0718C12.5161 1.3698 12.812 1.89169 12.953 2.48322C13.0936 3.07333 13.0932 3.77858 12.9836 4.53917C12.9532 4.75024 12.9141 4.9676 12.8665 5.19034C13.0832 5.26044 13.291 5.33524 13.489 5.41444C14.2025 5.69983 14.8134 6.05217 15.2542 6.46899C15.696 6.8868 16 7.404 16 8C16 8.596 15.696 9.11319 15.2542 9.53101C14.8134 9.94783 14.2025 10.3002 13.489 10.5856C13.291 10.6648 13.0832 10.7396 12.8665 10.8097C12.9141 11.0324 12.9532 11.2498 12.9837 11.4608C13.0932 12.2214 13.0936 12.9267 12.953 13.5168C12.812 14.1083 12.5161 14.6302 12 14.9282C11.4839 15.2262 10.8839 15.2215 10.3012 15.0478C9.71984 14.8745 9.10923 14.5216 8.50534 14.0464C8.33775 13.9145 8.16906 13.7719 7.99999 13.6193C7.83091 13.7719 7.66223 13.9145 7.49464 14.0464C6.89075 14.5216 6.28014 14.8745 5.69879 15.0478C5.11605 15.2215 4.51613 15.2262 3.99998 14.9282C3.48383 14.6302 3.18794 14.1083 3.047 13.5168C2.9064 12.9267 2.90674 12.2214 3.01632 11.4608C3.04673 11.2498 3.08586 11.0324 3.13351 10.8097C2.91679 10.7395 2.709 10.6648 2.511 10.5856C1.79752 10.3002 1.18658 9.94783 0.745833 9.53101C0.304028 9.11319 0 8.596 0 8C0 7.404 0.304028 6.8868 0.745833 6.46899C1.18658 6.05217 1.79752 5.69983 2.511 5.41444C2.709 5.33524 2.9168 5.26044 3.13352 5.19034C3.08587 4.9676 3.04675 4.75024 3.01634 4.53917C2.90676 3.77858 2.90642 3.07332 3.04702 2.48321C3.18796 1.89169 3.48385 1.3698 4 1.0718C4.51615 0.773798 5.11607 0.778495 5.69881 0.952201C6.28016 1.12549 6.89077 1.47841 7.49466 1.95361ZM7.36747 4.51025C7.57735 4.25194 7.78881 4.00927 7.99999 3.78356C8.21117 4.00927 8.42263 4.25194 8.63251 4.51025C8.42369 4.50346 8.21274 4.5 8 4.5C7.78725 4.5 7.5763 4.50345 7.36747 4.51025ZM8.71425 3.08331C9.13781 3.53447 9.55759 4.04358 9.96246 4.60092C10.6475 4.67288 11.2983 4.78186 11.9008 4.92309C11.9383 4.74244 11.9693 4.56671 11.9939 4.39657C12.0927 3.71031 12.0817 3.14114 11.9802 2.71499C11.879 2.29025 11.7013 2.05404 11.5 1.93782C11.2987 1.82161 11.0053 1.7858 10.5868 1.91053C10.167 2.03568 9.66859 2.31073 9.12371 2.73948C8.98862 2.84578 8.85196 2.96052 8.71425 3.08331ZM8 5.5C8.48433 5.5 8.95638 5.51885 9.41188 5.55456C9.67056 5.93118 9.9229 6.33056 10.1651 6.75C10.4072 7.16944 10.6269 7.58766 10.8237 7.99998C10.6269 8.41232 10.4072 8.83055 10.165 9.25C9.92288 9.66944 9.67053 10.0688 9.41185 10.4454C8.95636 10.4812 8.48432 10.5 8 10.5C7.51567 10.5 7.04363 10.4812 6.58813 10.4454C6.32945 10.0688 6.0771 9.66944 5.83494 9.25C5.59277 8.83055 5.37306 8.41232 5.17624 7.99998C5.37306 7.58765 5.59275 7.16944 5.83492 6.75C6.07708 6.33056 6.32942 5.93118 6.5881 5.55456C7.04361 5.51884 7.51566 5.5 8 5.5ZM11.0311 6.25C11.1375 6.43423 11.2399 6.61864 11.3385 6.80287C11.4572 6.49197 11.5616 6.18752 11.6515 5.89178C11.3505 5.82175 11.0346 5.75996 10.706 5.70736C10.8163 5.8848 10.9247 6.06576 11.0311 6.25ZM11.0311 9.75C11.1374 9.56576 11.2399 9.38133 11.3385 9.19709C11.4572 9.50801 11.5617 9.81246 11.6515 10.1082C11.3505 10.1782 11.0346 10.24 10.7059 10.2926C10.8162 10.1152 10.9247 9.93424 11.0311 9.75ZM11.9249 7.99998C12.2051 8.62927 12.4362 9.24738 12.6151 9.83977C12.7903 9.78191 12.958 9.72092 13.1176 9.65708C13.7614 9.39958 14.2488 9.10547 14.5671 8.80446C14.8843 8.50445 15 8.23243 15 8C15 7.76757 14.8843 7.49555 14.5671 7.19554C14.2488 6.89453 13.7614 6.60042 13.1176 6.34292C12.958 6.27907 12.7903 6.21808 12.6151 6.16022C12.4362 6.7526 12.2051 7.37069 11.9249 7.99998ZM9.96244 11.3991C10.6475 11.3271 11.2983 11.2181 11.9008 11.0769C11.9383 11.2576 11.9694 11.4333 11.9939 11.6034C12.0928 12.2897 12.0817 12.8589 11.9802 13.285C11.879 13.7098 11.7013 13.946 11.5 14.0622C11.2987 14.1784 11.0053 14.2142 10.5868 14.0895C10.167 13.9643 9.66861 13.6893 9.12373 13.2605C8.98863 13.1542 8.85196 13.0395 8.71424 12.9167C9.1378 12.4655 9.55758 11.9564 9.96244 11.3991ZM8.63249 11.4898C8.42262 11.7481 8.21116 11.9907 7.99999 12.2164C7.78881 11.9907 7.57737 11.7481 7.36749 11.4897C7.57631 11.4965 7.78726 11.5 8 11.5C8.21273 11.5 8.42367 11.4965 8.63249 11.4898ZM4.96891 9.75C5.07528 9.93424 5.18375 10.1152 5.29404 10.2926C4.9654 10.24 4.64951 10.1782 4.34844 10.1082C4.43833 9.81246 4.54276 9.508 4.66152 9.19708C4.76005 9.38133 4.86254 9.56575 4.96891 9.75ZM6.03754 11.3991C5.35244 11.3271 4.70163 11.2181 4.09914 11.0769C4.06165 11.2576 4.03062 11.4333 4.0061 11.6034C3.90723 12.2897 3.91823 12.8589 4.01977 13.285C4.12097 13.7098 4.29869 13.946 4.49998 14.0622C4.70127 14.1784 4.9947 14.2142 5.41313 14.0895C5.83296 13.9643 6.33137 13.6893 6.87625 13.2605C7.01135 13.1542 7.14802 13.0395 7.28573 12.9167C6.86217 12.4655 6.4424 11.9564 6.03754 11.3991ZM4.07507 7.99998C3.79484 8.62927 3.56381 9.24737 3.38489 9.83977C3.20969 9.78191 3.042 9.72092 2.88239 9.65708C2.23864 9.39958 1.75123 9.10547 1.43294 8.80446C1.11571 8.50445 1 8.23243 1 8C1 7.76757 1.11571 7.49555 1.43294 7.19554C1.75123 6.89453 2.23864 6.60042 2.88239 6.34292C3.042 6.27907 3.2097 6.21808 3.3849 6.16022C3.56383 6.75261 3.79484 7.37069 4.07507 7.99998ZM4.66152 6.80287C4.54277 6.49197 4.43835 6.18752 4.34846 5.89178C4.64952 5.82175 4.96539 5.75996 5.29402 5.70736C5.18373 5.8848 5.07526 6.06576 4.96889 6.25C4.86253 6.43423 4.76005 6.61864 4.66152 6.80287ZM9.25 8C9.25 8.69036 8.69036 9.25 8 9.25C7.30964 9.25 6.75 8.69036 6.75 8C6.75 7.30965 7.30964 6.75 8 6.75C8.69036 6.75 9.25 7.30965 9.25 8Z",
+                    fill: "currentColor"
+                })
+            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)("defs", {
+                children: /*#__PURE__*/ (0, _jsxruntime.jsx)("clipPath", {
+                    id: "file_react_clip0_872_3183",
+                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)("rect", {
+                        width: "16",
+                        height: "16",
+                        fill: "white"
+                    })
+                })
+            })
+        ]
+    });
+}
+if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
+    Object.defineProperty(exports.default, '__esModule', {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=file.js.map
 }}),
 "[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/code-frame/code-frame.js [client] (ecmascript)": (function(__turbopack_context__) {
 
@@ -13740,21 +13519,40 @@ _export(exports, {
         return CodeFrame;
     }
 });
+const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
+const _anser = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/compiled/anser/index.js [client] (ecmascript)"));
+const _stripansi = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/compiled/strip-ansi/index.js [client] (ecmascript)"));
 const _react = __turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)");
 const _hotlinkedtext = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/hot-linked-text/index.js [client] (ecmascript)");
 const _stackframe = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/utils/stack-frame.js [client] (ecmascript)");
 const _useopenineditor = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/utils/use-open-in-editor.js [client] (ecmascript)");
 const _external = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/icons/external.js [client] (ecmascript)");
 const _file = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/icons/file.js [client] (ecmascript)");
-const _parsecodeframe = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/code-frame/parse-code-frame.js [client] (ecmascript)");
 function CodeFrame(param) {
     let { stackFrame, codeFrame } = param;
     var _stackFrame_file;
-    const formattedFrame = (0, _react.useMemo)(()=>(0, _parsecodeframe.formatCodeFrame)(codeFrame), [
+    // Strip leading spaces out of the code frame:
+    const formattedFrame = (0, _react.useMemo)(()=>{
+        const lines = codeFrame.split(/\r?\n/g);
+        // Find the minimum length of leading spaces after `|` in the code frame
+        const miniLeadingSpacesLength = lines.map((line)=>/^>? +\d+ +\| [ ]+/.exec((0, _stripansi.default)(line)) === null ? null : /^>? +\d+ +\| ( *)/.exec((0, _stripansi.default)(line))).filter(Boolean).map((v)=>v.pop()).reduce((c, n)=>isNaN(c) ? n.length : Math.min(c, n.length), NaN);
+        // When the minimum length of leading spaces is greater than 1, remove them
+        // from the code frame to help the indentation looks better when there's a lot leading spaces.
+        if (miniLeadingSpacesLength > 1) {
+            return lines.map((line, a)=>~(a = line.indexOf('|')) ? line.substring(0, a) + line.substring(a).replace("^\\ {" + miniLeadingSpacesLength + "}", '') : line).join('\n');
+        }
+        return lines.join('\n');
+    }, [
         codeFrame
     ]);
-    const decodedLines = (0, _react.useMemo)(()=>(0, _parsecodeframe.groupCodeFrameLines)(formattedFrame), [
+    const decoded = (0, _react.useMemo)(()=>{
+        return _anser.default.ansiToJson(formattedFrame, {
+            json: true,
+            use_classes: true,
+            remove_empty: true
+        });
+    }, [
         formattedFrame
     ]);
     const open = (0, _useopenineditor.useOpenInEditor)({
@@ -13807,36 +13605,23 @@ function CodeFrame(param) {
             }),
             /*#__PURE__*/ (0, _jsxruntime.jsx)("pre", {
                 className: "code-frame-pre",
-                children: decodedLines.map((line, lineIndex)=>{
-                    const { lineNumber, isErroredLine } = (0, _parsecodeframe.parseLineNumberFromCodeFrameLine)(line, stackFrame);
-                    const lineNumberProps = {};
-                    if (lineNumber) {
-                        lineNumberProps['data-nextjs-codeframe-line'] = lineNumber;
-                    }
-                    if (isErroredLine) {
-                        lineNumberProps['data-nextjs-codeframe-line--errored'] = true;
-                    }
-                    return /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
-                        ...lineNumberProps,
-                        children: line.map((entry, entryIndex)=>/*#__PURE__*/ (0, _jsxruntime.jsx)("span", {
-                                style: {
-                                    color: entry.fg ? "var(--color-" + entry.fg + ")" : undefined,
-                                    ...entry.decoration === 'bold' ? // above 600, hence a temporary fix is to use 500 for bold.
-                                    {
-                                        fontWeight: 500
-                                    } : entry.decoration === 'italic' ? {
-                                        fontStyle: 'italic'
-                                    } : undefined
-                                },
-                                children: entry.content
-                            }, "frame-" + entryIndex))
-                    }, "line-" + lineIndex);
-                })
+                children: decoded.map((entry, index)=>/*#__PURE__*/ (0, _jsxruntime.jsx)("span", {
+                        style: {
+                            color: entry.fg ? "var(--color-" + entry.fg + ")" : undefined,
+                            ...entry.decoration === 'bold' ? // above 600, hence a temporary fix is to use 500 for bold.
+                            {
+                                fontWeight: 500
+                            } : entry.decoration === 'italic' ? {
+                                fontStyle: 'italic'
+                            } : undefined
+                        },
+                        children: entry.content
+                    }, "frame-" + index))
             })
         ]
     });
 }
-const CODE_FRAME_STYLES = '\n  [data-nextjs-codeframe] {\n    --code-frame-padding: 12px;\n    --code-frame-line-height: var(--size-16);\n    background-color: var(--color-background-200);\n    overflow: hidden;\n    color: var(--color-gray-1000);\n    text-overflow: ellipsis;\n    border: 1px solid var(--color-gray-400);\n    border-radius: 8px;\n    font-family: var(--font-stack-monospace);\n    font-size: var(--size-12);\n    line-height: var(--code-frame-line-height);\n    margin: 8px 0;\n\n    svg {\n      width: var(--size-16);\n      height: var(--size-16);\n    }\n  }\n\n  .code-frame-link,\n  .code-frame-pre {\n    padding: var(--code-frame-padding);\n  }\n\n  .code-frame-link svg {\n    flex-shrink: 0;\n  }\n\n  .code-frame-link [data-text] {\n    display: inline-flex;\n    text-align: left;\n    margin: auto 6px;\n  }\n\n  .code-frame-header {\n    width: 100%;\n    transition: background 100ms ease-out;\n    border-radius: 8px 8px 0 0;\n    border-bottom: 1px solid var(--color-gray-400);\n  }\n\n  [data-with-open-in-editor-link-source-file] {\n    padding: 4px;\n    margin: -4px 0 -4px auto;\n    border-radius: var(--rounded-full);\n    margin-left: auto;\n\n    &:focus-visible {\n      outline: var(--focus-ring);\n      outline-offset: -2px;\n    }\n\n    &:hover {\n      background: var(--color-gray-100);\n    }\n  }\n\n  [data-nextjs-codeframe]::selection,\n  [data-nextjs-codeframe] *::selection {\n    background-color: var(--color-ansi-selection);\n  }\n\n  [data-nextjs-codeframe] *:not(a) {\n    color: inherit;\n    background-color: transparent;\n    font-family: var(--font-stack-monospace);\n  }\n\n  [data-nextjs-codeframe-line][data-nextjs-codeframe-line--errored="true"] {\n    position: relative;\n    isolation: isolate;\n\n    > span { \n      position: relative;\n      z-index: 1;\n    }\n\n    &::after {\n      content: "";\n      width: calc(100% + var(--code-frame-padding) * 2);\n      height: var(--code-frame-line-height);\n      left: calc(-1 * var(--code-frame-padding));\n      background: var(--color-red-200);\n      box-shadow: 2px 0 0 0 var(--color-red-900) inset;\n      position: absolute;\n    }\n  }\n\n\n  [data-nextjs-codeframe] > * {\n    margin: 0;\n  }\n\n  .code-frame-link {\n    display: flex;\n    margin: 0;\n    outline: 0;\n  }\n  .code-frame-link [data-icon=\'right\'] {\n    margin-left: auto;\n  }\n\n  [data-nextjs-codeframe] div > pre {\n    overflow: hidden;\n    display: inline-block;\n  }\n\n  [data-nextjs-codeframe] svg {\n    color: var(--color-gray-900);\n  }\n';
+const CODE_FRAME_STYLES = "\n  [data-nextjs-codeframe] {\n    background-color: var(--color-background-200);\n    overflow: hidden;\n    color: var(--color-gray-1000);\n    text-overflow: ellipsis;\n    border: 1px solid var(--color-gray-400);\n    border-radius: 8px;\n    font-family: var(--font-stack-monospace);\n    font-size: var(--size-12);\n    line-height: var(--size-16);\n    margin: 8px 0;\n\n    svg {\n      width: var(--size-16);\n      height: var(--size-16);\n    }\n  }\n\n  .code-frame-link,\n  .code-frame-pre {\n    padding: 12px;\n  }\n\n  .code-frame-link svg {\n    flex-shrink: 0;\n  }\n\n  .code-frame-link [data-text] {\n    display: inline-flex;\n    text-align: left;\n    margin: auto 6px;\n  }\n\n  .code-frame-pre {\n    white-space: pre-wrap;\n  }\n\n  .code-frame-header {\n    width: 100%;\n    transition: background 100ms ease-out;\n    border-radius: 8px 8px 0 0;\n    border-bottom: 1px solid var(--color-gray-400);\n  }\n\n  [data-with-open-in-editor-link-source-file] {\n    padding: 4px;\n    margin: -4px 0 -4px auto;\n    border-radius: var(--rounded-full);\n    margin-left: auto;\n\n    &:focus-visible {\n      outline: var(--focus-ring);\n      outline-offset: -2px;\n    }\n\n    &:hover {\n      background: var(--color-gray-100);\n    }\n  }\n\n  [data-nextjs-codeframe]::selection,\n  [data-nextjs-codeframe] *::selection {\n    background-color: var(--color-ansi-selection);\n  }\n\n  [data-nextjs-codeframe] *:not(a) {\n    color: inherit;\n    background-color: transparent;\n    font-family: var(--font-stack-monospace);\n  }\n\n  [data-nextjs-codeframe] > * {\n    margin: 0;\n  }\n\n  .code-frame-link {\n    display: flex;\n    margin: 0;\n    outline: 0;\n  }\n  .code-frame-link [data-icon='right'] {\n    margin-left: auto;\n  }\n\n  [data-nextjs-codeframe] div > pre {\n    overflow: hidden;\n    display: inline-block;\n  }\n\n  [data-nextjs-codeframe] svg {\n    color: var(--color-gray-900);\n  }\n";
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
     Object.defineProperty(exports.default, '__esModule', {
         value: true
@@ -14171,6 +13956,37 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     module.exports = exports.default;
 } //# sourceMappingURL=dialog-header.js.map
 }}),
+"[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/dialog/dialog-footer.js [client] (ecmascript)": (function(__turbopack_context__) {
+
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
+{
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "DialogFooter", {
+    enumerable: true,
+    get: function() {
+        return DialogFooter;
+    }
+});
+const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
+function DialogFooter(param) {
+    let { children, className } = param;
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
+        "data-nextjs-dialog-footer": true,
+        className: className,
+        children: children
+    });
+}
+if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
+    Object.defineProperty(exports.default, '__esModule', {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=dialog-footer.js.map
+}}),
 "[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/dialog/styles.js [client] (ecmascript)": (function(__turbopack_context__) {
 
 var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
@@ -14185,7 +14001,7 @@ Object.defineProperty(exports, "styles", {
         return styles;
     }
 });
-const styles = "\n  [data-nextjs-dialog-root] {\n    --next-dialog-radius: var(--rounded-xl);\n    --next-dialog-max-width: 960px;\n    --next-dialog-row-padding: 16px;\n    --next-dialog-padding-x: 12px;\n    --next-dialog-notch-height: 42px;\n    --next-dialog-border-width: 1px;\n\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n    max-height: calc(100% - 56px);\n    max-width: var(--next-dialog-max-width);\n    margin-right: auto;\n    margin-left: auto;\n    scale: 0.98;\n    opacity: 0;\n    transition-property: scale, opacity;\n    transition-duration: var(--transition-duration);\n    transition-timing-function: var(--timing-overlay);\n\n    &[data-rendered='true'] {\n      opacity: 1;\n      scale: 1;\n    }\n\n    [data-nextjs-scroll-fader][data-side=\"top\"] {\n      left: 1px;\n      top: calc(var(--next-dialog-notch-height) + var(--next-dialog-border-width));\n      width: calc(100% - var(--next-dialog-padding-x));\n      opacity: 0;\n    }\n  }\n\n  [data-nextjs-dialog] {\n    outline: 0;\n  }\n\n  [data-nextjs-dialog], [data-nextjs-dialog] * {\n    &::-webkit-scrollbar {\n      width: 6px;\n      height: 6px;\n      border-radius: 0 0 1rem 1rem;\n      margin-bottom: 1rem;\n    }\n\n    &::-webkit-scrollbar-button {\n      display: none;\n    }\n\n    &::-webkit-scrollbar-track {\n      border-radius: 0 0 1rem 1rem;\n      background-color: var(--color-background-100);\n    }\n      \n    &::-webkit-scrollbar-thumb {\n      border-radius: 1rem;\n      background-color: var(--color-gray-500);\n    }\n  }\n\n  /* Place overflow: hidden on this so we can break out from [data-nextjs-dialog] */\n  [data-nextjs-dialog-sizer] {\n    overflow: hidden;\n    border-radius: inherit;\n  }\n\n  [data-nextjs-dialog-backdrop] {\n    opacity: 0;\n    transition: opacity var(--transition-duration) var(--timing-overlay);\n  }\n\n  [data-nextjs-dialog-overlay][data-rendered='true']\n    [data-nextjs-dialog-backdrop] {\n    opacity: 1;\n  }\n\n  [data-nextjs-dialog-content] {\n    border: none;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    position: relative;\n    padding: 16px var(--next-dialog-padding-x);\n  }\n\n  [data-nextjs-dialog-content] > [data-nextjs-dialog-header] {\n    flex-shrink: 0;\n    margin-bottom: 8px;\n  }\n\n  [data-nextjs-dialog-content] > [data-nextjs-dialog-body] {\n    position: relative;\n    flex: 1 1 auto;\n  }\n\n  @media (max-height: 812px) {\n    [data-nextjs-dialog-overlay] {\n      max-height: calc(100% - 15px);\n    }\n  }\n\n  @media (min-width: 576px) {\n    [data-nextjs-dialog-root] {\n      --next-dialog-max-width: 540px;\n    }\n  }\n\n  @media (min-width: 768px) {\n    [data-nextjs-dialog-root] {\n      --next-dialog-max-width: 720px;\n    }\n  }\n\n  @media (min-width: 992px) {\n    [data-nextjs-dialog-root] {\n      --next-dialog-max-width: 960px;\n    }\n  }\n";
+const styles = "\n  [data-nextjs-dialog-root] {\n    --next-dialog-radius: var(--rounded-xl);\n    --next-dialog-footer-height: var(--size-48);\n    --next-dialog-max-width: 960px;\n    --next-dialog-row-padding: 16px;\n    --next-dialog-container-padding: 12px;\n\n    display: flex;\n    flex-direction: column-reverse;\n    width: 100%;\n    max-height: calc(100% - 56px);\n    max-width: var(--next-dialog-max-width);\n    margin-right: auto;\n    margin-left: auto;\n    scale: 0.98;\n    opacity: 0;\n    transition-property: scale, opacity;\n    transition-duration: var(--transition-duration);\n    transition-timing-function: var(--timing-overlay);\n\n    &[data-rendered='true'] {\n      opacity: 1;\n      scale: 1;\n    }\n  }\n\n  [data-nextjs-dialog] {\n    outline: none;\n    overflow: hidden;\n  }\n  [data-nextjs-dialog]::-webkit-scrollbar {\n    width: 6px;\n    border-radius: 0 0 1rem 1rem;\n    margin-bottom: 1rem;\n  }\n  [data-nextjs-dialog]::-webkit-scrollbar-button {\n    display: none;\n  }\n  [data-nextjs-dialog]::-webkit-scrollbar-track {\n    border-radius: 0 0 1rem 1rem;\n    background-color: var(--color-background-100);\n  }\n  [data-nextjs-dialog]::-webkit-scrollbar-thumb {\n    border-radius: 1rem;\n    background-color: var(--color-gray-500);\n  }\n\n  \n  [data-nextjs-dialog-sizer] {\n    overflow: hidden;\n    border-radius: inherit;\n  }\n\n  [data-nextjs-dialog-backdrop] {\n    opacity: 0;\n    transition: opacity var(--transition-duration) var(--timing-overlay);\n  }\n\n  [data-nextjs-dialog-overlay][data-rendered='true']\n    [data-nextjs-dialog-backdrop] {\n    opacity: 1;\n  }\n\n  [data-nextjs-dialog-content] {\n    overflow-y: auto;\n    border: none;\n    margin: 0;\n    display: flex;\n    flex-direction: column;\n    position: relative;\n    padding: 16px 12px;\n  }\n\n  /* Account for the footer height, when present */\n  [data-nextjs-dialog][data-has-footer='true'] [data-nextjs-dialog-body] {\n    margin-bottom: var(--next-dialog-footer-height);\n  }\n\n  [data-nextjs-dialog-content] > [data-nextjs-dialog-header] {\n    flex-shrink: 0;\n    margin-bottom: 8px;\n  }\n\n  [data-nextjs-dialog-content] > [data-nextjs-dialog-body] {\n    position: relative;\n    flex: 1 1 auto;\n  }\n\n  [data-nextjs-dialog-footer] {\n    /* Subtract border width */\n    width: calc(100% - 2px);\n    /* \n      We make this element fixed to anchor it to the bottom during the height transition.\n      If you make this relative it will jump during the transition and not collapse or expand smoothly.\n      If you make this absolute it will remain stuck at its initial position when scrolling the dialog.\n    */\n    position: fixed;\n    bottom: 1px;\n    min-height: var(--next-dialog-footer-height);\n    border-radius: 0 0 var(--next-dialog-radius) var(--next-dialog-radius);\n    overflow: hidden;\n\n    > * {\n      min-height: var(--next-dialog-footer-height);\n    }\n  }\n\n  @media (max-height: 812px) {\n    [data-nextjs-dialog-overlay] {\n      max-height: calc(100% - 15px);\n    }\n  }\n\n  @media (min-width: 576px) {\n    [data-nextjs-dialog-root] {\n      --next-dialog-max-width: 540px;\n    }\n  }\n\n  @media (min-width: 768px) {\n    [data-nextjs-dialog-root] {\n      --next-dialog-max-width: 720px;\n    }\n  }\n\n  @media (min-width: 992px) {\n    [data-nextjs-dialog-root] {\n      --next-dialog-max-width: 960px;\n    }\n  }\n";
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
     Object.defineProperty(exports.default, '__esModule', {
         value: true
@@ -14206,6 +14022,7 @@ Object.defineProperty(exports, "__esModule", {
     Dialog: null,
     DialogBody: null,
     DialogContent: null,
+    DialogFooter: null,
     DialogHeader: null,
     styles: null
 });
@@ -14225,6 +14042,9 @@ _export(exports, {
     DialogContent: function() {
         return _dialogcontent.DialogContent;
     },
+    DialogFooter: function() {
+        return _dialogfooter.DialogFooter;
+    },
     DialogHeader: function() {
         return _dialogheader.DialogHeader;
     },
@@ -14236,6 +14056,7 @@ const _dialog = __turbopack_context__.r("[project]/node_modules/next/dist/client
 const _dialogbody = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/dialog/dialog-body.js [client] (ecmascript)");
 const _dialogcontent = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/dialog/dialog-content.js [client] (ecmascript)");
 const _dialogheader = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/dialog/dialog-header.js [client] (ecmascript)");
+const _dialogfooter = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/dialog/dialog-footer.js [client] (ecmascript)");
 const _styles = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/dialog/styles.js [client] (ecmascript)");
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
     Object.defineProperty(exports.default, '__esModule', {
@@ -15800,14 +15621,13 @@ _export(exports, {
 const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
 const _cx = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/utils/cx.js [client] (ecmascript)");
 function VersionStalenessInfo(param) {
-    let { versionInfo, bundlerName } = param;
+    let { versionInfo, isTurbopack } = param;
     const { staleness } = versionInfo;
     let { text, indicatorClass, title } = getStaleness(versionInfo);
-    const isTurbopack = bundlerName === 'Turbopack';
     const shouldBeLink = staleness.startsWith('stale');
     if (shouldBeLink) {
         return /*#__PURE__*/ (0, _jsxruntime.jsxs)("a", {
-            className: "nextjs-container-build-error-version-status dialog-exclude-closing-from-outside-click",
+            className: (0, _cx.cx)('nextjs-container-build-error-version-status', 'dialog-exclude-closing-from-outside-click', isTurbopack && 'turbopack-border'),
             target: "_blank",
             rel: "noopener noreferrer",
             href: "https://nextjs.org/docs/messages/version-staleness",
@@ -15820,9 +15640,9 @@ function VersionStalenessInfo(param) {
                     title: title,
                     children: text
                 }),
-                /*#__PURE__*/ (0, _jsxruntime.jsx)("span", {
-                    className: (0, _cx.cx)(isTurbopack && 'turbopack-text'),
-                    children: bundlerName
+                isTurbopack && /*#__PURE__*/ (0, _jsxruntime.jsx)("span", {
+                    className: "turbopack-text",
+                    children: "Turbopack"
                 })
             ]
         });
@@ -15838,9 +15658,9 @@ function VersionStalenessInfo(param) {
                 title: title,
                 children: text
             }),
-            /*#__PURE__*/ (0, _jsxruntime.jsx)("span", {
-                className: (0, _cx.cx)(isTurbopack && 'turbopack-text'),
-                children: bundlerName
+            isTurbopack && /*#__PURE__*/ (0, _jsxruntime.jsx)("span", {
+                className: "turbopack-text",
+                children: "Turbopack"
             })
         ]
     });
@@ -15922,7 +15742,6 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
 
 var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
 {
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -15949,8 +15768,7 @@ const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-ru
 const _erroroverlaypagination = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/error-overlay-pagination/error-overlay-pagination.js [client] (ecmascript)");
 const _versionstalenessinfo = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/version-staleness-info/version-staleness-info.js [client] (ecmascript)");
 function ErrorOverlayNav(param) {
-    let { runtimeErrors, activeIdx, setActiveIndex, versionInfo } = param;
-    const bundlerName = ("TURBOPACK compile-time value", "Turbopack") || 'Webpack';
+    let { runtimeErrors, activeIdx, setActiveIndex, versionInfo, isTurbopack } = param;
     return /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
         "data-nextjs-error-overlay-nav": true,
         children: [
@@ -15966,13 +15784,13 @@ function ErrorOverlayNav(param) {
                 side: "right",
                 children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_versionstalenessinfo.VersionStalenessInfo, {
                     versionInfo: versionInfo,
-                    bundlerName: bundlerName
+                    isTurbopack: isTurbopack
                 })
             })
         ]
     });
 }
-const styles = "\n  [data-nextjs-error-overlay-nav] {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n\n    width: 100%;\n\n    position: relative;\n    z-index: 2;\n    outline: none;\n    translate: 1px 1px;\n    max-width: var(--next-dialog-max-width);\n\n    .error-overlay-notch {\n      --stroke-color: var(--color-gray-400);\n      --background-color: var(--color-background-100);\n\n      translate: -1px 0;\n      width: auto;\n      height: var(--next-dialog-notch-height);\n      padding: 12px;\n      background: var(--background-color);\n      border: 1px solid var(--stroke-color);\n      border-bottom: none;\n      position: relative;\n\n      &[data-side='left'] {\n        padding-right: 0;\n        border-radius: var(--rounded-xl) 0 0 0;\n\n        .error-overlay-notch-tail {\n          right: -54px;\n        }\n\n        > *:not(.error-overlay-notch-tail) {\n          margin-right: -10px;\n        }\n      }\n\n      &[data-side='right'] {\n        padding-left: 0;\n        border-radius: 0 var(--rounded-xl) 0 0;\n\n        .error-overlay-notch-tail {\n          left: -54px;\n          transform: rotateY(180deg);\n        }\n\n        > *:not(.error-overlay-notch-tail) {\n          margin-left: -12px;\n        }\n      }\n\n      .error-overlay-notch-tail {\n        position: absolute;\n        top: -1px;\n        pointer-events: none;\n        z-index: -1;\n        height: calc(100% + 1px);\n      }\n    }\n  }\n";
+const styles = "\n  [data-nextjs-error-overlay-nav] {\n    --notch-height: 2.625rem; /* 42px */\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n\n    width: 100%;\n\n    outline: none;\n    translate: 1px 1px;\n    max-width: var(--next-dialog-max-width);\n\n    .error-overlay-notch {\n      --stroke-color: var(--color-gray-400);\n      --background-color: var(--color-background-100);\n\n      translate: -1px 0;\n      width: auto;\n      height: var(--notch-height);\n      padding: 12px;\n      background: var(--background-color);\n      border: 1px solid var(--stroke-color);\n      border-bottom: none;\n      position: relative;\n\n      &[data-side='left'] {\n        padding-right: 0;\n        border-radius: var(--rounded-xl) 0 0 0;\n\n        .error-overlay-notch-tail {\n          right: -54px;\n        }\n\n        > *:not(.error-overlay-notch-tail) {\n          margin-right: -10px;\n        }\n      }\n\n      &[data-side='right'] {\n        padding-left: 0;\n        border-radius: 0 var(--rounded-xl) 0 0;\n\n        .error-overlay-notch-tail {\n          left: -54px;\n          transform: rotateY(180deg);\n        }\n\n        > *:not(.error-overlay-notch-tail) {\n          margin-left: -12px;\n        }\n      }\n\n      .error-overlay-notch-tail {\n        position: absolute;\n        top: -1px;\n        pointer-events: none;\n        z-index: -1;\n        height: calc(100% + 1px);\n      }\n    }\n  }\n";
 function Notch(param) {
     let { children, side = 'left' } = param;
     return /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
@@ -16111,24 +15929,18 @@ _export(exports, {
 const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
 const _dialog = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/dialog/dialog.js [client] (ecmascript)");
 function ErrorOverlayDialog(param) {
-    let { children, onClose, footer, ...props } = param;
-    return /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
-        className: "error-overlay-dialog-container",
-        children: [
-            /*#__PURE__*/ (0, _jsxruntime.jsx)(_dialog.Dialog, {
-                type: "error",
-                "aria-labelledby": "nextjs__container_errors_label",
-                "aria-describedby": "nextjs__container_errors_desc",
-                className: "error-overlay-dialog-scroll",
-                onClose: onClose,
-                ...props,
-                children: children
-            }),
-            footer
-        ]
+    let { children, onClose, ...props } = param;
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_dialog.Dialog, {
+        type: "error",
+        "aria-labelledby": "nextjs__container_errors_label",
+        "aria-describedby": "nextjs__container_errors_desc",
+        onClose: onClose,
+        className: "error-overlay-dialog",
+        ...props,
+        children: children
     });
 }
-const DIALOG_STYLES = "\n  .error-overlay-dialog-container {\n    -webkit-font-smoothing: antialiased;\n    display: flex;\n    flex-direction: column;\n    background: var(--color-background-100);\n    background-clip: padding-box;\n    border: var(--next-dialog-border-width) solid var(--color-gray-400);\n    border-radius: 0 0 var(--next-dialog-radius) var(--next-dialog-radius);\n    box-shadow: var(--shadow-menu);\n    position: relative;\n    overflow: hidden;\n  }\n\n  .error-overlay-dialog-scroll {\n    overflow-y: auto;\n    height: 100%;\n  }\n";
+const DIALOG_STYLES = "\n  .error-overlay-dialog {\n    overflow-y: auto;\n    -webkit-font-smoothing: antialiased;\n    background: var(--color-background-100);\n    background-clip: padding-box;\n    border: 1px solid var(--color-gray-400);\n    border-radius: var(--rounded-xl);\n    box-shadow: var(--shadow-menu);\n    position: relative;\n\n    &:has(\n        ~ [data-nextjs-error-overlay-nav] .error-overlay-notch[data-side='left']\n      ) {\n      border-top-left-radius: 0;\n    }\n\n    &:has(\n        ~ [data-nextjs-error-overlay-nav]\n          .error-overlay-notch[data-side='right']\n      ) {\n      border-top-right-radius: 0;\n    }\n  }\n";
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
     Object.defineProperty(exports.default, '__esModule', {
         value: true
@@ -16839,59 +16651,6 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     module.exports = exports.default;
 } //# sourceMappingURL=utils.js.map
 }}),
-"[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/fader/index.js [client] (ecmascript)": (function(__turbopack_context__) {
-
-var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
-{
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-0 && (module.exports = {
-    FADER_STYLES: null,
-    Fader: null
-});
-function _export(target, all) {
-    for(var name in all)Object.defineProperty(target, name, {
-        enumerable: true,
-        get: all[name]
-    });
-}
-_export(exports, {
-    FADER_STYLES: function() {
-        return FADER_STYLES;
-    },
-    Fader: function() {
-        return Fader;
-    }
-});
-const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
-const _react = __turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)");
-const Fader = /*#__PURE__*/ (0, _react.forwardRef)(function Fader(param, ref) {
-    let { stop, blur, side, style, height } = param;
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
-        ref: ref,
-        "aria-hidden": true,
-        "data-nextjs-scroll-fader": true,
-        className: "nextjs-scroll-fader",
-        "data-side": side,
-        style: {
-            '--stop': stop,
-            '--blur': blur,
-            '--height': "" + height + "px",
-            ...style
-        }
-    });
-});
-const FADER_STYLES = '\n  .nextjs-scroll-fader {\n    --blur: 1px;\n    --stop: 25%;\n    --height: 150px;\n    --color-bg: var(--color-background-100);\n    position: absolute;\n    pointer-events: none;\n    user-select: none;\n    width: 100%;\n    height: var(--height);\n    left: 0;\n    backdrop-filter: blur(var(--blur));\n\n    &[data-side="top"] {\n      top: 0;\n      background: linear-gradient(to top, transparent, var(--color-bg));\n      mask-image: linear-gradient(to bottom, var(--color-bg) var(--stop), transparent);\n    }\n  }\n\n';
-if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
-    Object.defineProperty(exports.default, '__esModule', {
-        value: true
-    });
-    Object.assign(exports.default, exports);
-    module.exports = exports.default;
-} //# sourceMappingURL=index.js.map
-}}),
 "[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/error-overlay-layout/error-overlay-layout.js [client] (ecmascript)": (function(__turbopack_context__) {
 
 var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
@@ -16935,7 +16694,6 @@ const _overlay = __turbopack_context__.r("[project]/node_modules/next/dist/clien
 const _erroroverlaybottomstack = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/error-overlay-bottom-stack/index.js [client] (ecmascript)");
 const _environmentnamelabel = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/environment-name-label/environment-name-label.js [client] (ecmascript)");
 const _utils = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/dev-tools-indicator/utils.js [client] (ecmascript)");
-const _fader = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/fader/index.js [client] (ecmascript)");
 function ErrorOverlayLayout(param) {
     let { errorMessage, errorType, children, errorCode, error, debugInfo, isBuildError, onClose, versionInfo, runtimeErrors, activeIdx, setActiveIndex, footerMessage, isTurbopack, dialogResizerRef, // If it's not being passed, we should just render the component as it is being
     // used without the context of a parent component that controls its state (e.g. Storybook).
@@ -16946,19 +16704,9 @@ function ErrorOverlayLayout(param) {
             '--transition-duration': "" + transitionDurationMs + "ms"
         }
     };
-    const faderRef = _react.useRef(null);
     const hasFooter = Boolean(footerMessage || errorCode);
     const dialogRef = _react.useRef(null);
     (0, _utils.useFocusTrap)(dialogRef, null, rendered);
-    function onScroll(e) {
-        if (faderRef.current) {
-            const opacity = clamp(e.currentTarget.scrollTop / 17, [
-                0,
-                1
-            ]);
-            faderRef.current.style.opacity = String(opacity);
-        }
-    }
     var _runtimeErrors_length;
     return /*#__PURE__*/ (0, _jsxruntime.jsx)(_overlay.ErrorOverlayOverlay, {
         fixed: isBuildError,
@@ -16968,22 +16716,10 @@ function ErrorOverlayLayout(param) {
             ref: dialogRef,
             ...animationProps,
             children: [
-                /*#__PURE__*/ (0, _jsxruntime.jsx)(_erroroverlaynav.ErrorOverlayNav, {
-                    runtimeErrors: runtimeErrors,
-                    activeIdx: activeIdx,
-                    setActiveIndex: setActiveIndex,
-                    versionInfo: versionInfo,
-                    isTurbopack: isTurbopack
-                }),
                 /*#__PURE__*/ (0, _jsxruntime.jsxs)(_dialog1.ErrorOverlayDialog, {
                     onClose: onClose,
                     dialogResizerRef: dialogResizerRef,
                     "data-has-footer": hasFooter,
-                    onScroll: onScroll,
-                    footer: hasFooter && /*#__PURE__*/ (0, _jsxruntime.jsx)(_erroroverlayfooter.ErrorOverlayFooter, {
-                        footerMessage: footerMessage,
-                        errorCode: errorCode
-                    }),
                     children: [
                         /*#__PURE__*/ (0, _jsxruntime.jsxs)(_dialog.DialogContent, {
                             children: [
@@ -17021,26 +16757,28 @@ function ErrorOverlayLayout(param) {
                                 })
                             ]
                         }),
+                        hasFooter && /*#__PURE__*/ (0, _jsxruntime.jsx)(_dialog.DialogFooter, {
+                            children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_erroroverlayfooter.ErrorOverlayFooter, {
+                                footerMessage: footerMessage,
+                                errorCode: errorCode
+                            })
+                        }),
                         /*#__PURE__*/ (0, _jsxruntime.jsx)(_erroroverlaybottomstack.ErrorOverlayBottomStack, {
                             errorCount: (_runtimeErrors_length = runtimeErrors == null ? void 0 : runtimeErrors.length) != null ? _runtimeErrors_length : 0,
                             activeIdx: activeIdx != null ? activeIdx : 0
                         })
                     ]
                 }),
-                /*#__PURE__*/ (0, _jsxruntime.jsx)(_fader.Fader, {
-                    ref: faderRef,
-                    side: "top",
-                    stop: "50%",
-                    blur: "4px",
-                    height: 48
+                /*#__PURE__*/ (0, _jsxruntime.jsx)(_erroroverlaynav.ErrorOverlayNav, {
+                    runtimeErrors: runtimeErrors,
+                    activeIdx: activeIdx,
+                    setActiveIndex: setActiveIndex,
+                    versionInfo: versionInfo,
+                    isTurbopack: isTurbopack
                 })
             ]
         })
     });
-}
-function clamp(value, param) {
-    let [min, max] = param;
-    return Math.min(Math.max(value, min), max);
 }
 const styles = "\n  " + _overlay.OVERLAY_STYLES + "\n  " + _dialog1.DIALOG_STYLES + "\n  " + _header.DIALOG_HEADER_STYLES + "\n  " + _body.DIALOG_BODY_STYLES + "\n\n  " + _erroroverlaynav.styles + "\n  " + _errortypelabel.styles + "\n  " + _errormessage.styles + "\n  " + _erroroverlaytoolbar.styles + "\n  " + _callstack.CALL_STACK_STYLES + "\n\n  [data-nextjs-error-label-group] {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n  }\n";
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
@@ -17735,7 +17473,7 @@ _export(exports, {
     }
 });
 const _diffview = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/hydration-diff/diff-view.js [client] (ecmascript)");
-const PSEUDO_HTML_DIFF_STYLES = "\n  [data-nextjs-container-errors-pseudo-html] {\n    padding: 8px 0;\n    margin: 8px 0;\n    border: 1px solid var(--color-gray-400);\n    background: var(--color-background-200);\n    color: var(--color-syntax-constant);\n    font-family: var(--font-stack-monospace);\n    font-size: var(--size-12);\n    line-height: 1.33em; /* 16px in 12px font size */\n    border-radius: var(--rounded-md-2);\n  }\n  [data-nextjs-container-errors-pseudo-html-line] {\n    display: inline-block;\n    width: 100%;\n    padding-left: 40px;\n    line-height: calc(5 / 3);\n  }\n  [data-nextjs-container-errors-pseudo-html--diff='error'] {\n    background: var(--color-amber-100);\n    box-shadow: 2px 0 0 0 var(--color-amber-900) inset;\n    font-weight: bold;\n  }\n  [data-nextjs-container-errors-pseudo-html-collapse-button] {\n    all: unset;\n    margin-left: 12px;\n    &:focus {\n      outline: none;\n    }\n  }\n  [data-nextjs-container-errors-pseudo-html--diff='add'] {\n    background: var(--color-green-300);\n  }\n  [data-nextjs-container-errors-pseudo-html-line-sign] {\n    margin-left: calc(24px * -1);\n    margin-right: 24px;\n  }\n  [data-nextjs-container-errors-pseudo-html--diff='add']\n    [data-nextjs-container-errors-pseudo-html-line-sign] {\n    color: var(--color-green-900);\n  }\n  [data-nextjs-container-errors-pseudo-html--diff='remove'] {\n    background: var(--color-red-300);\n  }\n  [data-nextjs-container-errors-pseudo-html--diff='remove']\n    [data-nextjs-container-errors-pseudo-html-line-sign] {\n    color: var(--color-red-900);\n    margin-left: calc(24px * -1);\n    margin-right: 24px;\n  }\n  [data-nextjs-container-errors-pseudo-html--diff='error']\n    [data-nextjs-container-errors-pseudo-html-line-sign] {\n    color: var(--color-amber-900);\n  }\n  \n  [data-nextjs-container-errors-pseudo-html--hint] {\n    display: inline-block;\n    font-size: 0;\n    height: 0;\n  }\n  [data-nextjs-container-errors-pseudo-html--tag-adjacent='false'] {\n    color: var(--color-accents-1);\n  }\n  .nextjs__container_errors__component-stack {\n    margin: 0;\n  }\n  [data-nextjs-container-errors-pseudo-html-collapse='true']\n    .nextjs__container_errors__component-stack\n    code {\n    max-height: 120px;\n    mask-image: linear-gradient(to bottom,rgba(0,0,0,0) 0%,black 10%);\n    padding-bottom: 40px;\n  }\n  .nextjs__container_errors__component-stack code {\n    display: block;\n    width: 100%;\n    white-space: pre-wrap;\n    scroll-snap-type: y mandatory;\n    overflow-y: hidden;\n  }\n  [data-nextjs-container-errors-pseudo-html--diff] {\n    scroll-snap-align: center;\n  }\n  .error-overlay-hydration-error-diff-plus-icon {\n    color: var(--color-green-900);\n  }\n  .error-overlay-hydration-error-diff-minus-icon {\n    color: var(--color-red-900);\n  }\n";
+const PSEUDO_HTML_DIFF_STYLES = "\n  [data-nextjs-container-errors-pseudo-html] {\n    padding: 8px 0;\n    margin: 8px 0;\n    border: 1px solid var(--color-gray-400);\n    background: var(--color-background-200);\n    color: var(--color-syntax-constant);\n    font-family: var(--font-stack-monospace);\n    font-size: var(--size-12);\n    line-height: 1.33em; /* 16px in 12px font size */\n    border-radius: var(--rounded-md-2);\n  }\n  [data-nextjs-container-errors-pseudo-html-line] {\n    display: inline-block;\n    width: 100%;\n    padding-left: 40px;\n    line-height: calc(5 / 3);\n  }\n  [data-nextjs-container-errors-pseudo-html--diff='error'] {\n    background: var(--color-amber-100);\n    font-weight: bold;\n  }\n  [data-nextjs-container-errors-pseudo-html-collapse-button] {\n    all: unset;\n    margin-left: 12px;\n    &:focus {\n      outline: none;\n    }\n  }\n  [data-nextjs-container-errors-pseudo-html--diff='add'] {\n    background: var(--color-green-300);\n  }\n  [data-nextjs-container-errors-pseudo-html-line-sign] {\n    margin-left: calc(24px * -1);\n    margin-right: 24px;\n  }\n  [data-nextjs-container-errors-pseudo-html--diff='add']\n    [data-nextjs-container-errors-pseudo-html-line-sign] {\n    color: var(--color-green-900);\n  }\n  [data-nextjs-container-errors-pseudo-html--diff='remove'] {\n    background: var(--color-red-300);\n  }\n  [data-nextjs-container-errors-pseudo-html--diff='remove']\n    [data-nextjs-container-errors-pseudo-html-line-sign] {\n    color: var(--color-red-900);\n    margin-left: calc(24px * -1);\n    margin-right: 24px;\n  }\n  [data-nextjs-container-errors-pseudo-html--diff='error']\n    [data-nextjs-container-errors-pseudo-html-line-sign] {\n    color: var(--color-amber-900);\n  }\n  \n  [data-nextjs-container-errors-pseudo-html--hint] {\n    display: inline-block;\n    font-size: 0;\n    height: 0;\n  }\n  [data-nextjs-container-errors-pseudo-html--tag-adjacent='false'] {\n    color: var(--color-accents-1);\n  }\n  .nextjs__container_errors__component-stack {\n    margin: 0;\n  }\n  [data-nextjs-container-errors-pseudo-html-collapse='true']\n    .nextjs__container_errors__component-stack\n    code {\n    max-height: 120px;\n    mask-image: linear-gradient(to bottom,rgba(0,0,0,0) 0%,black 10%);\n    padding-bottom: 40px;\n  }\n  .nextjs__container_errors__component-stack code {\n    display: block;\n    width: 100%;\n    white-space: pre-wrap;\n    scroll-snap-type: y mandatory;\n    overflow-y: hidden;\n  }\n  [data-nextjs-container-errors-pseudo-html--diff] {\n    scroll-snap-align: center;\n  }\n  .error-overlay-hydration-error-diff-plus-icon {\n    color: var(--color-green-900);\n  }\n  .error-overlay-hydration-error-diff-minus-icon {\n    color: var(--color-red-900);\n  }\n";
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
     Object.defineProperty(exports.default, '__esModule', {
         value: true
@@ -17818,9 +17556,9 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 0 && (module.exports = {
-    createConsoleError: null,
-    getConsoleErrorType: null,
-    isConsoleError: null
+    createUnhandledError: null,
+    getUnhandledErrorType: null,
+    isUnhandledConsoleOrRejection: null
 });
 function _export(target, all) {
     for(var name in all)Object.defineProperty(target, name, {
@@ -17829,35 +17567,35 @@ function _export(target, all) {
     });
 }
 _export(exports, {
-    createConsoleError: function() {
-        return createConsoleError;
+    createUnhandledError: function() {
+        return createUnhandledError;
     },
-    getConsoleErrorType: function() {
-        return getConsoleErrorType;
+    getUnhandledErrorType: function() {
+        return getUnhandledErrorType;
     },
-    isConsoleError: function() {
-        return isConsoleError;
+    isUnhandledConsoleOrRejection: function() {
+        return isUnhandledConsoleOrRejection;
     }
 });
 const digestSym = Symbol.for('next.console.error.digest');
 const consoleTypeSym = Symbol.for('next.console.error.type');
-function createConsoleError(message, environmentName) {
+function createUnhandledError(message, environmentName) {
     const error = typeof message === 'string' ? Object.defineProperty(new Error(message), "__NEXT_ERROR_CODE", {
         value: "E394",
         enumerable: false,
         configurable: true
     }) : message;
-    error[digestSym] = 'NEXT_CONSOLE_ERROR';
+    error[digestSym] = 'NEXT_UNHANDLED_ERROR';
     error[consoleTypeSym] = typeof message === 'string' ? 'string' : 'error';
     if (environmentName && !error.environmentName) {
         error.environmentName = environmentName;
     }
     return error;
 }
-const isConsoleError = (error)=>{
-    return error && error[digestSym] === 'NEXT_CONSOLE_ERROR';
+const isUnhandledConsoleOrRejection = (error)=>{
+    return error && error[digestSym] === 'NEXT_UNHANDLED_ERROR';
 };
-const getConsoleErrorType = (error)=>{
+const getUnhandledErrorType = (error)=>{
     return error[consoleTypeSym];
 };
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
@@ -17911,13 +17649,14 @@ function isNextjsLink(text) {
 }
 function ErrorDescription(param) {
     let { error, hydrationWarning } = param;
-    const unhandledErrorType = (0, _consoleerror.isConsoleError)(error) ? (0, _consoleerror.getConsoleErrorType)(error) : null;
+    const isUnhandledOrReplayError = (0, _consoleerror.isUnhandledConsoleOrRejection)(error);
+    const unhandledErrorType = isUnhandledOrReplayError ? (0, _consoleerror.getUnhandledErrorType)(error) : null;
     const isConsoleErrorStringMessage = unhandledErrorType === 'string';
     // If the error is:
     // - hydration warning
     // - captured console error or unhandled rejection
     // skip displaying the error name
-    const title = isConsoleErrorStringMessage || hydrationWarning ? '' : error.name + ': ';
+    const title = isUnhandledOrReplayError && isConsoleErrorStringMessage || hydrationWarning ? '' : error.name + ': ';
     const environmentName = 'environmentName' in error ? error.environmentName : '';
     const envPrefix = environmentName ? "[ " + environmentName + " ] " : '';
     // The environment name will be displayed as a label, so remove it
@@ -17935,12 +17674,6 @@ function ErrorDescription(param) {
             })
         ]
     });
-}
-function getErrorType(error) {
-    if ((0, _consoleerror.isConsoleError)(error)) {
-        return 'Console Error';
-    }
-    return 'Runtime Error';
 }
 function Errors(param) {
     let { runtimeErrors, debugInfo, onClose, ...props } = param;
@@ -17983,7 +17716,7 @@ function Errors(param) {
         'server',
         'edge-server'
     ].includes((0, _errorsource.getErrorSource)(error) || '');
-    const errorType = getErrorType(error);
+    const isUnhandledError = (0, _consoleerror.isUnhandledConsoleOrRejection)(error);
     const errorDetails = error.details || {};
     const notes = errorDetails.notes || '';
     const [warningTemplate, serverContent, clientContent] = errorDetails.warning || [
@@ -17999,7 +17732,7 @@ function Errors(param) {
     const footerMessage = isServerError ? 'This error happened while generating the page. Any console logs will be displayed in the terminal window.' : undefined;
     return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_erroroverlaylayout.ErrorOverlayLayout, {
         errorCode: errorCode,
-        errorType: errorType,
+        errorType: isServerError ? 'Runtime Error' : isUnhandledError ? 'Console Error' : 'Unhandled Runtime Error',
         errorMessage: /*#__PURE__*/ (0, _jsxruntime.jsx)(ErrorDescription, {
             error: error,
             hydrationWarning: hydrationWarning
@@ -18233,10 +17966,12 @@ function _templateObject() {
     };
     return data;
 }
+const SIZE = '2.25rem' // 36px in 16px base
+;
+const SIZE_PX = 36;
 const SHORT_DURATION_MS = 150;
 const NextLogo = /*#__PURE__*/ (0, _react.forwardRef)(function NextLogo(param, propRef) {
-    let { disabled, issueCount, isDevBuilding, isDevRendering, isBuildError, onTriggerClick, toggleErrorOverlay, scale = 1, ...props } = param;
-    const SIZE = 36 / scale;
+    let { disabled, issueCount, isDevBuilding, isDevRendering, isBuildError, onTriggerClick, toggleErrorOverlay, ...props } = param;
     const hasError = issueCount > 0;
     const [isErrorExpanded, setIsErrorExpanded] = (0, _react.useState)(hasError);
     const [dismissed, setDismissed] = (0, _react.useState)(false);
@@ -18249,7 +17984,7 @@ const NextLogo = /*#__PURE__*/ (0, _react.forwardRef)(function NextLogo(param, p
     const style = (0, _react.useMemo)(()=>{
         let width = SIZE;
         // Animates the badge, if expanded
-        if (measuredWidth > SIZE) width = measuredWidth;
+        if (measuredWidth > SIZE_PX) width = measuredWidth;
         // No animations on page load, assume the intrinsic width immediately
         if (pristine && hasError) width = 'auto';
         // Default state, collapsed
@@ -18259,8 +17994,7 @@ const NextLogo = /*#__PURE__*/ (0, _react.forwardRef)(function NextLogo(param, p
     }, [
         measuredWidth,
         pristine,
-        hasError,
-        SIZE
+        hasError
     ]);
     (0, _react.useEffect)(()=>{
         setIsErrorExpanded(hasError);
@@ -18270,7 +18004,7 @@ const NextLogo = /*#__PURE__*/ (0, _react.forwardRef)(function NextLogo(param, p
     return /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
         "data-next-badge-root": true,
         style: {
-            '--size': "" + SIZE + "px",
+            '--size': SIZE,
             '--duration-short': "" + SHORT_DURATION_MS + "ms",
             // if the indicator is disabled, hide the badge
             // also allow the "disabled" state be dismissed, as long as there are no build errors
@@ -19473,89 +19207,6 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     module.exports = exports.default;
 } //# sourceMappingURL=system-icon.js.map
 }}),
-"[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/dev-tools-indicator/dev-tools-info/preferences.js [client] (ecmascript)": (function(__turbopack_context__) {
-
-var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
-{
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-0 && (module.exports = {
-    NEXT_DEV_TOOLS_SCALE: null,
-    getInitialPosition: null,
-    getInitialTheme: null,
-    useDevToolsScale: null
-});
-function _export(target, all) {
-    for(var name in all)Object.defineProperty(target, name, {
-        enumerable: true,
-        get: all[name]
-    });
-}
-_export(exports, {
-    NEXT_DEV_TOOLS_SCALE: function() {
-        return NEXT_DEV_TOOLS_SCALE;
-    },
-    getInitialPosition: function() {
-        return getInitialPosition;
-    },
-    getInitialTheme: function() {
-        return getInitialTheme;
-    },
-    useDevToolsScale: function() {
-        return useDevToolsScale;
-    }
-});
-const _react = __turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)");
-const _shared = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/shared.js [client] (ecmascript)");
-const INDICATOR_POSITION = ("TURBOPACK compile-time value", "bottom-left") || 'bottom-left';
-function getInitialPosition() {
-    if (typeof localStorage !== 'undefined' && localStorage.getItem(_shared.STORAGE_KEY_POSITION)) {
-        return localStorage.getItem(_shared.STORAGE_KEY_POSITION);
-    }
-    return INDICATOR_POSITION;
-}
-//////////////////////////////////////////////////////////////////////////////////////
-const BASE_SIZE = 16;
-const NEXT_DEV_TOOLS_SCALE = {
-    Small: BASE_SIZE / 14,
-    Medium: BASE_SIZE / 16,
-    Large: BASE_SIZE / 18
-};
-function getInitialScale() {
-    if (typeof localStorage !== 'undefined' && localStorage.getItem(_shared.STORAGE_KEY_SCALE)) {
-        return Number(localStorage.getItem(_shared.STORAGE_KEY_SCALE));
-    }
-    return NEXT_DEV_TOOLS_SCALE.Medium;
-}
-function useDevToolsScale() {
-    const [scale, setScale] = (0, _react.useState)(getInitialScale());
-    function set(value) {
-        setScale(value);
-        localStorage.setItem(_shared.STORAGE_KEY_SCALE, String(value));
-    }
-    return [
-        scale,
-        set
-    ];
-}
-function getInitialTheme() {
-    if (typeof localStorage === 'undefined') {
-        return 'system';
-    }
-    const theme = localStorage.getItem(_shared.STORAGE_KEY_THEME);
-    return theme === 'dark' || theme === 'light' ? theme : 'system';
-}
-if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
-    Object.defineProperty(exports.default, '__esModule', {
-        value: true
-    });
-    Object.assign(exports.default, exports);
-    module.exports = exports.default;
-} //# sourceMappingURL=preferences.js.map
-}}),
 "[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/dev-tools-indicator/dev-tools-info/user-preferences.js [client] (ecmascript)": (function(__turbopack_context__) {
 
 var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
@@ -19593,20 +19244,26 @@ const _lighticon = /*#__PURE__*/ _interop_require_default._(__turbopack_context_
 const _darkicon = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/icons/dark-icon.js [client] (ecmascript)"));
 const _systemicon = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/icons/system-icon.js [client] (ecmascript)"));
 const _devtoolsinfo = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/dev-tools-indicator/dev-tools-info/dev-tools-info.js [client] (ecmascript)");
-const _preferences = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/dev-tools-indicator/dev-tools-info/preferences.js [client] (ecmascript)");
 function _templateObject() {
     const data = _tagged_template_literal_loose._([
-        "\n  .preferences-container {\n    padding: 8px 6px;\n    width: 100%;\n  }\n\n  @media (min-width: 576px) {\n    .preferences-container {\n      width: 480px;\n    }\n  }\n\n  .preference-section:first-child {\n    padding-top: 0;\n  }\n\n  .preference-section {\n    padding: 12px 0;\n    border-bottom: 1px solid var(--color-gray-400);\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    gap: 24px;\n  }\n\n  .preference-section:last-child {\n    border-bottom: none;\n  }\n\n  .preference-header {\n    margin-bottom: 0;\n    flex: 1;\n  }\n\n  .preference-header label {\n    font-size: var(--size-14);\n    font-weight: 500;\n    color: var(--color-gray-1000);\n    margin: 0;\n  }\n\n  .preference-description {\n    color: var(--color-gray-900);\n    font-size: var(--size-14);\n    margin: 0;\n  }\n\n  .select-button,\n  .action-button {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    background: var(--color-background-100);\n    border: 1px solid var(--color-gray-400);\n    border-radius: var(--rounded-lg);\n    font-weight: 400;\n    font-size: var(--size-14);\n    color: var(--color-gray-1000);\n    padding: 6px 8px;\n\n    &:hover {\n      background: var(--color-gray-100);\n    }\n  }\n\n  .select-button {\n    &:focus-within {\n      outline: var(--focus-ring);\n    }\n\n    select {\n      all: unset;\n    }\n  }\n\n  :global(.icon) {\n    width: 18px;\n    height: 18px;\n    color: #666;\n  }\n"
+        "\n  .preferences-container {\n    padding: 8px 6px;\n    width: 100%;\n  }\n\n  @media (min-width: 576px) {\n    .preferences-container {\n      width: 480px;\n    }\n  }\n\n  .preference-section:first-child {\n    padding-top: 0;\n  }\n\n  .preference-section {\n    padding: 12px 0;\n    border-bottom: 1px solid var(--color-gray-400);\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    gap: 24px;\n  }\n\n  .preference-section:last-child {\n    border-bottom: none;\n  }\n\n  .preference-header {\n    margin-bottom: 0;\n    flex: 1;\n  }\n\n  .preference-header label {\n    font-size: var(--size-14);\n    font-weight: 500;\n    color: var(--color-gray-1000);\n    margin: 0;\n  }\n\n  .preference-description {\n    color: var(--color-gray-900);\n    font-size: var(--size-14);\n    margin: 0;\n  }\n\n  .preference-icon {\n    display: flex;\n    align-items: center;\n    width: 16px;\n    height: 16px;\n  }\n\n  .select-button,\n  .action-button {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    background: var(--color-background-100);\n    border: 1px solid var(--color-gray-400);\n    border-radius: var(--rounded-lg);\n    font-weight: 400;\n    font-size: var(--size-14);\n    color: var(--color-gray-1000);\n    padding: 6px 8px;\n\n    &:hover {\n      background: var(--color-gray-100);\n    }\n  }\n\n  .preference-control-select {\n    padding: 6px 8px;\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    border-radius: var(--rounded-lg);\n    border: 1px solid var(--color-gray-400);\n\n    &:hover {\n      background: var(--color-gray-100);\n    }\n\n    &:focus-within {\n      outline: var(--focus-ring);\n    }\n  }\n\n  .preference-control-select select {\n    font-size: var(--size-14);\n    font-weight: 400;\n    border: none;\n    padding: 0 6px 0 0;\n    border-radius: 0;\n    outline: none;\n    background: none;\n  }\n\n  :global(.icon) {\n    width: 18px;\n    height: 18px;\n    color: #666;\n  }\n"
     ]);
     _templateObject = function() {
         return data;
     };
     return data;
 }
+function getInitialPreference() {
+    if (typeof localStorage === 'undefined') {
+        return 'system';
+    }
+    const theme = localStorage.getItem(_shared.STORAGE_KEY_THEME);
+    return theme === 'dark' || theme === 'light' ? theme : 'system';
+}
 function UserPreferences(param) {
-    let { setPosition, position, hide, scale, setScale, ...props } = param;
+    let { setPosition, position, hide, ...props } = param;
     // derive initial theme from system preference
-    const [theme, setTheme] = (0, _react.useState)((0, _preferences.getInitialTheme)());
+    const [theme, setTheme] = (0, _react.useState)(getInitialPreference());
     const handleThemeChange = (e)=>{
         const portal = document.querySelector('nextjs-portal');
         if (!portal) return;
@@ -19631,11 +19288,6 @@ function UserPreferences(param) {
         setPosition(e.target.value);
         localStorage.setItem(_shared.STORAGE_KEY_POSITION, e.target.value);
     }
-    function handleSizeChange(param) {
-        let { target } = param;
-        const value = Number(target.value);
-        setScale(value);
-    }
     return /*#__PURE__*/ (0, _jsxruntime.jsx)(_devtoolsinfo.DevToolsInfo, {
         title: "Preferences",
         ...props,
@@ -19658,26 +19310,35 @@ function UserPreferences(param) {
                                 })
                             ]
                         }),
-                        /*#__PURE__*/ (0, _jsxruntime.jsxs)(Select, {
-                            id: "theme",
-                            name: "theme",
-                            prefix: /*#__PURE__*/ (0, _jsxruntime.jsx)(ThemeIcon, {
-                                theme: theme
-                            }),
-                            value: theme,
-                            onChange: handleThemeChange,
+                        /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
+                            className: "preference-control-select",
                             children: [
-                                /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
-                                    value: "system",
-                                    children: "System"
+                                /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
+                                    className: "preference-icon",
+                                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)(ThemeIcon, {
+                                        theme: theme
+                                    })
                                 }),
-                                /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
-                                    value: "light",
-                                    children: "Light"
-                                }),
-                                /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
-                                    value: "dark",
-                                    children: "Dark"
+                                /*#__PURE__*/ (0, _jsxruntime.jsxs)("select", {
+                                    id: "theme",
+                                    name: "theme",
+                                    className: "select-button",
+                                    value: theme,
+                                    onChange: handleThemeChange,
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
+                                            value: "system",
+                                            children: "System"
+                                        }),
+                                        /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
+                                            value: "light",
+                                            children: "Light"
+                                        }),
+                                        /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
+                                            value: "dark",
+                                            children: "Dark"
+                                        })
+                                    ]
                                 })
                             ]
                         })
@@ -19699,59 +19360,32 @@ function UserPreferences(param) {
                                 })
                             ]
                         }),
-                        /*#__PURE__*/ (0, _jsxruntime.jsxs)(Select, {
-                            id: "position",
-                            name: "position",
-                            value: position,
-                            onChange: handlePositionChange,
-                            children: [
-                                /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
-                                    value: "bottom-left",
-                                    children: "Bottom Left"
-                                }),
-                                /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
-                                    value: "bottom-right",
-                                    children: "Bottom Right"
-                                }),
-                                /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
-                                    value: "top-left",
-                                    children: "Top Left"
-                                }),
-                                /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
-                                    value: "top-right",
-                                    children: "Top Right"
-                                })
-                            ]
-                        })
-                    ]
-                }),
-                /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
-                    className: "preference-section",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
-                            className: "preference-header",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxruntime.jsx)("label", {
-                                    htmlFor: "size",
-                                    children: "Size"
-                                }),
-                                /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
-                                    className: "preference-description",
-                                    children: "Adjust the size of your dev tools."
-                                })
-                            ]
-                        }),
-                        /*#__PURE__*/ (0, _jsxruntime.jsx)(Select, {
-                            id: "size",
-                            name: "size",
-                            value: scale,
-                            onChange: handleSizeChange,
-                            children: Object.entries(_preferences.NEXT_DEV_TOOLS_SCALE).map((param)=>{
-                                let [key, value] = param;
-                                return /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
-                                    value: value,
-                                    children: key
-                                }, key);
+                        /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
+                            className: "preference-control-select",
+                            children: /*#__PURE__*/ (0, _jsxruntime.jsxs)("select", {
+                                id: "position",
+                                name: "position",
+                                className: "select-button",
+                                value: position,
+                                onChange: handlePositionChange,
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
+                                        value: "bottom-left",
+                                        children: "Bottom Left"
+                                    }),
+                                    /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
+                                        value: "bottom-right",
+                                        children: "Bottom Right"
+                                    }),
+                                    /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
+                                        value: "top-left",
+                                        children: "Top Left"
+                                    }),
+                                    /*#__PURE__*/ (0, _jsxruntime.jsx)("option", {
+                                        value: "top-right",
+                                        children: "Top Right"
+                                    })
+                                ]
                             })
                         })
                     ]
@@ -19763,7 +19397,7 @@ function UserPreferences(param) {
                             className: "preference-header",
                             children: [
                                 /*#__PURE__*/ (0, _jsxruntime.jsx)("label", {
-                                    id: "hide-dev-tools",
+                                    htmlFor: "hide-dev-tools",
                                     children: "Hide Dev Tools for this session"
                                 }),
                                 /*#__PURE__*/ (0, _jsxruntime.jsx)("p", {
@@ -19775,13 +19409,16 @@ function UserPreferences(param) {
                         /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
                             className: "preference-control",
                             children: /*#__PURE__*/ (0, _jsxruntime.jsxs)("button", {
-                                "aria-describedby": "hide-dev-tools",
+                                id: "hide-dev-tools",
                                 name: "hide-dev-tools",
                                 "data-hide-dev-tools": true,
                                 className: "action-button",
                                 onClick: hide,
                                 children: [
-                                    /*#__PURE__*/ (0, _jsxruntime.jsx)(_eyeicon.default, {}),
+                                    /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
+                                        className: "preference-icon",
+                                        children: /*#__PURE__*/ (0, _jsxruntime.jsx)(_eyeicon.default, {})
+                                    }),
                                     /*#__PURE__*/ (0, _jsxruntime.jsx)("span", {
                                         children: "Hide"
                                     })
@@ -19824,20 +19461,6 @@ function UserPreferences(param) {
         })
     });
 }
-function Select(param) {
-    let { children, prefix, ...props } = param;
-    return /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
-        className: "select-button",
-        children: [
-            prefix,
-            /*#__PURE__*/ (0, _jsxruntime.jsx)("select", {
-                ...props,
-                children: children
-            }),
-            /*#__PURE__*/ (0, _jsxruntime.jsx)(ChevronDownIcon, {})
-        ]
-    });
-}
 function ThemeIcon(param) {
     let { theme } = param;
     switch(theme){
@@ -19852,20 +19475,6 @@ function ThemeIcon(param) {
     }
 }
 const DEV_TOOLS_INFO_USER_PREFERENCES_STYLES = (0, _css.css)(_templateObject());
-function ChevronDownIcon() {
-    return /*#__PURE__*/ (0, _jsxruntime.jsx)("svg", {
-        width: "16",
-        height: "16",
-        viewBox: "0 0 16 16",
-        "aria-hidden": true,
-        children: /*#__PURE__*/ (0, _jsxruntime.jsx)("path", {
-            fillRule: "evenodd",
-            clipRule: "evenodd",
-            d: "M14.0607 5.49999L13.5303 6.03032L8.7071 10.8535C8.31658 11.2441 7.68341 11.2441 7.29289 10.8535L2.46966 6.03032L1.93933 5.49999L2.99999 4.43933L3.53032 4.96966L7.99999 9.43933L12.4697 4.96966L13 4.43933L14.0607 5.49999Z",
-            fill: "currentColor"
-        })
-    });
-}
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
     Object.defineProperty(exports.default, '__esModule', {
         value: true
@@ -19903,6 +19512,7 @@ _export(exports, {
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
 const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
+const _shared = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/shared.js [client] (ecmascript)");
 const _react = __turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)");
 const _toast = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/toast/index.js [client] (ecmascript)");
 const _nextlogo = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/dev-tools-indicator/next-logo.js [client] (ecmascript)");
@@ -19914,9 +19524,10 @@ const _routeinfo = __turbopack_context__.r("[project]/node_modules/next/dist/cli
 const _gearicon = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/icons/gear-icon.js [client] (ecmascript)"));
 const _userpreferences = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/dev-tools-indicator/dev-tools-info/user-preferences.js [client] (ecmascript)");
 const _utils = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/dev-tools-indicator/utils.js [client] (ecmascript)");
-const _preferences = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/dev-tools-indicator/dev-tools-info/preferences.js [client] (ecmascript)");
+// TODO: add E2E tests to cover different scenarios
+const INDICATOR_POSITION = ("TURBOPACK compile-time value", "bottom-left") || 'bottom-left';
 function DevToolsIndicator(param) {
-    let { state, errorCount, isBuildError, setIsErrorOverlayOpen, ...props } = param;
+    let { state, errorCount, isBuildError, setIsErrorOverlayOpen } = param;
     const [isDevToolsIndicatorVisible, setIsDevToolsIndicatorVisible] = (0, _react.useState)(true);
     return /*#__PURE__*/ (0, _jsxruntime.jsx)(DevToolsPopover, {
         routerType: state.routerType,
@@ -19932,11 +19543,16 @@ function DevToolsIndicator(param) {
         setIsErrorOverlayOpen: setIsErrorOverlayOpen,
         isTurbopack: !!("TURBOPACK compile-time value", true),
         disabled: state.disableDevIndicator || !isDevToolsIndicatorVisible,
-        isBuildError: isBuildError,
-        ...props
+        isBuildError: isBuildError
     });
 }
 const Context = /*#__PURE__*/ (0, _react.createContext)({});
+function getInitialPosition() {
+    if (typeof localStorage !== 'undefined' && localStorage.getItem(_shared.STORAGE_KEY_POSITION)) {
+        return localStorage.getItem(_shared.STORAGE_KEY_POSITION);
+    }
+    return INDICATOR_POSITION;
+}
 const OVERLAYS = {
     Root: 'root',
     Turbo: 'turbo',
@@ -19944,11 +19560,11 @@ const OVERLAYS = {
     Preferences: 'preferences'
 };
 function DevToolsPopover(param) {
-    let { routerType, disabled, issueCount, isStaticRoute, isTurbopack, isBuildError, hide, setIsErrorOverlayOpen, scale, setScale } = param;
+    let { routerType, disabled, issueCount, isStaticRoute, isTurbopack, isBuildError, hide, setIsErrorOverlayOpen } = param;
     const menuRef = (0, _react.useRef)(null);
     const triggerRef = (0, _react.useRef)(null);
     const [open, setOpen] = (0, _react.useState)(null);
-    const [position, setPosition] = (0, _react.useState)((0, _preferences.getInitialPosition)());
+    const [position, setPosition] = (0, _react.useState)(getInitialPosition());
     const [selectedIndex, setSelectedIndex] = (0, _react.useState)(-1);
     const isMenuOpen = open === OVERLAYS.Root;
     const isTurbopackInfoOpen = open === OVERLAYS.Turbo;
@@ -20096,8 +19712,7 @@ function DevToolsPopover(param) {
                 toggleErrorOverlay: toggleErrorOverlay,
                 isDevBuilding: (0, _initialize.useIsDevBuilding)(),
                 isDevRendering: (0, _devrenderindicator.useIsDevRendering)(),
-                isBuildError: isBuildError,
-                scale: scale
+                isBuildError: isBuildError
             }),
             /*#__PURE__*/ (0, _jsxruntime.jsx)(_routeinfo.RouteInfo, {
                 isOpen: isRouteInfoOpen,
@@ -20120,9 +19735,7 @@ function DevToolsPopover(param) {
                 style: popover,
                 hide: handleHideDevtools,
                 setPosition: setPosition,
-                position: position,
-                scale: scale,
-                setScale: setScale
+                position: position
             }),
             menuMounted && /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
                 ref: menuRef,
@@ -20315,10 +19928,8 @@ const _devtoolsinfo = __turbopack_context__.r("[project]/node_modules/next/dist/
 const _turbopackinfo = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/dev-tools-indicator/dev-tools-info/turbopack-info.js [client] (ecmascript)");
 const _routeinfo = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/dev-tools-indicator/dev-tools-info/route-info.js [client] (ecmascript)");
 const _userpreferences = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/dev-tools-indicator/dev-tools-info/user-preferences.js [client] (ecmascript)");
-const _fader = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/fader/index.js [client] (ecmascript)");
 function _templateObject() {
     const data = _tagged_template_literal_loose._([
-        "\n        ",
         "\n        ",
         "\n        ",
         "\n        ",
@@ -20350,7 +19961,7 @@ function _templateObject() {
 }
 function ComponentStyles() {
     return /*#__PURE__*/ (0, _jsxruntime.jsx)("style", {
-        children: (0, _css.css)(_templateObject(), _copybutton.COPY_BUTTON_STYLES, _callstackframe.CALL_STACK_FRAME_STYLES, _environmentnamelabel.ENVIRONMENT_NAME_LABEL_STYLES, _styles.styles, _toast.styles, _dialog.styles, _erroroverlaylayout.styles, _erroroverlayfooter.styles, _erroroverlaybottomstack.styles, _erroroverlaypagination.styles, _codeframe.CODE_FRAME_STYLES, _terminal.TERMINAL_STYLES, _editorlink.EDITOR_LINK_STYLES, _builderror.styles, _errors.styles, _runtimeerror.styles, _versionstalenessinfo.styles, _devtoolsindicator.DEV_TOOLS_INDICATOR_STYLES, _devtoolsinfo.DEV_TOOLS_INFO_STYLES, _turbopackinfo.DEV_TOOLS_INFO_TURBOPACK_INFO_STYLES, _routeinfo.DEV_TOOLS_INFO_ROUTE_INFO_STYLES, _userpreferences.DEV_TOOLS_INFO_USER_PREFERENCES_STYLES, _fader.FADER_STYLES)
+        children: (0, _css.css)(_templateObject(), _copybutton.COPY_BUTTON_STYLES, _callstackframe.CALL_STACK_FRAME_STYLES, _environmentnamelabel.ENVIRONMENT_NAME_LABEL_STYLES, _styles.styles, _toast.styles, _dialog.styles, _erroroverlaylayout.styles, _erroroverlayfooter.styles, _erroroverlaybottomstack.styles, _erroroverlaypagination.styles, _codeframe.CODE_FRAME_STYLES, _terminal.TERMINAL_STYLES, _editorlink.EDITOR_LINK_STYLES, _builderror.styles, _errors.styles, _runtimeerror.styles, _versionstalenessinfo.styles, _devtoolsindicator.DEV_TOOLS_INDICATOR_STYLES, _devtoolsinfo.DEV_TOOLS_INFO_STYLES, _turbopackinfo.DEV_TOOLS_INFO_TURBOPACK_INFO_STYLES, _routeinfo.DEV_TOOLS_INFO_ROUTE_INFO_STYLES, _userpreferences.DEV_TOOLS_INFO_USER_PREFERENCES_STYLES)
     });
 }
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
@@ -20441,6 +20052,50 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     module.exports = exports.default;
 } //# sourceMappingURL=colors.js.map
 }}),
+"[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/container/root-layout-missing-tags-error.js [client] (ecmascript)": (function(__turbopack_context__) {
+
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
+{
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "RootLayoutMissingTagsError", {
+    enumerable: true,
+    get: function() {
+        return RootLayoutMissingTagsError;
+    }
+});
+const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
+const _react = __turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)");
+const _hotlinkedtext = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/hot-linked-text/index.js [client] (ecmascript)");
+const _erroroverlaylayout = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/error-overlay-layout/error-overlay-layout.js [client] (ecmascript)");
+function RootLayoutMissingTagsError(param) {
+    let { missingTags, ...props } = param;
+    const noop = (0, _react.useCallback)(()=>{}, []);
+    const error = Object.defineProperty(new Error("The following tags are missing in the Root Layout: " + missingTags.map((tagName)=>"<" + tagName + ">").join(', ') + ".\nRead more at https://nextjs.org/docs/messages/missing-root-layout-tags"), "__NEXT_ERROR_CODE", {
+        value: "E638",
+        enumerable: false,
+        configurable: true
+    });
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_erroroverlaylayout.ErrorOverlayLayout, {
+        errorType: "Missing Required HTML Tag",
+        error: error,
+        errorMessage: /*#__PURE__*/ (0, _jsxruntime.jsx)(_hotlinkedtext.HotlinkedText, {
+            text: error.message
+        }),
+        onClose: noop,
+        ...props
+    });
+}
+if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
+    Object.defineProperty(exports.default, '__esModule', {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=root-layout-missing-tags-error.js.map
+}}),
 "[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/error-overlay/error-overlay.js [client] (ecmascript)": (function(__turbopack_context__) {
 
 var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
@@ -20460,10 +20115,12 @@ const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-ru
 const _react = __turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)");
 const _builderror = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/container/build-error.js [client] (ecmascript)");
 const _errors = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/container/errors.js [client] (ecmascript)");
+const _rootlayoutmissingtagserror = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/container/root-layout-missing-tags-error.js [client] (ecmascript)");
 const _usedelayedrender = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/hooks/use-delayed-render.js [client] (ecmascript)");
 const transitionDurationMs = 200;
 function ErrorOverlay(param) {
     let { state, runtimeErrors, isErrorOverlayOpen, setIsErrorOverlayOpen } = param;
+    var _state_rootLayoutMissingTags;
     const isTurbopack = !!("TURBOPACK compile-time value", true);
     // This hook lets us do an exit animation before unmounting the component
     const { mounted, rendered } = (0, _usedelayedrender.useDelayedRender)(isErrorOverlayOpen, {
@@ -20475,6 +20132,14 @@ function ErrorOverlay(param) {
         isTurbopack,
         versionInfo: state.versionInfo
     };
+    if (!!((_state_rootLayoutMissingTags = state.rootLayoutMissingTags) == null ? void 0 : _state_rootLayoutMissingTags.length)) {
+        return /*#__PURE__*/ (0, _jsxruntime.jsx)(_rootlayoutmissingtagserror.RootLayoutMissingTagsError, {
+            ...commonProps,
+            // This is not a runtime error, forcedly display error overlay
+            rendered: true,
+            missingTags: state.rootLayoutMissingTags
+        });
+    }
     if (state.buildError !== null) {
         return /*#__PURE__*/ (0, _jsxruntime.jsx)(_builderror.BuildError, {
             ...commonProps,
@@ -20541,8 +20206,9 @@ function getErrorSignature(ev) {
     }
 }
 const RenderError = (props)=>{
+    var _state_rootLayoutMissingTags;
     const { state } = props;
-    const isBuildError = !!state.buildError;
+    const isBuildError = !!((_state_rootLayoutMissingTags = state.rootLayoutMissingTags) == null ? void 0 : _state_rootLayoutMissingTags.length) || !!state.buildError;
     if (isBuildError) {
         return /*#__PURE__*/ (0, _jsxruntime.jsx)(RenderBuildError, {
             ...props
@@ -20609,12 +20275,7 @@ const RenderRuntimeError = (param)=>{
         nextError,
         isAppDir
     ]);
-    const totalErrorCount = errors.filter((err, idx)=>{
-        const prev = errors[idx - 1];
-        // Check for duplicates
-        if (idx > 0) return getErrorSignature(prev) !== getErrorSignature(err);
-        return true;
-    }).length;
+    const totalErrorCount = runtimeErrors.length;
     return children({
         runtimeErrors,
         totalErrorCount
@@ -20706,16 +20367,12 @@ const _erroroverlay = __turbopack_context__.r("[project]/node_modules/next/dist/
 const _devtoolsindicator = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/dev-tools-indicator/dev-tools-indicator.js [client] (ecmascript)");
 const _rendererror = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/container/runtime-error/render-error.js [client] (ecmascript)");
 const _darktheme = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/styles/dark-theme.js [client] (ecmascript)");
-const _preferences = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/ui/components/errors/dev-tools-indicator/dev-tools-info/preferences.js [client] (ecmascript)");
 function DevOverlay(param) {
     let { state, isErrorOverlayOpen, setIsErrorOverlayOpen } = param;
-    const [scale, setScale] = (0, _preferences.useDevToolsScale)();
     return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_shadowportal.ShadowPortal, {
         children: [
             /*#__PURE__*/ (0, _jsxruntime.jsx)(_cssreset.CssReset, {}),
-            /*#__PURE__*/ (0, _jsxruntime.jsx)(_base.Base, {
-                scale: scale
-            }),
+            /*#__PURE__*/ (0, _jsxruntime.jsx)(_base.Base, {}),
             /*#__PURE__*/ (0, _jsxruntime.jsx)(_colors.Colors, {}),
             /*#__PURE__*/ (0, _jsxruntime.jsx)(_componentstyles.ComponentStyles, {}),
             /*#__PURE__*/ (0, _jsxruntime.jsx)(_darktheme.DarkTheme, {}),
@@ -20724,12 +20381,10 @@ function DevOverlay(param) {
                 isAppDir: true,
                 children: (param)=>{
                     let { runtimeErrors, totalErrorCount } = param;
-                    const isBuildError = state.buildError !== null;
+                    const isBuildError = runtimeErrors.length === 0;
                     return /*#__PURE__*/ (0, _jsxruntime.jsxs)(_jsxruntime.Fragment, {
                         children: [
-                            state.showIndicator && /*#__PURE__*/ (0, _jsxruntime.jsx)(_devtoolsindicator.DevToolsIndicator, {
-                                scale: scale,
-                                setScale: setScale,
+                            /*#__PURE__*/ (0, _jsxruntime.jsx)(_devtoolsindicator.DevToolsIndicator, {
                                 state: state,
                                 errorCount: totalErrorCount,
                                 isBuildError: isBuildError,
@@ -20910,7 +20565,7 @@ const _hooksclientcontextsharedruntime = __turbopack_context__.r("[project]/node
 const _onrecoverableerror = __turbopack_context__.r("[project]/node_modules/next/dist/client/react-client-callbacks/on-recoverable-error.js [client] (ecmascript)");
 const _tracer = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/client/tracing/tracer.js [client] (ecmascript)"));
 const _isnextroutererror = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/is-next-router-error.js [client] (ecmascript)");
-const version = "15.3.1";
+const version = "15.2.2";
 let router;
 const emitter = (0, _mitt.default)();
 const looseToArray = (input)=>[].slice.call(input);
@@ -21499,8 +21154,8 @@ const _interop_require_default = __turbopack_context__.r("[project]/node_modules
 const _hotreloaderclient = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/pages/hot-reloader-client.js [client] (ecmascript)"));
 const _websocket = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/react-dev-overlay/pages/websocket.js [client] (ecmascript)");
 let reloading = false;
-const _default = ()=>{
-    const devClient = (0, _hotreloaderclient.default)();
+const _default = (mode)=>{
+    const devClient = (0, _hotreloaderclient.default)(mode);
     devClient.subscribeToHmrEvent((obj)=>{
         var _window_next;
         if (reloading) return;
@@ -21582,39 +21237,6 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     Object.assign(exports.default, exports);
     module.exports = exports.default;
 } //# sourceMappingURL=hot-middleware-client.js.map
-}}),
-"[project]/node_modules/next/dist/lib/require-instrumentation-client.js [client] (ecmascript)": (function(__turbopack_context__) {
-
-var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
-{
-/**
- * This module imports the client instrumentation hook from the project root.
- *
- * The `private-next-instrumentation-client` module is automatically aliased to
- * the `instrumentation-client.ts` file in the project root by webpack or turbopack.
- */ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
-"use strict";
-if ("TURBOPACK compile-time truthy", 1) {
-    const measureName = 'Client Instrumentation Hook';
-    const startTime = performance.now();
-    module.exports = {};
-    const endTime = performance.now();
-    const duration = endTime - startTime;
-    performance.measure(measureName, {
-        start: startTime,
-        end: endTime,
-        detail: 'Client instrumentation initialization'
-    });
-    // Using 16ms threshold as it represents one frame (1000ms/60fps)
-    // This helps identify if the instrumentation hook initialization
-    // could potentially cause frame drops during development.
-    const THRESHOLD = 16;
-    if (duration > THRESHOLD) {
-        console.log(`[${measureName}] Slow execution detected: ${duration.toFixed(0)}ms (Note: Code download overhead is not included in this measurement)`);
-    }
-} else {
-    "TURBOPACK unreachable";
-} //# sourceMappingURL=require-instrumentation-client.js.map
 }}),
 "[project]/node_modules/next/dist/client/dev/on-demand-entries-client.js [client] (ecmascript)": (function(__turbopack_context__) {
 
@@ -21787,7 +21409,6 @@ Object.defineProperty(exports, "pageBootstrap", {
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-__turbopack_context__.r("[project]/node_modules/next/dist/lib/require-instrumentation-client.js [client] (ecmascript)");
 const _ = __turbopack_context__.r("[project]/node_modules/next/dist/client/index.js [client] (ecmascript)");
 const _ondemandentriesclient = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/client/dev/on-demand-entries-client.js [client] (ecmascript)"));
 const _devbuildindicator = __turbopack_context__.r("[project]/node_modules/next/dist/client/dev/dev-build-indicator/internal/dev-build-indicator.js [client] (ecmascript)");
@@ -21929,7 +21550,7 @@ window.next = {
 };
 self.__next_set_public_path__ = ()=>{};
 self.__webpack_hash__ = '';
-const devClient = (0, _hotmiddlewareclient.default)();
+const devClient = (0, _hotmiddlewareclient.default)('turbopack');
 (0, _.initialize)({
     devClient
 }).then((param)=>{
@@ -21959,7 +21580,7 @@ if ((typeof exports.default === 'function' || typeof exports.default === 'object
     module.exports = exports.default;
 } //# sourceMappingURL=next-dev-turbopack.js.map
 }}),
-"[project]/node_modules/next/dist/pages/_app.js [client] (ecmascript)": (function(__turbopack_context__) {
+"[project]/node_modules/next/dist/shared/lib/side-effect.js [client] (ecmascript)": (function(__turbopack_context__) {
 
 var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
 {
@@ -21970,56 +21591,549 @@ Object.defineProperty(exports, "__esModule", {
 Object.defineProperty(exports, "default", {
     enumerable: true,
     get: function() {
-        return App;
+        return SideEffect;
+    }
+});
+const _react = __turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)");
+const isServer = typeof window === 'undefined';
+const useClientOnlyLayoutEffect = isServer ? ()=>{} : _react.useLayoutEffect;
+const useClientOnlyEffect = isServer ? ()=>{} : _react.useEffect;
+function SideEffect(props) {
+    const { headManager, reduceComponentsToState } = props;
+    function emitChange() {
+        if (headManager && headManager.mountedInstances) {
+            const headElements = _react.Children.toArray(Array.from(headManager.mountedInstances).filter(Boolean));
+            headManager.updateHead(reduceComponentsToState(headElements, props));
+        }
+    }
+    if (isServer) {
+        var _headManager_mountedInstances;
+        headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.add(props.children);
+        emitChange();
+    }
+    useClientOnlyLayoutEffect({
+        "SideEffect.useClientOnlyLayoutEffect": ()=>{
+            var _headManager_mountedInstances;
+            headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.add(props.children);
+            return ({
+                "SideEffect.useClientOnlyLayoutEffect": ()=>{
+                    var _headManager_mountedInstances;
+                    headManager == null ? void 0 : (_headManager_mountedInstances = headManager.mountedInstances) == null ? void 0 : _headManager_mountedInstances.delete(props.children);
+                }
+            })["SideEffect.useClientOnlyLayoutEffect"];
+        }
+    }["SideEffect.useClientOnlyLayoutEffect"]);
+    // We need to call `updateHead` method whenever the `SideEffect` is trigger in all
+    // life-cycles: mount, update, unmount. However, if there are multiple `SideEffect`s
+    // being rendered, we only trigger the method from the last one.
+    // This is ensured by keeping the last unflushed `updateHead` in the `_pendingUpdate`
+    // singleton in the layout effect pass, and actually trigger it in the effect pass.
+    useClientOnlyLayoutEffect({
+        "SideEffect.useClientOnlyLayoutEffect": ()=>{
+            if (headManager) {
+                headManager._pendingUpdate = emitChange;
+            }
+            return ({
+                "SideEffect.useClientOnlyLayoutEffect": ()=>{
+                    if (headManager) {
+                        headManager._pendingUpdate = emitChange;
+                    }
+                }
+            })["SideEffect.useClientOnlyLayoutEffect"];
+        }
+    }["SideEffect.useClientOnlyLayoutEffect"]);
+    useClientOnlyEffect({
+        "SideEffect.useClientOnlyEffect": ()=>{
+            if (headManager && headManager._pendingUpdate) {
+                headManager._pendingUpdate();
+                headManager._pendingUpdate = null;
+            }
+            return ({
+                "SideEffect.useClientOnlyEffect": ()=>{
+                    if (headManager && headManager._pendingUpdate) {
+                        headManager._pendingUpdate();
+                        headManager._pendingUpdate = null;
+                    }
+                }
+            })["SideEffect.useClientOnlyEffect"];
+        }
+    }["SideEffect.useClientOnlyEffect"]);
+    return null;
+} //# sourceMappingURL=side-effect.js.map
+}}),
+"[project]/node_modules/next/dist/shared/lib/amp-context.shared-runtime.js [client] (ecmascript)": (function(__turbopack_context__) {
+
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
+{
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "AmpStateContext", {
+    enumerable: true,
+    get: function() {
+        return AmpStateContext;
     }
 });
 const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
-const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
 const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)"));
-const _utils = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/utils.js [client] (ecmascript)");
-/**
- * `App` component is used for initialize of pages. It allows for overwriting and full control of the `page` initialization.
- * This allows for keeping state between navigation, custom error handling, injecting additional data.
- */ async function appGetInitialProps(param) {
-    let { Component, ctx } = param;
-    const pageProps = await (0, _utils.loadGetInitialProps)(Component, ctx);
-    return {
-        pageProps
+const AmpStateContext = _react.default.createContext({});
+if ("TURBOPACK compile-time truthy", 1) {
+    AmpStateContext.displayName = 'AmpStateContext';
+} //# sourceMappingURL=amp-context.shared-runtime.js.map
+}}),
+"[project]/node_modules/next/dist/shared/lib/amp-mode.js [client] (ecmascript)": (function(__turbopack_context__) {
+
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
+{
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "isInAmpMode", {
+    enumerable: true,
+    get: function() {
+        return isInAmpMode;
+    }
+});
+function isInAmpMode(param) {
+    let { ampFirst = false, hybrid = false, hasQuery = false } = param === void 0 ? {} : param;
+    return ampFirst || hybrid && hasQuery;
+} //# sourceMappingURL=amp-mode.js.map
+}}),
+"[project]/node_modules/next/dist/shared/lib/utils/warn-once.js [client] (ecmascript)": (function(__turbopack_context__) {
+
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
+{
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "warnOnce", {
+    enumerable: true,
+    get: function() {
+        return warnOnce;
+    }
+});
+let warnOnce = (_)=>{};
+if ("TURBOPACK compile-time truthy", 1) {
+    const warnings = new Set();
+    warnOnce = (msg)=>{
+        if (!warnings.has(msg)) {
+            console.warn(msg);
+        }
+        warnings.add(msg);
+    };
+} //# sourceMappingURL=warn-once.js.map
+}}),
+"[project]/node_modules/next/dist/shared/lib/head.js [client] (ecmascript)": (function(__turbopack_context__) {
+
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
+{
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [client] (ecmascript)");
+'use client';
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+0 && (module.exports = {
+    default: null,
+    defaultHead: null
+});
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    default: function() {
+        return _default;
+    },
+    defaultHead: function() {
+        return defaultHead;
+    }
+});
+const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
+const _interop_require_wildcard = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs [client] (ecmascript)");
+const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
+const _react = /*#__PURE__*/ _interop_require_wildcard._(__turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)"));
+const _sideeffect = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/side-effect.js [client] (ecmascript)"));
+const _ampcontextsharedruntime = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/amp-context.shared-runtime.js [client] (ecmascript)");
+const _headmanagercontextsharedruntime = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/head-manager-context.shared-runtime.js [client] (ecmascript)");
+const _ampmode = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/amp-mode.js [client] (ecmascript)");
+const _warnonce = __turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/utils/warn-once.js [client] (ecmascript)");
+function defaultHead(inAmpMode) {
+    if (inAmpMode === void 0) inAmpMode = false;
+    const head = [
+        /*#__PURE__*/ (0, _jsxruntime.jsx)("meta", {
+            charSet: "utf-8"
+        }, "charset")
+    ];
+    if (!inAmpMode) {
+        head.push(/*#__PURE__*/ (0, _jsxruntime.jsx)("meta", {
+            name: "viewport",
+            content: "width=device-width"
+        }, "viewport"));
+    }
+    return head;
+}
+function onlyReactElement(list, child) {
+    // React children can be "string" or "number" in this case we ignore them for backwards compat
+    if (typeof child === 'string' || typeof child === 'number') {
+        return list;
+    }
+    // Adds support for React.Fragment
+    if (child.type === _react.default.Fragment) {
+        return list.concat(_react.default.Children.toArray(child.props.children).reduce((fragmentList, fragmentChild)=>{
+            if (typeof fragmentChild === 'string' || typeof fragmentChild === 'number') {
+                return fragmentList;
+            }
+            return fragmentList.concat(fragmentChild);
+        }, []));
+    }
+    return list.concat(child);
+}
+const METATYPES = [
+    'name',
+    'httpEquiv',
+    'charSet',
+    'itemProp'
+];
+/*
+ returns a function for filtering head child elements
+ which shouldn't be duplicated, like <title/>
+ Also adds support for deduplicated `key` properties
+*/ function unique() {
+    const keys = new Set();
+    const tags = new Set();
+    const metaTypes = new Set();
+    const metaCategories = {};
+    return (h)=>{
+        let isUnique = true;
+        let hasKey = false;
+        if (h.key && typeof h.key !== 'number' && h.key.indexOf('$') > 0) {
+            hasKey = true;
+            const key = h.key.slice(h.key.indexOf('$') + 1);
+            if (keys.has(key)) {
+                isUnique = false;
+            } else {
+                keys.add(key);
+            }
+        }
+        // eslint-disable-next-line default-case
+        switch(h.type){
+            case 'title':
+            case 'base':
+                if (tags.has(h.type)) {
+                    isUnique = false;
+                } else {
+                    tags.add(h.type);
+                }
+                break;
+            case 'meta':
+                for(let i = 0, len = METATYPES.length; i < len; i++){
+                    const metatype = METATYPES[i];
+                    if (!h.props.hasOwnProperty(metatype)) continue;
+                    if (metatype === 'charSet') {
+                        if (metaTypes.has(metatype)) {
+                            isUnique = false;
+                        } else {
+                            metaTypes.add(metatype);
+                        }
+                    } else {
+                        const category = h.props[metatype];
+                        const categories = metaCategories[metatype] || new Set();
+                        if ((metatype !== 'name' || !hasKey) && categories.has(category)) {
+                            isUnique = false;
+                        } else {
+                            categories.add(category);
+                            metaCategories[metatype] = categories;
+                        }
+                    }
+                }
+                break;
+        }
+        return isUnique;
     };
 }
-class App extends _react.default.Component {
-    render() {
-        const { Component, pageProps } = this.props;
-        return /*#__PURE__*/ (0, _jsxruntime.jsx)(Component, {
-            ...pageProps
+/**
+ *
+ * @param headChildrenElements List of children of <Head>
+ */ function reduceComponents(headChildrenElements, props) {
+    const { inAmpMode } = props;
+    return headChildrenElements.reduce(onlyReactElement, []).reverse().concat(defaultHead(inAmpMode).reverse()).filter(unique()).reverse().map((c, i)=>{
+        const key = c.key || i;
+        if ("TURBOPACK compile-time falsy", 0) {
+            "TURBOPACK unreachable";
+        }
+        if ("TURBOPACK compile-time truthy", 1) {
+            // omit JSON-LD structured data snippets from the warning
+            if (c.type === 'script' && c.props['type'] !== 'application/ld+json') {
+                const srcMessage = c.props['src'] ? '<script> tag with src="' + c.props['src'] + '"' : "inline <script>";
+                (0, _warnonce.warnOnce)("Do not add <script> tags using next/head (see " + srcMessage + "). Use next/script instead. \nSee more info here: https://nextjs.org/docs/messages/no-script-tags-in-head-component");
+            } else if (c.type === 'link' && c.props['rel'] === 'stylesheet') {
+                (0, _warnonce.warnOnce)('Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="' + c.props['href'] + '"). Use Document instead. \nSee more info here: https://nextjs.org/docs/messages/no-stylesheets-in-head-component');
+            }
+        }
+        return /*#__PURE__*/ _react.default.cloneElement(c, {
+            key
         });
-    }
+    });
 }
-App.origGetInitialProps = appGetInitialProps;
-App.getInitialProps = appGetInitialProps;
+/**
+ * This component injects elements to `<head>` of your page.
+ * To avoid duplicated `tags` in `<head>` you can use the `key` property, which will make sure every tag is only rendered once.
+ */ function Head(param) {
+    let { children } = param;
+    const ampState = (0, _react.useContext)(_ampcontextsharedruntime.AmpStateContext);
+    const headManager = (0, _react.useContext)(_headmanagercontextsharedruntime.HeadManagerContext);
+    return /*#__PURE__*/ (0, _jsxruntime.jsx)(_sideeffect.default, {
+        reduceComponentsToState: reduceComponents,
+        headManager: headManager,
+        inAmpMode: (0, _ampmode.isInAmpMode)(ampState),
+        children: children
+    });
+}
+const _default = Head;
 if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
     Object.defineProperty(exports.default, '__esModule', {
         value: true
     });
     Object.assign(exports.default, exports);
     module.exports = exports.default;
-} //# sourceMappingURL=_app.js.map
+} //# sourceMappingURL=head.js.map
 }}),
-"[project]/node_modules/next/app.js [client] (ecmascript)": (function(__turbopack_context__) {
+"[project]/node_modules/next/dist/server/request-meta.js [client] (ecmascript)": (function(__turbopack_context__) {
 
 var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
 {
-module.exports = __turbopack_context__.r("[project]/node_modules/next/dist/pages/_app.js [client] (ecmascript)");
+/* eslint-disable no-redeclare */ "use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+0 && (module.exports = {
+    NEXT_REQUEST_META: null,
+    addRequestMeta: null,
+    getRequestMeta: null,
+    removeRequestMeta: null,
+    setRequestMeta: null
+});
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    NEXT_REQUEST_META: function() {
+        return NEXT_REQUEST_META;
+    },
+    addRequestMeta: function() {
+        return addRequestMeta;
+    },
+    getRequestMeta: function() {
+        return getRequestMeta;
+    },
+    removeRequestMeta: function() {
+        return removeRequestMeta;
+    },
+    setRequestMeta: function() {
+        return setRequestMeta;
+    }
+});
+const NEXT_REQUEST_META = Symbol.for('NextInternalRequestMeta');
+function getRequestMeta(req, key) {
+    const meta = req[NEXT_REQUEST_META] || {};
+    return typeof key === 'string' ? meta[key] : meta;
+}
+function setRequestMeta(req, meta) {
+    req[NEXT_REQUEST_META] = meta;
+    return meta;
+}
+function addRequestMeta(request, key, value) {
+    const meta = getRequestMeta(request);
+    meta[key] = value;
+    return setRequestMeta(request, meta);
+}
+function removeRequestMeta(request, key) {
+    const meta = getRequestMeta(request);
+    delete meta[key];
+    return setRequestMeta(request, meta);
+} //# sourceMappingURL=request-meta.js.map
 }}),
-"[next]/entry/page-loader.ts { PAGE => \"[project]/node_modules/next/app.js [client] (ecmascript)\" } [client] (ecmascript)": (function(__turbopack_context__) {
+"[project]/node_modules/next/dist/pages/_error.js [client] (ecmascript)": (function(__turbopack_context__) {
 
 var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
 {
-const PAGE_PATH = "/_app";
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function() {
+        return Error;
+    }
+});
+const _interop_require_default = __turbopack_context__.r("[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs [client] (ecmascript)");
+const _jsxruntime = __turbopack_context__.r("[project]/node_modules/react/jsx-runtime.js [client] (ecmascript)");
+const _react = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/react/index.js [client] (ecmascript)"));
+const _head = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/shared/lib/head.js [client] (ecmascript)"));
+const statusCodes = {
+    400: 'Bad Request',
+    404: 'This page could not be found',
+    405: 'Method Not Allowed',
+    500: 'Internal Server Error'
+};
+function _getInitialProps(param) {
+    let { req, res, err } = param;
+    const statusCode = res && res.statusCode ? res.statusCode : err ? err.statusCode : 404;
+    let hostname;
+    if (typeof window !== 'undefined') {
+        hostname = window.location.hostname;
+    } else if (req) {
+        const { getRequestMeta } = __turbopack_context__.r("[project]/node_modules/next/dist/server/request-meta.js [client] (ecmascript)");
+        const initUrl = getRequestMeta(req, 'initURL');
+        if (initUrl) {
+            const url = new URL(initUrl);
+            hostname = url.hostname;
+        }
+    }
+    return {
+        statusCode,
+        hostname
+    };
+}
+const styles = {
+    error: {
+        // https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css#L38-L52
+        fontFamily: 'system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"',
+        height: '100vh',
+        textAlign: 'center',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    desc: {
+        lineHeight: '48px'
+    },
+    h1: {
+        display: 'inline-block',
+        margin: '0 20px 0 0',
+        paddingRight: 23,
+        fontSize: 24,
+        fontWeight: 500,
+        verticalAlign: 'top'
+    },
+    h2: {
+        fontSize: 14,
+        fontWeight: 400,
+        lineHeight: '28px'
+    },
+    wrap: {
+        display: 'inline-block'
+    }
+};
+class Error extends _react.default.Component {
+    render() {
+        const { statusCode, withDarkMode = true } = this.props;
+        const title = this.props.title || statusCodes[statusCode] || 'An unexpected error has occurred';
+        return /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
+            style: styles.error,
+            children: [
+                /*#__PURE__*/ (0, _jsxruntime.jsx)(_head.default, {
+                    children: /*#__PURE__*/ (0, _jsxruntime.jsx)("title", {
+                        children: statusCode ? statusCode + ": " + title : 'Application error: a client-side exception has occurred'
+                    })
+                }),
+                /*#__PURE__*/ (0, _jsxruntime.jsxs)("div", {
+                    style: styles.desc,
+                    children: [
+                        /*#__PURE__*/ (0, _jsxruntime.jsx)("style", {
+                            dangerouslySetInnerHTML: {
+                                /* CSS minified from
+                body { margin: 0; color: #000; background: #fff; }
+                .next-error-h1 {
+                  border-right: 1px solid rgba(0, 0, 0, .3);
+                }
+
+                ${
+                  withDarkMode
+                    ? `@media (prefers-color-scheme: dark) {
+                  body { color: #fff; background: #000; }
+                  .next-error-h1 {
+                    border-right: 1px solid rgba(255, 255, 255, .3);
+                  }
+                }`
+                    : ''
+                }
+               */ __html: "body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}" + (withDarkMode ? '@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}' : '')
+                            }
+                        }),
+                        statusCode ? /*#__PURE__*/ (0, _jsxruntime.jsx)("h1", {
+                            className: "next-error-h1",
+                            style: styles.h1,
+                            children: statusCode
+                        }) : null,
+                        /*#__PURE__*/ (0, _jsxruntime.jsx)("div", {
+                            style: styles.wrap,
+                            children: /*#__PURE__*/ (0, _jsxruntime.jsxs)("h2", {
+                                style: styles.h2,
+                                children: [
+                                    this.props.title || statusCode ? title : /*#__PURE__*/ (0, _jsxruntime.jsxs)(_jsxruntime.Fragment, {
+                                        children: [
+                                            "Application error: a client-side exception has occurred",
+                                            ' ',
+                                            Boolean(this.props.hostname) && /*#__PURE__*/ (0, _jsxruntime.jsxs)(_jsxruntime.Fragment, {
+                                                children: [
+                                                    "while loading ",
+                                                    this.props.hostname
+                                                ]
+                                            }),
+                                            ' ',
+                                            "(see the browser console for more information)"
+                                        ]
+                                    }),
+                                    "."
+                                ]
+                            })
+                        })
+                    ]
+                })
+            ]
+        });
+    }
+}
+Error.displayName = 'ErrorPage';
+Error.getInitialProps = _getInitialProps;
+Error.origGetInitialProps = _getInitialProps;
+if ((typeof exports.default === 'function' || typeof exports.default === 'object' && exports.default !== null) && typeof exports.default.__esModule === 'undefined') {
+    Object.defineProperty(exports.default, '__esModule', {
+        value: true
+    });
+    Object.assign(exports.default, exports);
+    module.exports = exports.default;
+} //# sourceMappingURL=_error.js.map
+}}),
+"[project]/node_modules/next/error.js [client] (ecmascript)": (function(__turbopack_context__) {
+
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
+{
+module.exports = __turbopack_context__.r("[project]/node_modules/next/dist/pages/_error.js [client] (ecmascript)");
+}}),
+"[next]/entry/page-loader.ts { PAGE => \"[project]/node_modules/next/error.js [client] (ecmascript)\" } [client] (ecmascript)": (function(__turbopack_context__) {
+
+var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
+{
+const PAGE_PATH = "/_error";
 (window.__NEXT_P = window.__NEXT_P || []).push([
     PAGE_PATH,
     ()=>{
-        return __turbopack_context__.r("[project]/node_modules/next/app.js [client] (ecmascript)");
+        return __turbopack_context__.r("[project]/node_modules/next/error.js [client] (ecmascript)");
     }
 ]);
 // @ts-expect-error module.hot exists
@@ -22034,4 +22148,4 @@ if (module.hot) {
 }}),
 }]);
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__ec07ee34._.js.map
+//# sourceMappingURL=%5Broot%20of%20the%20server%5D__73499ecc._.js.map

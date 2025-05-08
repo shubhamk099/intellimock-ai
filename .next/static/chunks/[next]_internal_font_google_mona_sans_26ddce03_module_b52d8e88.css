@@ -1,0 +1,20 @@
+/* [next]/internal/font/google/mona_sans_26ddce03.module.css [app-client] (css) */
+@font-face {
+  font-family: Mona Sans Fallback;
+  src: local(Arial);
+  ascent-override: 104.72%;
+  descent-override: 30.74%;
+  line-gap-override: 0.0%;
+  size-adjust: 104.08%;
+}
+
+.mona_sans_26ddce03-module__qDlOMW__className {
+  font-family: Mona Sans, Mona Sans Fallback;
+  font-style: normal;
+}
+
+.mona_sans_26ddce03-module__qDlOMW__variable {
+  --font-mona-sans: "Mona Sans", "Mona Sans Fallback";
+}
+
+/*# sourceMappingURL=%5Bnext%5D_internal_font_google_mona_sans_26ddce03_module_b52d8e88.css.map*/
